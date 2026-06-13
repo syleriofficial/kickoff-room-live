@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY package.json ./
 COPY outputs/generated-stream-pack ./outputs/generated-stream-pack
+COPY outputs/schedule ./outputs/schedule
+COPY outputs/monetization-kit ./outputs/monetization-kit
 COPY services/automation-api ./services/automation-api
 
 ENV NODE_ENV=production

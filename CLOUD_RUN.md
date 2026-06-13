@@ -14,6 +14,8 @@ It serves generated stream packages over HTTP:
 - first-minute scripts
 - Shorts ideas
 - match metadata
+- schedule data
+- sponsor/affiliate copy
 
 ## Local Test
 
@@ -26,6 +28,11 @@ npm run start:api
 Then open:
 
 `http://localhost:8080/streams`
+
+Also available:
+
+- `http://localhost:8080/schedule`
+- `http://localhost:8080/monetization`
 
 ## Deploy
 

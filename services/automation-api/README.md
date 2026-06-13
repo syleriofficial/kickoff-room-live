@@ -17,6 +17,8 @@ Open:
 - `http://localhost:8080/streams`
 - `http://localhost:8080/next`
 - `http://localhost:8080/stream/bra-mar`
+- `http://localhost:8080/schedule`
+- `http://localhost:8080/monetization`
 - `http://localhost:8080/search?q=brazil`
 
 ## Cloud Run Deploy
@@ -36,6 +38,8 @@ gcloud run deploy kickoff-room-live-api \
 - `/streams`: all generated stream packages
 - `/next`: first stream package in the generated list
 - `/stream/:id`: one stream package by preset id
+- `/schedule`: go-live schedule data
+- `/monetization`: sponsor and affiliate copy data
 - `/search?q=term`: simple match search
 
 ## Future Jobs

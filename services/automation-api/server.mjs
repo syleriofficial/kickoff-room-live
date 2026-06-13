@@ -5,6 +5,8 @@ import { resolve } from "node:path";
 const port = Number(process.env.PORT || 8080);
 const root = resolve(new URL("../..", import.meta.url).pathname);
 const streamsPath = resolve(root, "outputs/generated-stream-pack/streams.json");
+const schedulePath = resolve(root, "outputs/schedule/live-schedule.json");
+const monetizationPath = resolve(root, "outputs/monetization-kit/monetization-kit.json");
 
 function json(res, status, payload) {
   const body = JSON.stringify(payload, null, 2);
@@ -27,6 +29,14 @@ function text(res, status, body) {
 
 async function streams() {
   return JSON.parse(await readFile(streamsPath, "utf8"));
+}
+
+async function schedule() {
+  return JSON.parse(await readFile(schedulePath, "utf8"));
+}
+
+async function monetization() {
+  return JSON.parse(await readFile(monetizationPath, "utf8"));
 }
 
 function scoreMatch(item) {
@@ -76,7 +86,7 @@ async function handle(req, res) {
     json(res, 200, {
       ok: true,
       service: "kickoff-room-live-automation-api",
-      routes: ["/streams", "/next", "/stream/:id", "/search?q=term"]
+      routes: ["/streams", "/next", "/stream/:id", "/schedule", "/monetization", "/search?q=term"]
     });
     return;
   }
@@ -85,6 +95,18 @@ async function handle(req, res) {
 
   if (path === "/streams") {
     json(res, 200, { count: items.length, streams: items.map(publicStream) });
+    return;
+  }
+
+  if (path === "/schedule") {
+    const items = await schedule();
+    json(res, 200, { count: items.length, schedule: items });
+    return;
+  }
+
+  if (path === "/monetization") {
+    const kit = await monetization();
+    json(res, 200, kit);
     return;
   }
 
