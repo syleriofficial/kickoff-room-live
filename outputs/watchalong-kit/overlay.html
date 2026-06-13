@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>World Cup Watchalong Overlay</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="stage">
+      <section class="camera-frame" aria-label="Host camera area">
+        <div class="camera-glow"></div>
+        <div class="top-match-strip">
+          <span id="strip-home">BRA</span>
+          <strong id="strip-title">WORLD CUP WATCHALONG</strong>
+          <span id="strip-away">MAR</span>
+        </div>
+        <div class="camera-placeholder">
+          <div class="lens-ring"></div>
+          <div>
+            <span class="micro-label">CAMERA</span>
+            <strong>Place webcam here</strong>
+          </div>
+        </div>
+        <div class="chat-mission">
+          <span class="micro-label">CHAT MISSION</span>
+          <strong id="chat-mission">Type your country + final score prediction</strong>
+        </div>
+      </section>
+
+      <aside class="right-rail">
+        <div class="brand-panel">
+          <span id="competition">WORLD CUP 2026</span>
+          <strong id="subtitle">LIVE WATCHALONG - NO FOOTAGE</strong>
+        </div>
+
+        <div class="score-card">
+          <div class="team-row">
+            <span class="flag-swatch" id="home-swatch"></span>
+            <span id="home-name">BRAZIL</span>
+            <strong id="home-score">0</strong>
+          </div>
+          <div class="team-row">
+            <span class="flag-swatch" id="away-swatch"></span>
+            <span id="away-name">MOROCCO</span>
+            <strong id="away-score">0</strong>
+          </div>
+          <div class="clock-row">
+            <button class="icon-btn" id="minus" title="Minus one minute">-</button>
+            <span id="match-clock">00:00</span>
+            <button class="icon-btn" id="plus" title="Plus one minute">+</button>
+          </div>
+          <div class="period-row" id="period">1st Half</div>
+        </div>
+
+        <div class="topic-panel">
+          <span class="micro-label">LIVE TALKING POINT</span>
+          <p id="topic">Opening pressure, wing battles, early nerves</p>
+        </div>
+
+        <div class="insight-panel">
+          <div>
+            <span class="micro-label">KEY BATTLE</span>
+            <strong id="key-battle">Vinicius Jr vs Hakimi channel</strong>
+          </div>
+          <div>
+            <span class="micro-label">GAME PULSE</span>
+            <p id="game-pulse">Brazil controlling possession, Morocco dangerous in transition</p>
+          </div>
+        </div>
+
+        <div class="hype-panel">
+          <div class="hype-head">
+            <span class="micro-label">STREAM HYPE</span>
+            <strong id="hype-number">72%</strong>
+          </div>
+          <div class="hype-track"><span id="hype-fill"></span></div>
+        </div>
+
+        <div class="momentum-panel">
+          <div class="momentum-head">
+            <span id="mom-home-label">BRA</span>
+            <strong>Momentum</strong>
+            <span id="mom-away-label">MAR</span>
+          </div>
+          <div class="momentum-bar">
+            <span id="mom-home"></span>
+            <span id="mom-away"></span>
+          </div>
+          <div class="mini-stats">
+            <span>Shots <strong id="shots">0-0</strong></span>
+            <span>Poss <strong id="possession">50-50</strong></span>
+          </div>
+        </div>
+
+        <div class="poll-panel">
+          <span class="micro-label">CHAT POLL</span>
+          <strong id="poll-question">Who wins tonight?</strong>
+          <div class="poll-options">
+            <span id="poll-home">Brazil</span>
+            <span id="poll-draw">Draw</span>
+            <span id="poll-away">Morocco</span>
+          </div>
+        </div>
+      </aside>
+
+      <footer class="lower-third">
+        <div class="host-block">
+          <span id="host-name">Aaditya Live</span>
+          <strong id="host-tag">@AadityaLive</strong>
+        </div>
+        <div class="ticker-wrap">
+          <div class="ticker" id="ticker"></div>
+        </div>
+        <div class="status-pill">LIVE</div>
+      </footer>
+
+      <div class="control-dock">
+        <button data-action="homeGoal">Home Goal</button>
+        <button data-action="awayGoal">Away Goal</button>
+        <button data-action="resetScore">Reset</button>
+        <button data-action="startClock">Start</button>
+        <button data-action="pauseClock">Pause</button>
+        <button data-action="sfxGoal">Goal SFX</button>
+        <button data-action="hypeUp">Hype +</button>
+        <button data-action="hypeDown">Hype -</button>
+      </div>
+    </main>
+    <script src="config.js"></script>
+    <script src="match-presets.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="1440" viewBox="0 0 2560 1440">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.56" stop-color="#13233b"/>
+      <stop offset="1" stop-color="#07111f"/>
+    </linearGradient>
+    <pattern id="lines" width="42" height="42" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <rect width="42" height="42" fill="transparent"/>
+      <path d="M0 0h42" stroke="#ffffff" stroke-opacity="0.07" stroke-width="4"/>
+    </pattern>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="2560" height="1440" fill="url(#bg)"/>
+  <rect width="2560" height="1440" fill="url(#lines)"/>
+  <circle cx="560" cy="710" r="310" fill="#21d4a3" opacity="0.18" filter="url(#soft)"/>
+  <circle cx="2030" cy="470" r="330" fill="#ffbf3f" opacity="0.16" filter="url(#soft)"/>
+  <rect x="424" y="508" width="1712" height="424" fill="#08111f" opacity="0.62" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2"/>
+  <g transform="translate(520 610)">
+    <circle cx="100" cy="100" r="96" fill="none" stroke="#21d4a3" stroke-width="18"/>
+    <path d="M100 24v152M24 100h152M48 48l104 104M152 48L48 152" stroke="#ffffff" stroke-opacity="0.88" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <text x="760" y="690" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="116" font-weight="900" letter-spacing="0">KICKOFF ROOM</text>
+  <text x="766" y="782" fill="#21d4a3" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="900" letter-spacing="0">LIVE WATCHALONGS  /  ENGLISH REACTIONS  /  NO FOOTAGE</text>
+  <text x="766" y="852" fill="#b7c2d9" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="0">Open the official broadcast. Join the room before kickoff.</text>
+  <rect x="424" y="1012" width="1712" height="2" fill="#ffffff" opacity="0.16"/>
+</svg>
