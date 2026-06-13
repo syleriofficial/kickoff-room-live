@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "generate": "node tools/generate-stream-pack.mjs",
-    "check": "node --check tools/generate-stream-pack.mjs && node --check outputs/watchalong-kit/config.js && node --check outputs/watchalong-kit/match-presets.js && node --check outputs/watchalong-kit/script.js && node --check services/automation-api/server.mjs",
-    "start:api": "node services/automation-api/server.mjs"
+    "check": "node --check tools/generate-stream-pack.mjs && node --check outputs/watchalong-kit/config.js && node --check outputs/watchalong-kit/match-presets.js && node --check outputs/watchalong-kit/script.js && node --check services/automation-api/server.mjs && node --check services/youtube/oauth-url.mjs && node --check services/youtube/exchange-token.mjs && node --check services/youtube/create-broadcast.mjs",
+    "start:api": "node services/automation-api/server.mjs",
+    "youtube:auth-url": "node services/youtube/oauth-url.mjs",
+    "youtube:create-dry-run": "node services/youtube/create-broadcast.mjs"
   },
   "engines": {
     "node": ">=22"
