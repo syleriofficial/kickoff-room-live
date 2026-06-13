@@ -8,6 +8,7 @@ This project contains:
 - OBS overlay for live watchalongs
 - Producer control panel
 - Command center for stream copy and checklist
+- Stream package generator
 - Match presets
 - YouTube channel setup kit
 - Google Cloud / YouTube API automation plan
@@ -22,6 +23,8 @@ This project contains:
 ## Folders
 
 - `index.html`: launcher for all tools when hosted on GitHub Pages
+- `tools/generate-stream-pack.mjs`: creates stream titles, descriptions, pinned chats, scripts, Shorts ideas, JSON, Markdown, and CSV
+- `outputs/generated-stream-pack`: generated schedule and copy files
 - `outputs/watchalong-kit`: OBS overlay, producer panel, thumbnails, match presets
 - `outputs/youtube-channel-kit`: channel name, about text, avatar, banner, launch plan
 - `outputs/automation-stack`: GitHub, Google Cloud, and YouTube API automation plan
@@ -73,3 +76,9 @@ Start with semi-auto, then connect OAuth:
 `outputs/automation-stack/autopilot-plan.md`
 
 Never paste API keys, client secrets, or refresh tokens into chat or GitHub.
+
+## Generate Stream Pack
+
+```bash
+node tools/generate-stream-pack.mjs
+```
