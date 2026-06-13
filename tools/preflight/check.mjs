@@ -24,10 +24,13 @@ const requiredFiles = [
   "outputs/schedule/live-calendar.ics",
   "outputs/schedule/live-schedule.json",
   "outputs/schedule/live-schedule.md",
+  "outputs/shorts-kit/shorts-kit.json",
+  "outputs/shorts-kit/shorts-kit.md",
   "services/automation-api/server.mjs",
   "services/youtube/create-broadcast.mjs",
   "services/telegram/send-reminder.mjs",
-  "services/monetization/generate-kit.mjs"
+  "services/monetization/generate-kit.mjs",
+  "services/shorts/generate-shorts.mjs"
 ];
 
 const secretPatterns = [

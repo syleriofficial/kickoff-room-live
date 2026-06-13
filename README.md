@@ -14,6 +14,7 @@ This project contains:
 - Telegram reminder automation scaffold
 - Monetization kit generator
 - Calendar schedule generator
+- Shorts kit generator
 - Preflight checker
 - GitHub Actions checks
 - GitHub Pages deploy workflow
@@ -39,6 +40,7 @@ This project contains:
 - `services/telegram`: Telegram reminder dry-run/send helper
 - `services/monetization`: sponsor, affiliate, and rate-card generator
 - `services/schedule`: calendar and go-live schedule generator
+- `services/shorts`: match-specific Shorts title, caption, hashtag, and shot-list generator
 - `.github/workflows/stream-pack.yml`: checks scripts and verifies generated stream packs
 - `.github/workflows/pages.yml`: deploys the static launcher to GitHub Pages
 - `cloudbuild.yaml`: builds and deploys the automation API to Cloud Run
@@ -146,6 +148,12 @@ npm run monetize
 
 ```bash
 npm run schedule
+```
+
+## Shorts Kit
+
+```bash
+npm run shorts
 ```
 
 ## Preflight
