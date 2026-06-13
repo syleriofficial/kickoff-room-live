@@ -17,6 +17,7 @@ This project contains:
 - Preflight checker
 - GitHub Actions checks
 - GitHub Pages deploy workflow
+- Cloud Run deploy config
 - Match presets
 - YouTube channel setup kit
 - Google Cloud / YouTube API automation plan
@@ -40,6 +41,8 @@ This project contains:
 - `services/schedule`: calendar and go-live schedule generator
 - `.github/workflows/stream-pack.yml`: checks scripts and verifies generated stream packs
 - `.github/workflows/pages.yml`: deploys the static launcher to GitHub Pages
+- `cloudbuild.yaml`: builds and deploys the automation API to Cloud Run
+- `DEPLOYMENT.md`: Google Cloud deploy steps
 - `outputs/generated-stream-pack`: generated schedule and copy files
 - `outputs/watchalong-kit`: OBS overlay, producer panel, thumbnails, match presets
 - `outputs/youtube-channel-kit`: channel name, about text, avatar, banner, launch plan

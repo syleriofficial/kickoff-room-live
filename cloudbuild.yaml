@@ -1,0 +1,33 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -f
+      - services/automation-api/Dockerfile
+      - -t
+      - us-central1-docker.pkg.dev/$PROJECT_ID/kickoff-room-live/automation-api:$SHORT_SHA
+      - .
+
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - us-central1-docker.pkg.dev/$PROJECT_ID/kickoff-room-live/automation-api:$SHORT_SHA
+
+  - name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - kickoff-room-live-api
+      - --image
+      - us-central1-docker.pkg.dev/$PROJECT_ID/kickoff-room-live/automation-api:$SHORT_SHA
+      - --region
+      - us-central1
+      - --platform
+      - managed
+      - --allow-unauthenticated
+      - --port
+      - "8080"
+
+images:
+  - us-central1-docker.pkg.dev/$PROJECT_ID/kickoff-room-live/automation-api:$SHORT_SHA
