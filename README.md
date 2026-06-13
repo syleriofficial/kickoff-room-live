@@ -12,6 +12,7 @@ This project contains:
 - Cloud Run automation API scaffold
 - YouTube OAuth automation scaffold
 - Telegram reminder automation scaffold
+- Monetization kit generator
 - GitHub Actions checks
 - Match presets
 - YouTube channel setup kit
@@ -31,6 +32,7 @@ This project contains:
 - `services/automation-api`: Cloud Run-ready API for stream packages
 - `services/youtube`: OAuth helpers and scheduled live dry-run/create script
 - `services/telegram`: Telegram reminder dry-run/send helper
+- `services/monetization`: sponsor, affiliate, and rate-card generator
 - `.github/workflows/stream-pack.yml`: checks scripts and verifies generated stream packs
 - `outputs/generated-stream-pack`: generated schedule and copy files
 - `outputs/watchalong-kit`: OBS overlay, producer panel, thumbnails, match presets
@@ -123,4 +125,10 @@ Dry-run message:
 
 ```bash
 npm run telegram:dry-run -- bra-mar
+```
+
+## Monetization Kit
+
+```bash
+npm run monetize
 ```

@@ -29,8 +29,11 @@ jobs:
         run: echo "Covered by npm run check"
 
       - name: Generate stream pack
-        run: node tools/generate-stream-pack.mjs
+        run: |
+          node tools/generate-stream-pack.mjs
+          npm run monetize
 
       - name: Verify generated files are committed
         run: |
           git diff --exit-code -- outputs/generated-stream-pack/streams.json outputs/generated-stream-pack/streams.md outputs/generated-stream-pack/streams.csv
+          git diff --exit-code -- outputs/monetization-kit/monetization-kit.json outputs/monetization-kit/monetization-kit.md
