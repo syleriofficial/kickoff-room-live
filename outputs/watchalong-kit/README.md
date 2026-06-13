@@ -6,6 +6,7 @@ This kit is designed for a legal YouTube watchalong: your camera, your live comm
 
 - `overlay.html`: Main OBS browser overlay for the stream.
 - `control.html`: Producer panel for changing score, clock, hype, storylines, and stats live.
+- `dashboard.html`: Command center for titles, descriptions, pinned chat, links, checklist, and Shorts ideas.
 - `match-presets.js`: One-click match presets for all matches in the daily marathon.
 - `config.js`: Edit match names, colors, host name, ticker, poll, and topic.
 - `thumbnail.html`: 1280x720 thumbnail layout you can screenshot/export.
@@ -23,6 +24,7 @@ This kit is designed for a legal YouTube watchalong: your camera, your live comm
 8. Add your mic with filters: Noise Suppression, Compressor, Limiter.
 9. Open `control.html` in a normal browser window to run the stream like a producer.
 10. Use Match Switcher in `control.html` to move from one fixture to the next.
+11. Use `dashboard.html` before every match to copy title, description, pinned chat, and Shorts ideas.
 
 ## Keyboard Controls
 

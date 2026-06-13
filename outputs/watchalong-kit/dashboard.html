@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kickoff Room Command Center</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #08111f;
+        color: #f8fafc;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background:
+          linear-gradient(135deg, #08111f, #14223b 56%, #08111f),
+          repeating-linear-gradient(135deg, rgba(255,255,255,.055) 0 1px, transparent 1px 20px);
+      }
+
+      main {
+        max-width: 1220px;
+        margin: 0 auto;
+        padding: 28px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 20px;
+        margin-bottom: 22px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 38px;
+        line-height: 1;
+      }
+
+      .tagline {
+        margin: 8px 0 0;
+        color: #b7c2d9;
+        font-weight: 750;
+      }
+
+      .live-pill {
+        min-height: 42px;
+        display: grid;
+        place-items: center;
+        padding: 0 18px;
+        background: #ff455f;
+        color: white;
+        font-weight: 950;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 16px;
+      }
+
+      section {
+        grid-column: span 6;
+        border: 1px solid rgba(255,255,255,.14);
+        background: rgba(255,255,255,.06);
+        padding: 18px;
+      }
+
+      section.full { grid-column: 1 / -1; }
+      section.third { grid-column: span 4; }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: 16px;
+        color: #ffbf3f;
+      }
+
+      label {
+        display: grid;
+        gap: 7px;
+        color: #b7c2d9;
+        font-size: 13px;
+        font-weight: 850;
+      }
+
+      select,
+      textarea,
+      input {
+        width: 100%;
+        border: 1px solid rgba(255,255,255,.16);
+        background: rgba(0,0,0,.32);
+        color: white;
+        padding: 11px;
+        font: inherit;
+      }
+
+      textarea {
+        min-height: 132px;
+        resize: vertical;
+        line-height: 1.4;
+      }
+
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      button,
+      a.button {
+        min-height: 40px;
+        display: inline-grid;
+        place-items: center;
+        border: 1px solid rgba(255,255,255,.18);
+        background: #17213a;
+        color: white;
+        padding: 0 14px;
+        font: inherit;
+        font-weight: 900;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button.primary,
+      a.primary { background: #21a981; }
+
+      button.gold,
+      a.gold { background: #b98219; }
+
+      .match-card {
+        display: grid;
+        gap: 8px;
+        padding: 16px;
+        background: rgba(0,0,0,.26);
+        border-left: 5px solid #21d4a3;
+      }
+
+      .match-card strong {
+        font-size: 28px;
+        line-height: 1.05;
+      }
+
+      .match-card span {
+        color: #b7c2d9;
+        font-weight: 800;
+      }
+
+      .checklist {
+        display: grid;
+        gap: 10px;
+      }
+
+      .checklist label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #f8fafc;
+      }
+
+      .checklist input {
+        width: 18px;
+        height: 18px;
+      }
+
+      .shorts {
+        margin: 0;
+        padding-left: 20px;
+        color: #e6edf8;
+        line-height: 1.65;
+        font-weight: 720;
+      }
+
+      @media (max-width: 900px) {
+        section,
+        section.third { grid-column: 1 / -1; }
+
+        header {
+          align-items: start;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>Command Center</h1>
+          <p class="tagline">Schedule, copy, switch, and run English no-footage watchalongs.</p>
+        </div>
+        <div class="live-pill">KICKOFF ROOM LIVE</div>
+      </header>
+
+      <div class="grid">
+        <section class="full">
+          <h2>Match</h2>
+          <label>Select fixture
+            <select id="match"></select>
+          </label>
+          <div class="match-card">
+            <strong id="matchTitle">Brazil vs Morocco</strong>
+            <span id="kickoff">3:30 AM IST, Sunday June 14</span>
+            <span id="angle">English no-footage watchalong, live score, AI commentary, chat polls.</span>
+          </div>
+          <div class="buttons">
+            <a class="button primary" href="control.html" target="_blank">Open Producer Panel</a>
+            <a class="button" href="overlay.html" target="_blank">Open Overlay</a>
+            <a class="button" href="thumbnail.html" target="_blank">Open Thumbnail</a>
+            <button class="gold" id="loadPreset">Load Match To Overlay</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>YouTube Title</h2>
+          <textarea id="title"></textarea>
+          <div class="buttons">
+            <button class="primary" data-copy="title">Copy Title</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>Pinned Chat</h2>
+          <textarea id="pinned"></textarea>
+          <div class="buttons">
+            <button class="primary" data-copy="pinned">Copy Pinned Chat</button>
+          </div>
+        </section>
+
+        <section class="full">
+          <h2>Description</h2>
+          <textarea id="description"></textarea>
+          <div class="buttons">
+            <button class="primary" data-copy="description">Copy Description</button>
+          </div>
+        </section>
+
+        <section class="third">
+          <h2>Pre-Live Checklist</h2>
+          <div class="checklist">
+            <label><input type="checkbox"> Overlay loaded in OBS</label>
+            <label><input type="checkbox"> Browser source audio enabled for TTS</label>
+            <label><input type="checkbox"> Stream title says No Footage</label>
+            <label><input type="checkbox"> Description has disclaimer</label>
+            <label><input type="checkbox"> Pinned chat ready</label>
+          </div>
+        </section>
+
+        <section class="third">
+          <h2>First Minute Script</h2>
+          <textarea id="script"></textarea>
+          <div class="buttons">
+            <button class="primary" data-copy="script">Copy Script</button>
+          </div>
+        </section>
+
+        <section class="third">
+          <h2>Shorts Ideas</h2>
+          <ol class="shorts" id="shorts"></ol>
+          <div class="buttons">
+            <button class="primary" id="copyShorts">Copy Shorts</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="match-presets.js"></script>
+    <script>
+      const stateKey = "watchalong-live-state";
+      const channel = "BroadcastChannel" in window ? new BroadcastChannel("watchalong-control") : null;
+      const matches = window.MATCH_PRESETS || [];
+      const els = {
+        match: document.getElementById("match"),
+        matchTitle: document.getElementById("matchTitle"),
+        kickoff: document.getElementById("kickoff"),
+        angle: document.getElementById("angle"),
+        title: document.getElementById("title"),
+        pinned: document.getElementById("pinned"),
+        description: document.getElementById("description"),
+        script: document.getElementById("script"),
+        shorts: document.getElementById("shorts")
+      };
+
+      function current() {
+        return matches.find((item) => item.id === els.match.value) || matches[0];
+      }
+
+      function title(match) {
+        return `${match.home} vs ${match.away} LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage`;
+      }
+
+      function pinned(match) {
+        return `No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + ${match.home} vs ${match.away} score prediction.`;
+      }
+
+      function description(match) {
+        return `Live English watchalong for ${match.home} vs ${match.away} at the World Cup 2026.\n\nThis stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.\n\nChat questions:\n- Where are you watching from?\n- Score prediction?\n- First scorer?\n- Player of the match?\n\nSubscribe for every World Cup watchalong.\n\nDisclaimer: No match footage or broadcast audio is shown on this stream.`;
+      }
+
+      function script(match) {
+        return `Welcome to Kickoff Room Live. This is an English no-footage watchalong for ${match.home} vs ${match.away}. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is ${match.keyBattle}.`;
+      }
+
+      function shorts(match) {
+        return [
+          `${match.home} vs ${match.away}: full-time reaction in 30 seconds`,
+          `The moment ${match.home} vs ${match.away} changed`,
+          `Best player so far in ${match.home} vs ${match.away}`,
+          `Why the key battle was ${match.keyBattle}`,
+          `Chat predicted this ${match.home} vs ${match.away} moment`
+        ];
+      }
+
+      function render() {
+        const match = current();
+        els.matchTitle.textContent = `${match.home} vs ${match.away}`;
+        els.kickoff.textContent = match.kickoffIst;
+        els.angle.textContent = match.gamePulse;
+        els.title.value = title(match);
+        els.pinned.value = pinned(match);
+        els.description.value = description(match);
+        els.script.value = script(match);
+        els.shorts.innerHTML = "";
+        shorts(match).forEach((idea) => {
+          const li = document.createElement("li");
+          li.textContent = idea;
+          els.shorts.append(li);
+        });
+      }
+
+      function loadPreset() {
+        const match = current();
+        const state = {
+          ...match,
+          presetId: match.id,
+          homeScore: 0,
+          awayScore: 0,
+          seconds: 0,
+          hype: 55,
+          momentumHome: 50,
+          momentumAway: 50,
+          shotsHome: 0,
+          shotsAway: 0,
+          possessionHome: 50,
+          possessionAway: 50
+        };
+        localStorage.setItem(stateKey, JSON.stringify(state));
+        channel?.postMessage(state);
+      }
+
+      async function copy(id) {
+        await navigator.clipboard.writeText(document.getElementById(id).value);
+      }
+
+      matches.forEach((match) => {
+        const option = document.createElement("option");
+        option.value = match.id;
+        option.textContent = `${match.home} vs ${match.away} - ${match.kickoffIst}`;
+        els.match.append(option);
+      });
+
+      els.match.value = "bra-mar";
+      els.match.addEventListener("change", render);
+      document.getElementById("loadPreset").addEventListener("click", loadPreset);
+      document.getElementById("copyShorts").addEventListener("click", async () => {
+        await navigator.clipboard.writeText(shorts(current()).join("\n"));
+      });
+      document.addEventListener("click", (event) => {
+        if (event.target.dataset.copy) copy(event.target.dataset.copy);
+      });
+
+      render();
+    </script>
+  </body>
+</html>

@@ -6,6 +6,7 @@ This project contains:
 
 - OBS overlay for live watchalongs
 - Producer control panel
+- Command center for stream copy and checklist
 - Match presets
 - YouTube channel setup kit
 - Google Cloud / YouTube API automation plan
@@ -24,6 +25,12 @@ This project contains:
 - `outputs/automation-stack`: GitHub, Google Cloud, and YouTube API automation plan
 
 ## OBS Start
+
+Open:
+
+`outputs/watchalong-kit/dashboard.html`
+
+Use it before every stream to copy the title, description, pinned chat, and Shorts ideas.
 
 Open:
 
