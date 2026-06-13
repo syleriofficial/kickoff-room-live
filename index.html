@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kickoff Room Live</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #07111f;
+        color: #f8fafc;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background:
+          linear-gradient(135deg, #07111f, #14233d 58%, #07111f),
+          repeating-linear-gradient(135deg, rgba(255,255,255,.055) 0 1px, transparent 1px 22px);
+      }
+
+      main {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 42px 24px;
+      }
+
+      header {
+        display: grid;
+        gap: 14px;
+        margin-bottom: 30px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        color: #21d4a3;
+        font-weight: 950;
+      }
+
+      .mark {
+        width: 42px;
+        height: 42px;
+        border: 4px solid #21d4a3;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      .mark::before,
+      .mark::after {
+        content: "";
+        position: absolute;
+        background: #f8fafc;
+        opacity: .86;
+      }
+
+      .mark::before {
+        left: 17px;
+        top: 3px;
+        width: 4px;
+        height: 28px;
+      }
+
+      .mark::after {
+        left: 3px;
+        top: 17px;
+        width: 28px;
+        height: 4px;
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 850px;
+        font-size: clamp(42px, 7vw, 84px);
+        line-height: .95;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        max-width: 760px;
+        margin: 0;
+        color: #b7c2d9;
+        font-size: 20px;
+        line-height: 1.45;
+        font-weight: 720;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 16px;
+      }
+
+      .card {
+        grid-column: span 4;
+        min-height: 178px;
+        display: grid;
+        align-content: space-between;
+        gap: 18px;
+        padding: 20px;
+        border: 1px solid rgba(255,255,255,.14);
+        background: rgba(255,255,255,.065);
+        text-decoration: none;
+        color: white;
+      }
+
+      .card.primary {
+        grid-column: span 8;
+        background: rgba(33, 212, 163, .13);
+        border-color: rgba(33, 212, 163, .36);
+      }
+
+      .card strong {
+        display: block;
+        font-size: 24px;
+        line-height: 1.1;
+      }
+
+      .card span {
+        color: #b7c2d9;
+        line-height: 1.35;
+        font-weight: 720;
+      }
+
+      .pill {
+        width: max-content;
+        padding: 7px 10px;
+        background: rgba(255,255,255,.1);
+        color: #ffbf3f;
+        font-size: 12px;
+        font-weight: 950;
+      }
+
+      .rules {
+        margin-top: 22px;
+        padding: 18px 20px;
+        border-left: 5px solid #ff455f;
+        background: rgba(0,0,0,.28);
+        color: #e6edf8;
+        font-weight: 750;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 850px) {
+        .card,
+        .card.primary { grid-column: 1 / -1; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand"><span class="mark"></span> KICKOFF ROOM LIVE</div>
+        <h1>English no-footage football watchalong command kit.</h1>
+        <p class="lead">Run faceless YouTube watchalongs with overlays, live score controls, English auto-voice prompts, stream copy, Shorts ideas, and automation plans.</p>
+      </header>
+
+      <section class="grid" aria-label="Project links">
+        <a class="card primary" href="outputs/watchalong-kit/dashboard.html">
+          <span class="pill">START HERE</span>
+          <div>
+            <strong>Command Center</strong>
+            <span>Pick a match, copy YouTube title, description, pinned chat, first-minute script, and Shorts ideas.</span>
+          </div>
+        </a>
+
+        <a class="card" href="outputs/watchalong-kit/control.html">
+          <span class="pill">LIVE OPS</span>
+          <div>
+            <strong>Producer Panel</strong>
+            <span>Control score, clock, hype, stats, talking points, and English voice lines.</span>
+          </div>
+        </a>
+
+        <a class="card" href="outputs/watchalong-kit/overlay.html">
+          <span class="pill">OBS</span>
+          <div>
+            <strong>Stream Overlay</strong>
+            <span>Use as a 1920x1080 OBS Browser Source for the live watchalong.</span>
+          </div>
+        </a>
+
+        <a class="card" href="outputs/watchalong-kit/thumbnail.html">
+          <span class="pill">YOUTUBE</span>
+          <div>
+            <strong>Thumbnail Template</strong>
+            <span>Open and screenshot/export for match-specific live thumbnails.</span>
+          </div>
+        </a>
+
+        <a class="card" href="outputs/youtube-channel-kit/channel-setup.md">
+          <span class="pill">CHANNEL</span>
+          <div>
+            <strong>Channel Setup</strong>
+            <span>Name, handle, about section, tags, pinned chat, and upload checklist.</span>
+          </div>
+        </a>
+
+        <a class="card" href="outputs/automation-stack/autopilot-plan.md">
+          <span class="pill">AUTO</span>
+          <div>
+            <strong>Automation Plan</strong>
+            <span>GitHub, Google Cloud, YouTube API, scheduler, and dashboard roadmap.</span>
+          </div>
+        </a>
+      </section>
+
+      <section class="rules">
+        Safe format: no match footage, no broadcast audio, no copyrighted music. Use original graphics, English commentary prompts, live chat, and the official broadcast as the viewer's first screen.
+      </section>
+    </main>
+  </body>
+</html>

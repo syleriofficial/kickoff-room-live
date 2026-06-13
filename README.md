@@ -4,6 +4,7 @@ English no-footage football watchalong system for YouTube.
 
 This project contains:
 
+- Website launcher for GitHub Pages
 - OBS overlay for live watchalongs
 - Producer control panel
 - Command center for stream copy and checklist
@@ -20,11 +21,18 @@ This project contains:
 
 ## Folders
 
+- `index.html`: launcher for all tools when hosted on GitHub Pages
 - `outputs/watchalong-kit`: OBS overlay, producer panel, thumbnails, match presets
 - `outputs/youtube-channel-kit`: channel name, about text, avatar, banner, launch plan
 - `outputs/automation-stack`: GitHub, Google Cloud, and YouTube API automation plan
 
 ## OBS Start
+
+Open:
+
+`index.html`
+
+Use it as the launcher for dashboard, overlay, producer controls, and templates.
 
 Open:
 
