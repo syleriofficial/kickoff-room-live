@@ -2,7 +2,19 @@
 
 Use GitHub Pages to open the command kit from a browser without digging through files.
 
-## Enable Pages
+## Enable Pages With GitHub Actions
+
+Recommended:
+
+1. Open the GitHub repository.
+2. Go to `Settings`.
+3. Go to `Pages`.
+4. Source: `GitHub Actions`.
+5. Save.
+
+The workflow `.github/workflows/pages.yml` deploys the site after each push to `main`.
+
+## Alternative: Enable Pages From Branch
 
 1. Open the GitHub repository.
 2. Go to `Settings`.

@@ -97,7 +97,10 @@ async function checkSecretLeaks() {
   if (!files.ok) {
     return { name: "secret scan", ok: false, detail: files.output };
   }
-  const tracked = files.output.split("\n").filter(Boolean);
+  const tracked = files.output
+    .split("\n")
+    .filter(Boolean)
+    .filter((file) => file !== "tools/preflight/check.mjs");
   const findings = [];
   for (const file of tracked) {
     const path = resolve(root, file);

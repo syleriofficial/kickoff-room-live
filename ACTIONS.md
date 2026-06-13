@@ -4,6 +4,10 @@ This repo includes a workflow:
 
 `.github/workflows/stream-pack.yml`
 
+It also includes:
+
+`.github/workflows/pages.yml`
+
 It runs on:
 
 - push to `main`
@@ -16,6 +20,12 @@ It runs on:
 - Node syntax for overlay/config scripts
 - Regenerates the stream pack
 - Verifies generated files are committed
+
+## Pages Deploy
+
+The Pages workflow deploys the static launcher and tools to GitHub Pages after each push to `main`.
+
+In GitHub settings, set Pages source to `GitHub Actions`.
 
 ## If It Fails
 

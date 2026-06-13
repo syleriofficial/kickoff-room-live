@@ -15,6 +15,7 @@ This project contains:
 - Monetization kit generator
 - Preflight checker
 - GitHub Actions checks
+- GitHub Pages deploy workflow
 - Match presets
 - YouTube channel setup kit
 - Google Cloud / YouTube API automation plan
@@ -36,6 +37,7 @@ This project contains:
 - `services/telegram`: Telegram reminder dry-run/send helper
 - `services/monetization`: sponsor, affiliate, and rate-card generator
 - `.github/workflows/stream-pack.yml`: checks scripts and verifies generated stream packs
+- `.github/workflows/pages.yml`: deploys the static launcher to GitHub Pages
 - `outputs/generated-stream-pack`: generated schedule and copy files
 - `outputs/watchalong-kit`: OBS overlay, producer panel, thumbnails, match presets
 - `outputs/youtube-channel-kit`: channel name, about text, avatar, banner, launch plan
