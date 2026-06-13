@@ -9,6 +9,7 @@ This project contains:
 - Producer control panel
 - Command center for stream copy and checklist
 - Stream package generator
+- GitHub Actions checks
 - Match presets
 - YouTube channel setup kit
 - Google Cloud / YouTube API automation plan
@@ -24,6 +25,7 @@ This project contains:
 
 - `index.html`: launcher for all tools when hosted on GitHub Pages
 - `tools/generate-stream-pack.mjs`: creates stream titles, descriptions, pinned chats, scripts, Shorts ideas, JSON, Markdown, and CSV
+- `.github/workflows/stream-pack.yml`: checks scripts and verifies generated stream packs
 - `outputs/generated-stream-pack`: generated schedule and copy files
 - `outputs/watchalong-kit`: OBS overlay, producer panel, thumbnails, match presets
 - `outputs/youtube-channel-kit`: channel name, about text, avatar, banner, launch plan

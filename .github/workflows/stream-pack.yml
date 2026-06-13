@@ -1,0 +1,39 @@
+name: Stream Pack
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check generator syntax
+        run: node --check tools/generate-stream-pack.mjs
+
+      - name: Check overlay scripts
+        run: |
+          node --check outputs/watchalong-kit/config.js
+          node --check outputs/watchalong-kit/match-presets.js
+          node --check outputs/watchalong-kit/script.js
+
+      - name: Generate stream pack
+        run: node tools/generate-stream-pack.mjs
+
+      - name: Verify generated files are committed
+        run: |
+          git diff --exit-code -- outputs/generated-stream-pack/streams.json outputs/generated-stream-pack/streams.md outputs/generated-stream-pack/streams.csv
