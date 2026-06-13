@@ -13,6 +13,7 @@ This project contains:
 - YouTube OAuth automation scaffold
 - Telegram reminder automation scaffold
 - Monetization kit generator
+- Preflight checker
 - GitHub Actions checks
 - Match presets
 - YouTube channel setup kit
@@ -29,6 +30,7 @@ This project contains:
 
 - `index.html`: launcher for all tools when hosted on GitHub Pages
 - `tools/generate-stream-pack.mjs`: creates stream titles, descriptions, pinned chats, scripts, Shorts ideas, JSON, Markdown, and CSV
+- `tools/preflight/check.mjs`: checks project readiness before stream/deploy
 - `services/automation-api`: Cloud Run-ready API for stream packages
 - `services/youtube`: OAuth helpers and scheduled live dry-run/create script
 - `services/telegram`: Telegram reminder dry-run/send helper
@@ -131,4 +133,12 @@ npm run telegram:dry-run -- bra-mar
 
 ```bash
 npm run monetize
+```
+
+## Preflight
+
+Run before a stream or deploy:
+
+```bash
+npm run preflight
 ```

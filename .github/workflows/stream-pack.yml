@@ -37,3 +37,6 @@ jobs:
         run: |
           git diff --exit-code -- outputs/generated-stream-pack/streams.json outputs/generated-stream-pack/streams.md outputs/generated-stream-pack/streams.csv
           git diff --exit-code -- outputs/monetization-kit/monetization-kit.json outputs/monetization-kit/monetization-kit.md
+
+      - name: Preflight
+        run: npm run preflight

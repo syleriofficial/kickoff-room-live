@@ -7,6 +7,7 @@
     "generate": "node tools/generate-stream-pack.mjs",
     "monetize": "node services/monetization/generate-kit.mjs",
     "check": "node --check tools/generate-stream-pack.mjs && node --check outputs/watchalong-kit/config.js && node --check outputs/watchalong-kit/match-presets.js && node --check outputs/watchalong-kit/script.js && node --check services/automation-api/server.mjs && node --check services/youtube/oauth-url.mjs && node --check services/youtube/exchange-token.mjs && node --check services/youtube/create-broadcast.mjs && node --check services/youtube/local-oauth.mjs && node --check services/telegram/send-reminder.mjs && node --check services/monetization/generate-kit.mjs",
+    "preflight": "node tools/preflight/check.mjs",
     "start:api": "node services/automation-api/server.mjs",
     "youtube:oauth": "node services/youtube/local-oauth.mjs",
     "youtube:auth-url": "node services/youtube/oauth-url.mjs",
