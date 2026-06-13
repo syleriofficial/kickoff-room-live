@@ -11,6 +11,7 @@ This project contains:
 - Stream package generator
 - Cloud Run automation API scaffold
 - YouTube OAuth automation scaffold
+- Telegram reminder automation scaffold
 - GitHub Actions checks
 - Match presets
 - YouTube channel setup kit
@@ -29,6 +30,7 @@ This project contains:
 - `tools/generate-stream-pack.mjs`: creates stream titles, descriptions, pinned chats, scripts, Shorts ideas, JSON, Markdown, and CSV
 - `services/automation-api`: Cloud Run-ready API for stream packages
 - `services/youtube`: OAuth helpers and scheduled live dry-run/create script
+- `services/telegram`: Telegram reminder dry-run/send helper
 - `.github/workflows/stream-pack.yml`: checks scripts and verifies generated stream packs
 - `outputs/generated-stream-pack`: generated schedule and copy files
 - `outputs/watchalong-kit`: OBS overlay, producer panel, thumbnails, match presets
@@ -113,4 +115,12 @@ One-command local OAuth helper:
 
 ```bash
 npm run youtube:oauth
+```
+
+## Telegram Reminder
+
+Dry-run message:
+
+```bash
+npm run telegram:dry-run -- bra-mar
 ```
