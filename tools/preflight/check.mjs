@@ -26,6 +26,7 @@ const requiredFiles = [
   "outputs/schedule/live-schedule.md",
   "outputs/shorts-kit/shorts-kit.json",
   "outputs/shorts-kit/shorts-kit.md",
+  "outputs/shorts-kit/README.md",
   "services/automation-api/server.mjs",
   "services/youtube/create-broadcast.mjs",
   "services/telegram/send-reminder.mjs",

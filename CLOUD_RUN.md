@@ -16,6 +16,7 @@ It serves generated stream packages over HTTP:
 - match metadata
 - schedule data
 - sponsor/affiliate copy
+- Shorts ideas and captions
 
 ## Local Test
 
@@ -33,6 +34,7 @@ Also available:
 
 - `http://localhost:8080/schedule`
 - `http://localhost:8080/monetization`
+- `http://localhost:8080/shorts`
 
 ## Deploy
 

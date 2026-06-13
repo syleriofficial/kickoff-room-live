@@ -7,6 +7,7 @@ const root = resolve(new URL("../..", import.meta.url).pathname);
 const streamsPath = resolve(root, "outputs/generated-stream-pack/streams.json");
 const schedulePath = resolve(root, "outputs/schedule/live-schedule.json");
 const monetizationPath = resolve(root, "outputs/monetization-kit/monetization-kit.json");
+const shortsPath = resolve(root, "outputs/shorts-kit/shorts-kit.json");
 
 function json(res, status, payload) {
   const body = JSON.stringify(payload, null, 2);
@@ -37,6 +38,10 @@ async function schedule() {
 
 async function monetization() {
   return JSON.parse(await readFile(monetizationPath, "utf8"));
+}
+
+async function shorts() {
+  return JSON.parse(await readFile(shortsPath, "utf8"));
 }
 
 function scoreMatch(item) {
@@ -86,7 +91,7 @@ async function handle(req, res) {
     json(res, 200, {
       ok: true,
       service: "kickoff-room-live-automation-api",
-      routes: ["/streams", "/next", "/stream/:id", "/schedule", "/monetization", "/search?q=term"]
+      routes: ["/streams", "/next", "/stream/:id", "/schedule", "/monetization", "/shorts", "/shorts/:id", "/search?q=term"]
     });
     return;
   }
@@ -107,6 +112,24 @@ async function handle(req, res) {
   if (path === "/monetization") {
     const kit = await monetization();
     json(res, 200, kit);
+    return;
+  }
+
+  if (path === "/shorts") {
+    const items = await shorts();
+    json(res, 200, { count: items.length, shorts: items });
+    return;
+  }
+
+  if (path.startsWith("/shorts/")) {
+    const id = decodeURIComponent(path.replace("/shorts/", ""));
+    const items = await shorts();
+    const item = items.find((short) => short.id === id);
+    if (!item) {
+      json(res, 404, { error: "Shorts package not found", id });
+      return;
+    }
+    json(res, 200, item);
     return;
   }
 
