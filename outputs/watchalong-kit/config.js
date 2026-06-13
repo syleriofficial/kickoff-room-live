@@ -42,6 +42,28 @@ window.WATCHALONG_CONFIG = {
   },
   audio: {
     enabled: true,
-    volume: 0.35
+    volume: 0.35,
+    ttsEnabled: true,
+    ttsRate: 0.95,
+    ttsPitch: 1,
+    ttsIntervalSeconds: 55,
+    ttsLines: [
+      "Welcome to Kickoff Room Live. This is an English no-footage watchalong.",
+      "Open the official broadcast in your country and use this stream as your second screen.",
+      "Drop your country and score prediction in the live chat.",
+      "No match footage and no broadcast audio are used on this stream.",
+      "The match pulse is building. Keep your predictions coming in chat.",
+      "Who has been the best player so far? Tell us in the chat."
+    ],
+    goalLines: [
+      "Goal. Huge moment in this match. The score has changed.",
+      "That goal shifts the energy completely. Chat, rate the finish out of ten.",
+      "Big breakthrough. This match has opened up now."
+    ],
+    hypeLines: [
+      "The pressure is rising. This is the moment where the match can turn.",
+      "Big spell in the game. Chat, who is controlling the momentum?",
+      "The tempo is increasing. Stay locked in."
+    ]
   }
 };

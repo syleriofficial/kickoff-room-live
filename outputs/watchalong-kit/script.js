@@ -6,8 +6,11 @@ let homeScore = 0;
 let awayScore = 0;
 let seconds = Math.max(0, Number(cfg.match.startMinute || 0) * 60);
 let clockTimer = null;
+let ttsTimer = null;
 let audioCtx = null;
 let hype = Number(cfg.panels.hypePercent || 50);
+let ttsEnabled = Boolean(cfg.audio.ttsEnabled);
+let ttsIndex = 0;
 let liveState = {
   presetId: cfg.match.presetId || "bra-mar",
   home: cfg.match.home,
@@ -118,6 +121,9 @@ function saveState() {
 }
 
 function applyState(nextState) {
+  if (nextState.speakLine && nextState.speakNonce !== liveState.speakNonce) {
+    speak(nextState.speakLine);
+  }
   liveState = { ...liveState, ...nextState };
   homeScore = Number(liveState.homeScore || 0);
   awayScore = Number(liveState.awayScore || 0);
@@ -164,10 +170,45 @@ function beep(freq, duration, gain, delay = 0) {
   osc.stop(t + duration + 0.02);
 }
 
+function speak(line) {
+  if (!ttsEnabled || !("speechSynthesis" in window) || !line) return;
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(line);
+  utterance.lang = "en-US";
+  utterance.rate = Number(cfg.audio.ttsRate || 0.95);
+  utterance.pitch = Number(cfg.audio.ttsPitch || 1);
+  utterance.volume = Math.min(1, Math.max(0, Number(cfg.audio.volume || 0.35) + 0.35));
+  window.speechSynthesis.speak(utterance);
+}
+
+function nextPromptLine() {
+  const tactical = [
+    liveState.gamePulse,
+    liveState.chatMission,
+    `The key battle is ${liveState.keyBattle}.`,
+    `Current score is ${liveState.home} ${homeScore}, ${liveState.away} ${awayScore}.`
+  ];
+  const lines = [...cfg.audio.ttsLines, ...tactical].filter(Boolean);
+  const line = lines[ttsIndex % lines.length];
+  ttsIndex += 1;
+  return line;
+}
+
+function startTtsLoop() {
+  clearInterval(ttsTimer);
+  if (!ttsEnabled) return;
+  ttsTimer = setInterval(() => speak(nextPromptLine()), Number(cfg.audio.ttsIntervalSeconds || 55) * 1000);
+}
+
+function randomLine(lines) {
+  return lines[Math.floor(Math.random() * lines.length)];
+}
+
 function goalSfx() {
   beep(392, 0.18, 0.5, 0);
   beep(523.25, 0.18, 0.5, 0.18);
   beep(659.25, 0.34, 0.48, 0.36);
+  speak(randomLine(cfg.audio.goalLines));
 }
 
 const actions = {
@@ -195,6 +236,7 @@ const actions = {
     saveState();
     render();
     beep(740, 0.09, 0.25);
+    if (hype >= 80) speak(randomLine(cfg.audio.hypeLines));
   },
   hypeDown() {
     hype = Math.max(0, hype - 5);
@@ -203,7 +245,20 @@ const actions = {
   },
   startClock,
   pauseClock,
-  sfxGoal: goalSfx
+  sfxGoal: goalSfx,
+  speakPrompt() {
+    speak(nextPromptLine());
+  },
+  toggleTts() {
+    ttsEnabled = !ttsEnabled;
+    if (ttsEnabled) {
+      speak("Auto voice is now enabled.");
+      startTtsLoop();
+    } else {
+      clearInterval(ttsTimer);
+      window.speechSynthesis?.cancel();
+    }
+  }
 };
 
 document.addEventListener("click", (event) => {
@@ -231,6 +286,8 @@ document.addEventListener("keydown", (event) => {
   if (event.key.toLowerCase() === "r") actions.resetScore();
   if (event.key.toLowerCase() === "u") actions.hypeUp();
   if (event.key.toLowerCase() === "j") actions.hypeDown();
+  if (event.key.toLowerCase() === "s") actions.speakPrompt();
+  if (event.key.toLowerCase() === "t") actions.toggleTts();
 });
 
 window.addEventListener("storage", (event) => {
@@ -243,3 +300,4 @@ channel?.addEventListener("message", (event) => applyState(event.data));
 
 loadState();
 render();
+startTtsLoop();

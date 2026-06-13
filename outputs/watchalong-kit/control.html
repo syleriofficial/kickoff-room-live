@@ -207,6 +207,19 @@
           </div>
         </section>
 
+        <section>
+          <h2>Auto Voice</h2>
+          <div class="buttons">
+            <button class="primary" id="speak-line">Speak Update</button>
+            <button id="speak-goal">Goal Line</button>
+            <button id="speak-hype">Hype Line</button>
+            <button id="voice-note">Copy Disclaimer</button>
+          </div>
+          <label>Custom English Line
+            <textarea id="customLine">Welcome to Kickoff Room Live. This is a no-footage watchalong.</textarea>
+          </label>
+        </section>
+
         <section class="wide">
           <h2>Live Story</h2>
           <label>Talking Point
@@ -339,6 +352,12 @@
         return `${current.home} vs ${current.away} LIVE WATCHALONG | World Cup 2026 | English Reactions | No Footage`;
       }
 
+      function speak(line) {
+        const payload = { ...state, speakLine: line, speakNonce: Date.now() };
+        localStorage.setItem(key, JSON.stringify(payload));
+        channel?.postMessage(payload);
+      }
+
       presets.forEach((item) => {
         const option = document.createElement("option");
         option.value = item.id;
@@ -362,6 +381,10 @@
         if (hype) state.hype = Number(hype);
         if (event.target.id === "load-preset") loadPreset(el("presetId").value);
         if (event.target.id === "copy-title") navigator.clipboard?.writeText(titleForCurrent());
+        if (event.target.id === "speak-line") speak(el("customLine").value);
+        if (event.target.id === "speak-goal") speak("Goal. Huge moment in this match. The score has changed.");
+        if (event.target.id === "speak-hype") speak("The pressure is rising. This is the moment where the match can turn.");
+        if (event.target.id === "voice-note") navigator.clipboard?.writeText("No match footage or broadcast audio here. Open the official broadcast and sync with our timer.");
         if (event.target.id === "reset-all") state = { ...defaults };
         publish();
       });

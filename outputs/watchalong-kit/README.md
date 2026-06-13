@@ -33,6 +33,8 @@ This kit is designed for a legal YouTube watchalong: your camera, your live comm
 - `R`: reset score
 - `U`: hype meter up
 - `J`: hype meter down
+- `S`: speak next English auto-voice prompt
+- `T`: toggle English auto-voice
 - `+` and `-` buttons on screen: adjust timer by one minute
 
 ## Retention Features
@@ -55,6 +57,18 @@ Open `control.html` in the same browser profile as the OBS browser source if pos
 - Chat mission
 - Momentum
 - Shots and possession
+
+## English Auto Voice
+
+The overlay uses the browser's built-in speech synthesis for faceless English commentary prompts.
+
+- Auto prompts speak roughly every 55 seconds.
+- Goal and hype buttons trigger special voice lines.
+- Press `S` to speak the next safe prompt.
+- Press `T` to turn auto voice on/off.
+- Do not use broadcast audio or copyrighted music under the voice.
+
+Keep the voice useful and match-specific. Avoid running the same generic line repeatedly for hours.
 
 ## Today Marathon
 
