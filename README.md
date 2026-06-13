@@ -9,6 +9,7 @@ This project contains:
 - Producer control panel
 - Command center for stream copy and checklist
 - Stream package generator
+- Cloud Run automation API scaffold
 - GitHub Actions checks
 - Match presets
 - YouTube channel setup kit
@@ -25,6 +26,7 @@ This project contains:
 
 - `index.html`: launcher for all tools when hosted on GitHub Pages
 - `tools/generate-stream-pack.mjs`: creates stream titles, descriptions, pinned chats, scripts, Shorts ideas, JSON, Markdown, and CSV
+- `services/automation-api`: Cloud Run-ready API for stream packages
 - `.github/workflows/stream-pack.yml`: checks scripts and verifies generated stream packs
 - `outputs/generated-stream-pack`: generated schedule and copy files
 - `outputs/watchalong-kit`: OBS overlay, producer panel, thumbnails, match presets
@@ -83,4 +85,12 @@ Never paste API keys, client secrets, or refresh tokens into chat or GitHub.
 
 ```bash
 node tools/generate-stream-pack.mjs
+```
+
+## Local Automation API
+
+```bash
+npm run generate
+npm run check
+npm run start:api
 ```

@@ -1,0 +1,14 @@
+{
+  "name": "kickoff-room-live",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node tools/generate-stream-pack.mjs",
+    "check": "node --check tools/generate-stream-pack.mjs && node --check outputs/watchalong-kit/config.js && node --check outputs/watchalong-kit/match-presets.js && node --check outputs/watchalong-kit/script.js && node --check services/automation-api/server.mjs",
+    "start:api": "node services/automation-api/server.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

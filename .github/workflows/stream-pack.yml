@@ -23,13 +23,10 @@ jobs:
           node-version: "22"
 
       - name: Check generator syntax
-        run: node --check tools/generate-stream-pack.mjs
+        run: npm run check
 
       - name: Check overlay scripts
-        run: |
-          node --check outputs/watchalong-kit/config.js
-          node --check outputs/watchalong-kit/match-presets.js
-          node --check outputs/watchalong-kit/script.js
+        run: echo "Covered by npm run check"
 
       - name: Generate stream pack
         run: node tools/generate-stream-pack.mjs
