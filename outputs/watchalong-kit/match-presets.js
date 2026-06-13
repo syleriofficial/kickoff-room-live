@@ -2,6 +2,8 @@ window.MATCH_PRESETS = [
   {
     id: "qat-sui",
     kickoffIst: "12:30 AM IST, Sunday June 14",
+    kickoffUtc: "2026-06-13T19:00:00Z",
+    goLiveUtc: "2026-06-13T18:30:00Z",
     home: "QATAR",
     away: "SWITZERLAND",
     homeShort: "QAT",
@@ -18,6 +20,8 @@ window.MATCH_PRESETS = [
   {
     id: "bra-mar",
     kickoffIst: "3:30 AM IST, Sunday June 14",
+    kickoffUtc: "2026-06-13T22:00:00Z",
+    goLiveUtc: "2026-06-13T21:30:00Z",
     home: "BRAZIL",
     away: "MOROCCO",
     homeShort: "BRA",
@@ -34,6 +38,8 @@ window.MATCH_PRESETS = [
   {
     id: "hai-sco",
     kickoffIst: "6:30 AM IST, Sunday June 14",
+    kickoffUtc: "2026-06-14T01:00:00Z",
+    goLiveUtc: "2026-06-14T00:30:00Z",
     home: "HAITI",
     away: "SCOTLAND",
     homeShort: "HAI",
@@ -50,6 +56,8 @@ window.MATCH_PRESETS = [
   {
     id: "aus-tur",
     kickoffIst: "9:30 AM IST, Sunday June 14",
+    kickoffUtc: "2026-06-14T04:00:00Z",
+    goLiveUtc: "2026-06-14T03:30:00Z",
     home: "AUSTRALIA",
     away: "TURKIYE",
     homeShort: "AUS",

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "qat-sui",
+    "match": "QATAR vs SWITZERLAND",
+    "goLiveUtc": "2026-06-13T18:30:00Z",
+    "kickoffUtc": "2026-06-13T19:00:00Z",
+    "kickoffIst": "12:30 AM IST, Sunday June 14",
+    "title": "QATAR vs SWITZERLAND LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
+    "keyBattle": "Afif drifting inside vs Swiss full-backs",
+    "chatMission": "First match crew: country + score prediction"
+  },
+  {
+    "id": "bra-mar",
+    "match": "BRAZIL vs MOROCCO",
+    "goLiveUtc": "2026-06-13T21:30:00Z",
+    "kickoffUtc": "2026-06-13T22:00:00Z",
+    "kickoffIst": "3:30 AM IST, Sunday June 14",
+    "title": "BRAZIL vs MOROCCO LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
+    "keyBattle": "Vinicius Jr vs Hakimi channel",
+    "chatMission": "Big match crew: country + final score prediction"
+  },
+  {
+    "id": "hai-sco",
+    "match": "HAITI vs SCOTLAND",
+    "goLiveUtc": "2026-06-14T00:30:00Z",
+    "kickoffUtc": "2026-06-14T01:00:00Z",
+    "kickoffIst": "6:30 AM IST, Sunday June 14",
+    "title": "HAITI vs SCOTLAND LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
+    "keyBattle": "Haiti pace vs Scotland defensive line",
+    "chatMission": "Morning crew: predict first scorer"
+  },
+  {
+    "id": "aus-tur",
+    "match": "AUSTRALIA vs TURKIYE",
+    "goLiveUtc": "2026-06-14T03:30:00Z",
+    "kickoffUtc": "2026-06-14T04:00:00Z",
+    "kickoffIst": "9:30 AM IST, Sunday June 14",
+    "title": "AUSTRALIA vs TURKIYE LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
+    "keyBattle": "Australia aerial power vs Turkiye midfield craft",
+    "chatMission": "Breakfast match: who survives the pressure?"
+  }
+]

@@ -13,6 +13,7 @@ This project contains:
 - YouTube OAuth automation scaffold
 - Telegram reminder automation scaffold
 - Monetization kit generator
+- Calendar schedule generator
 - Preflight checker
 - GitHub Actions checks
 - GitHub Pages deploy workflow
@@ -36,6 +37,7 @@ This project contains:
 - `services/youtube`: OAuth helpers and scheduled live dry-run/create script
 - `services/telegram`: Telegram reminder dry-run/send helper
 - `services/monetization`: sponsor, affiliate, and rate-card generator
+- `services/schedule`: calendar and go-live schedule generator
 - `.github/workflows/stream-pack.yml`: checks scripts and verifies generated stream packs
 - `.github/workflows/pages.yml`: deploys the static launcher to GitHub Pages
 - `outputs/generated-stream-pack`: generated schedule and copy files
@@ -135,6 +137,12 @@ npm run telegram:dry-run -- bra-mar
 
 ```bash
 npm run monetize
+```
+
+## Live Calendar
+
+```bash
+npm run schedule
 ```
 
 ## Preflight

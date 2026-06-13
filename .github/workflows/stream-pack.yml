@@ -32,11 +32,13 @@ jobs:
         run: |
           node tools/generate-stream-pack.mjs
           npm run monetize
+          npm run schedule
 
       - name: Verify generated files are committed
         run: |
           git diff --exit-code -- outputs/generated-stream-pack/streams.json outputs/generated-stream-pack/streams.md outputs/generated-stream-pack/streams.csv
           git diff --exit-code -- outputs/monetization-kit/monetization-kit.json outputs/monetization-kit/monetization-kit.md
+          git diff --exit-code -- outputs/schedule/live-calendar.ics outputs/schedule/live-schedule.md outputs/schedule/live-schedule.json
 
       - name: Preflight
         run: npm run preflight

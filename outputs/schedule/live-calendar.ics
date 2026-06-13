@@ -1,0 +1,58 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Kickoff Room Live//Watchalong Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:kickoff-room-qat-sui@kickoff-room-live
+DTSTAMP:20260613T170935.367Z
+DTSTART:20260613T183000Z
+DTEND:20260613T213000Z
+SUMMARY:Go live: QATAR vs SWITZERLAND
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 12:30 AM IST\, Sunday June 14\nKey battle: Afif drifting inside vs Swiss full-backs\nReminder: no match footage\, no broadcast audio.
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Go live: QATAR vs SWITZERLAND
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kickoff-room-bra-mar@kickoff-room-live
+DTSTAMP:20260613T170935.368Z
+DTSTART:20260613T213000Z
+DTEND:20260614T003000Z
+SUMMARY:Go live: BRAZIL vs MOROCCO
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 3:30 AM IST\, Sunday June 14\nKey battle: Vinicius Jr vs Hakimi channel\nReminder: no match footage\, no broadcast audio.
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Go live: BRAZIL vs MOROCCO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kickoff-room-hai-sco@kickoff-room-live
+DTSTAMP:20260613T170935.368Z
+DTSTART:20260614T003000Z
+DTEND:20260614T033000Z
+SUMMARY:Go live: HAITI vs SCOTLAND
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 6:30 AM IST\, Sunday June 14\nKey battle: Haiti pace vs Scotland defensive line\nReminder: no match footage\, no broadcast audio.
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Go live: HAITI vs SCOTLAND
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kickoff-room-aus-tur@kickoff-room-live
+DTSTAMP:20260613T170935.368Z
+DTSTART:20260614T033000Z
+DTEND:20260614T063000Z
+SUMMARY:Go live: AUSTRALIA vs TURKIYE
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 9:30 AM IST\, Sunday June 14\nKey battle: Australia aerial power vs Turkiye midfield craft\nReminder: no match footage\, no broadcast audio.
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Go live: AUSTRALIA vs TURKIYE
+END:VALARM
+END:VEVENT
+END:VCALENDAR
