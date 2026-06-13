@@ -14,6 +14,16 @@ export YOUTUBE_REDIRECT_URI="http://localhost:8080/oauth2callback"
 
 ## Step 1: Generate Consent URL
 
+Easiest one-command local flow:
+
+```bash
+node services/youtube/local-oauth.mjs
+```
+
+Open the printed URL, approve access, and return to the terminal. The helper prints `YOUTUBE_REFRESH_TOKEN` and does not save it to the repo.
+
+Manual flow:
+
 ```bash
 node services/youtube/oauth-url.mjs
 ```

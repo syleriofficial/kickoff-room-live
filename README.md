@@ -108,3 +108,9 @@ npm run youtube:create-dry-run -- bra-mar
 OAuth setup is documented in:
 
 `services/youtube/README.md`
+
+One-command local OAuth helper:
+
+```bash
+npm run youtube:oauth
+```
