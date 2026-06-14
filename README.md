@@ -19,6 +19,7 @@ This project contains:
 - GitHub Actions checks
 - GitHub Pages deploy workflow
 - Cloud Run deploy config
+- Local OBS/tools server
 - Match presets
 - YouTube channel setup kit
 - Google Cloud / YouTube API automation plan
@@ -36,6 +37,7 @@ This project contains:
 - `tools/generate-stream-pack.mjs`: creates stream titles, descriptions, pinned chats, scripts, Shorts ideas, JSON, Markdown, and CSV
 - `tools/preflight/check.mjs`: checks project readiness before stream/deploy
 - `services/automation-api`: Cloud Run-ready API for stream packages
+- `services/local-tools-server`: local server for OBS/browser tool URLs
 - `services/youtube`: OAuth helpers and scheduled live dry-run/create script
 - `services/telegram`: Telegram reminder dry-run/send helper
 - `services/monetization`: sponsor, affiliate, and rate-card generator
@@ -111,6 +113,20 @@ npm run generate
 npm run check
 npm run start:api
 ```
+
+## Local OBS Tools Server
+
+```bash
+npm run start:tools
+```
+
+Open:
+
+`http://127.0.0.1:5173/dashboard`
+
+OBS overlay:
+
+`http://127.0.0.1:5173/overlay`
 
 ## YouTube Automation
 
