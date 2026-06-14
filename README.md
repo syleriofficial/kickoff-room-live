@@ -47,7 +47,7 @@ This project contains:
 - `DEPLOYMENT.md`: Google Cloud deploy steps
 - `outputs/generated-stream-pack`: generated schedule and copy files
 - `outputs/watchalong-kit`: OBS overlay, producer panel, thumbnails, match presets
-- `outputs/youtube-channel-kit`: channel name, about text, avatar, banner, launch plan
+- `outputs/youtube-channel-kit`: channel name, about text, avatar, banner, launch plan, completion checklist
 - `outputs/automation-stack`: GitHub, Google Cloud, and YouTube API automation plan
 
 ## OBS Start

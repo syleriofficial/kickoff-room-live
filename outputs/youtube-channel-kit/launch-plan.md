@@ -12,6 +12,8 @@ Go to YouTube while logged into your Google account:
 6. Upload avatar from `avatar.svg`.
 7. Upload banner from `banner.svg`.
 8. Paste the About section from `channel-setup.md`.
+9. Create playlists from `channel-completion.md`.
+10. Add upload defaults from `upload-defaults.md`.
 
 ## Step 2: Create First Live
 
@@ -47,3 +49,12 @@ After every match:
 - Post one full-time verdict Short.
 - Pin a comment linking to the next watchalong.
 - Update the next scheduled live immediately.
+
+## While Live Verification Is Pending
+
+- Complete About section.
+- Upload avatar and banner.
+- Create playlists.
+- Prepare 3 Shorts from the Shorts kit.
+- Create Telegram/WhatsApp community.
+- Add channel keywords and upload defaults.
