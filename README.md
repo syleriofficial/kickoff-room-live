@@ -120,6 +120,12 @@ Start with a safe dry run:
 npm run youtube:create-dry-run -- bra-mar
 ```
 
+Create the next upcoming private scheduled live after YouTube Live is enabled:
+
+```bash
+YOUTUBE_DRY_RUN=false npm run youtube:create-next
+```
+
 OAuth setup is documented in:
 
 `services/youtube/README.md`

@@ -29,6 +29,7 @@ const requiredFiles = [
   "outputs/shorts-kit/README.md",
   "services/automation-api/server.mjs",
   "services/youtube/create-broadcast.mjs",
+  "services/youtube/create-next-broadcast.mjs",
   "services/telegram/send-reminder.mjs",
   "services/monetization/generate-kit.mjs",
   "services/shorts/generate-shorts.mjs"

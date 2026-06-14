@@ -46,6 +46,20 @@ node services/youtube/create-broadcast.mjs bra-mar
 
 This does not call YouTube by default.
 
+## Create Next Scheduled Broadcast
+
+Dry-run next upcoming stream from `outputs/schedule/live-schedule.json`:
+
+```bash
+npm run youtube:create-next
+```
+
+Create the next broadcast as private after live verification is active:
+
+```bash
+YOUTUBE_DRY_RUN=false npm run youtube:create-next
+```
+
 ## Step 4: Create Scheduled Broadcast
 
 Use an ISO timestamp:
