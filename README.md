@@ -185,3 +185,11 @@ Run before a stream or deploy:
 ```bash
 npm run preflight
 ```
+
+## One-Command Local Launch
+
+```bash
+npm run launch
+```
+
+This runs preflight, prints the next match and OBS URLs, then starts the local tools server.

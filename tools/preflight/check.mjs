@@ -27,6 +27,7 @@ const requiredFiles = [
   "outputs/shorts-kit/shorts-kit.json",
   "outputs/shorts-kit/shorts-kit.md",
   "outputs/shorts-kit/README.md",
+  "scripts/launch-local.mjs",
   "services/automation-api/server.mjs",
   "services/local-tools-server/server.mjs",
   "services/youtube/create-broadcast.mjs",
