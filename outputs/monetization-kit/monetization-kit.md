@@ -67,6 +67,34 @@ Kickoff Room Live
 
 # Match Sponsor Copy
 
+## GERMANY vs CURACAO
+
+### Pinned Sponsor
+
+```text
+Sponsor slot available for GERMANY vs CURACAO. DM/contact to promote football gear, fan merch, snacks, or creator tools.
+```
+
+### Live Read
+
+```text
+Quick sponsor note: today's GERMANY vs CURACAO watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
+```
+
+### Description Block
+
+```text
+Support the stream:
+
+- Football gear: ADD_AFFILIATE_LINK
+- Streaming setup: ADD_AFFILIATE_LINK
+- Fan merch: ADD_AFFILIATE_LINK
+
+Disclosure: Some links may be affiliate links. If you buy through them, the channel may earn a small commission at no extra cost to you.
+
+Sponsor this match: contact Kickoff Room Live for pinned chat, lower-third, and Shorts promo slots.
+```
+
 ## QATAR vs SWITZERLAND
 
 ### Pinned Sponsor

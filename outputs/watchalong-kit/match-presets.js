@@ -1,5 +1,23 @@
 window.MATCH_PRESETS = [
   {
+    id: "ger-cur",
+    kickoffIst: "9:30 PM IST, Sunday June 14",
+    kickoffUtc: "2026-06-14T16:00:00Z",
+    goLiveUtc: "2026-06-14T15:30:00Z",
+    home: "GERMANY",
+    away: "CURACAO",
+    homeShort: "GER",
+    awayShort: "CUR",
+    homeColor: "#f4c430",
+    awayColor: "#2457c5",
+    topic: "Germany's control, Curacao's debut energy, early tempo",
+    keyBattle: "Wirtz between the lines vs Curacao's midfield screen",
+    gamePulse: "Germany want early authority; Curacao need compact defending and brave counters",
+    chatMission: "Tonight crew: country + Germany vs Curacao score prediction",
+    pollHome: "Germany",
+    pollAway: "Curacao"
+  },
+  {
     id: "qat-sui",
     kickoffIst: "12:30 AM IST, Sunday June 14",
     kickoffUtc: "2026-06-13T19:00:00Z",

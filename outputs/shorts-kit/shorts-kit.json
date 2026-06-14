@@ -1,5 +1,80 @@
 [
   {
+    "id": "ger-cur",
+    "match": "GERMANY vs CURACAO",
+    "hashtags": [
+      "#WorldCup2026",
+      "#FootballShorts",
+      "#LiveReaction",
+      "#Watchalong",
+      "#GERMANY",
+      "#CURACAO",
+      "#NoFootage"
+    ],
+    "ideas": [
+      {
+        "type": "full-time",
+        "title": "GERMANY vs CURACAO: Full-Time Reaction in 30 Seconds",
+        "hook": "The biggest story from GERMANY vs CURACAO was clear.",
+        "caption": "GERMANY vs CURACAO full-time reaction. No footage, just fan analysis and match reaction.",
+        "shotList": [
+          "score graphic",
+          "one big turning point",
+          "player of the match",
+          "next match CTA"
+        ]
+      },
+      {
+        "type": "turning-point",
+        "title": "The Moment GERMANY vs CURACAO Changed",
+        "hook": "This was the moment the match shifted.",
+        "caption": "The key turning point from GERMANY vs CURACAO, explained fast.",
+        "shotList": [
+          "timer graphic",
+          "momentum meter",
+          "one-sentence explanation",
+          "chat question"
+        ]
+      },
+      {
+        "type": "key-battle",
+        "title": "Why Wirtz between the lines vs Curacao's midfield screen Mattered",
+        "hook": "This matchup decided more than people expected.",
+        "caption": "Wirtz between the lines vs Curacao's midfield screen was one of the biggest tactical stories in GERMANY vs CURACAO.",
+        "shotList": [
+          "key battle text",
+          "team colors",
+          "tactical note",
+          "subscribe CTA"
+        ]
+      },
+      {
+        "type": "prediction",
+        "title": "Chat Predicted This GERMANY vs CURACAO Moment",
+        "hook": "The live chat saw this coming.",
+        "caption": "Live chat predictions during GERMANY vs CURACAO. Join the next no-footage watchalong.",
+        "shotList": [
+          "chat prompt",
+          "prediction graphic",
+          "result/reaction",
+          "next live CTA"
+        ]
+      },
+      {
+        "type": "best-player",
+        "title": "Best Player So Far: GERMANY vs CURACAO",
+        "hook": "One player stood above the rest.",
+        "caption": "Quick player-of-the-match debate from GERMANY vs CURACAO. Comment your pick.",
+        "shotList": [
+          "player role text",
+          "stat/momentum graphic",
+          "why they mattered",
+          "comment prompt"
+        ]
+      }
+    ]
+  },
+  {
     "id": "qat-sui",
     "match": "QATAR vs SWITZERLAND",
     "hashtags": [

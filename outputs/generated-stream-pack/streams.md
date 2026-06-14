@@ -2,6 +2,54 @@
 
 Generated from `outputs/watchalong-kit/match-presets.js`.
 
+## GERMANY vs CURACAO
+
+Kickoff: **9:30 PM IST, Sunday June 14**
+
+### YouTube Title
+
+```text
+GERMANY vs CURACAO LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
+```
+
+### Description
+
+```text
+Live English watchalong for GERMANY vs CURACAO at the World Cup 2026.
+
+This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
+
+Chat questions:
+- Where are you watching from?
+- Score prediction?
+- First scorer?
+- Player of the match?
+
+Subscribe for every World Cup watchalong.
+
+Disclaimer: No match footage or broadcast audio is shown on this stream.
+```
+
+### Pinned Chat
+
+```text
+No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + GERMANY vs CURACAO score prediction.
+```
+
+### First Minute Script
+
+```text
+Welcome to Kickoff Room Live. This is an English no-footage watchalong for GERMANY vs CURACAO. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Wirtz between the lines vs Curacao's midfield screen.
+```
+
+### Shorts Ideas
+
+- GERMANY vs CURACAO: full-time reaction in 30 seconds
+- The moment GERMANY vs CURACAO changed
+- Best player so far in GERMANY vs CURACAO
+- Why the key battle was Wirtz between the lines vs Curacao's midfield screen
+- Chat predicted this GERMANY vs CURACAO moment
+
 ## QATAR vs SWITZERLAND
 
 Kickoff: **12:30 AM IST, Sunday June 14**

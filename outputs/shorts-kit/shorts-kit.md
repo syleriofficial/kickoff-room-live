@@ -2,6 +2,46 @@
 
 Use these after every live stream. Record or clip only original graphics, your overlay, your AI/human commentary, and your own reactions. Do not use match footage or broadcast audio.
 
+## GERMANY vs CURACAO
+
+Hashtags: #WorldCup2026 #FootballShorts #LiveReaction #Watchalong #GERMANY #CURACAO #NoFootage
+
+### 1. GERMANY vs CURACAO: Full-Time Reaction in 30 Seconds
+
+- Type: full-time
+- Hook: The biggest story from GERMANY vs CURACAO was clear.
+- Caption: GERMANY vs CURACAO full-time reaction. No footage, just fan analysis and match reaction.
+- Shot list: score graphic -> one big turning point -> player of the match -> next match CTA
+
+### 2. The Moment GERMANY vs CURACAO Changed
+
+- Type: turning-point
+- Hook: This was the moment the match shifted.
+- Caption: The key turning point from GERMANY vs CURACAO, explained fast.
+- Shot list: timer graphic -> momentum meter -> one-sentence explanation -> chat question
+
+### 3. Why Wirtz between the lines vs Curacao's midfield screen Mattered
+
+- Type: key-battle
+- Hook: This matchup decided more than people expected.
+- Caption: Wirtz between the lines vs Curacao's midfield screen was one of the biggest tactical stories in GERMANY vs CURACAO.
+- Shot list: key battle text -> team colors -> tactical note -> subscribe CTA
+
+### 4. Chat Predicted This GERMANY vs CURACAO Moment
+
+- Type: prediction
+- Hook: The live chat saw this coming.
+- Caption: Live chat predictions during GERMANY vs CURACAO. Join the next no-footage watchalong.
+- Shot list: chat prompt -> prediction graphic -> result/reaction -> next live CTA
+
+### 5. Best Player So Far: GERMANY vs CURACAO
+
+- Type: best-player
+- Hook: One player stood above the rest.
+- Caption: Quick player-of-the-match debate from GERMANY vs CURACAO. Comment your pick.
+- Shot list: player role text -> stat/momentum graphic -> why they mattered -> comment prompt
+
+
 ## QATAR vs SWITZERLAND
 
 Hashtags: #WorldCup2026 #FootballShorts #LiveReaction #Watchalong #QATAR #SWITZERLAND #NoFootage
