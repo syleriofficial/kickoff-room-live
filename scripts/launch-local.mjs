@@ -53,6 +53,7 @@ if (next) {
 console.log("");
 console.log("Local URLs:");
 console.log(`Dashboard:      http://127.0.0.1:${port}/dashboard`);
+console.log(`Readiness:      http://127.0.0.1:${port}/readiness`);
 console.log(`OBS overlay:    http://127.0.0.1:${port}/overlay`);
 console.log(`Producer panel: http://127.0.0.1:${port}/control`);
 console.log(`Trailer:        http://127.0.0.1:${port}/trailer`);

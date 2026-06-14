@@ -10,6 +10,7 @@ const requiredFiles = [
   "README.md",
   ".gitignore",
   "outputs/watchalong-kit/dashboard.html",
+  "outputs/watchalong-kit/readiness.html",
   "outputs/watchalong-kit/control.html",
   "outputs/watchalong-kit/overlay.html",
   "outputs/watchalong-kit/thumbnail.html",

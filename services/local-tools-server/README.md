@@ -15,6 +15,7 @@ Default URL:
 ## Routes
 
 - `/dashboard`: command center
+- `/readiness`: live readiness checklist
 - `/control`: producer panel
 - `/overlay`: OBS overlay
 - `/obs`: redirects to overlay

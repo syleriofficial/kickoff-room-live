@@ -9,6 +9,7 @@ const port = Number(process.env.PORT || 5173);
 const aliases = new Map([
   ["/", "index.html"],
   ["/dashboard", "outputs/watchalong-kit/dashboard.html"],
+  ["/readiness", "outputs/watchalong-kit/readiness.html"],
   ["/control", "outputs/watchalong-kit/control.html"],
   ["/overlay", "outputs/watchalong-kit/overlay.html"],
   ["/thumbnail", "outputs/watchalong-kit/thumbnail.html"],
@@ -98,6 +99,7 @@ const server = createServer((req, res) => {
 server.listen(port, "127.0.0.1", () => {
   console.log(`Kickoff Room tools server running at http://127.0.0.1:${port}`);
   console.log(`Dashboard: http://127.0.0.1:${port}/dashboard`);
+  console.log(`Readiness: http://127.0.0.1:${port}/readiness`);
   console.log(`OBS overlay: http://127.0.0.1:${port}/overlay`);
   console.log(`Producer control: http://127.0.0.1:${port}/control`);
   console.log(`Trailer: http://127.0.0.1:${port}/trailer`);
