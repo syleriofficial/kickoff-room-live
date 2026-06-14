@@ -1,7 +1,12 @@
+import { readFile } from "node:fs/promises";
+import { resolve } from "node:path";
+
 const clientId = process.env.YOUTUBE_CLIENT_ID;
 const clientSecret = process.env.YOUTUBE_CLIENT_SECRET;
 const refreshToken = process.env.YOUTUBE_REFRESH_TOKEN;
 const dryRun = process.env.YOUTUBE_DRY_RUN === "true";
+const root = resolve(new URL("../..", import.meta.url).pathname);
+const bannerPath = resolve(root, "outputs/youtube-channel-kit/png-assets/banner-2560x1440.png");
 
 const channelDescription = `Kickoff Room Live is a global English football watchalong channel.
 
@@ -113,6 +118,50 @@ async function updateBranding(token, channel) {
   return api("channels?part=brandingSettings", { method: "PUT", token, body });
 }
 
+async function uploadBanner(token) {
+  const bytes = await readFile(bannerPath);
+  if (dryRun) return { dryRun: true, url: "DRY_RUN_BANNER_URL" };
+  const response = await fetch("https://www.googleapis.com/upload/youtube/v3/channelBanners/insert", {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${token}`,
+      "content-type": "image/png"
+    },
+    body: bytes
+  });
+  const payload = await response.json();
+  if (!response.ok) {
+    throw new Error(JSON.stringify(payload, null, 2));
+  }
+  return payload;
+}
+
+async function setBanner(token, channel, bannerUrl) {
+  const brandingSettings = channel.brandingSettings || {};
+  const currentChannel = brandingSettings.channel || {};
+  const currentImage = brandingSettings.image || {};
+  const body = {
+    id: channel.id,
+    brandingSettings: {
+      ...brandingSettings,
+      channel: {
+        ...currentChannel,
+        title: "Kickoff Room Live",
+        description: channelDescription,
+        keywords,
+        defaultLanguage: "en",
+        country: "US"
+      },
+      image: {
+        ...currentImage,
+        bannerExternalUrl: bannerUrl
+      }
+    }
+  };
+  if (dryRun) return { dryRun: true, request: body };
+  return api("channels?part=brandingSettings", { method: "PUT", token, body });
+}
+
 async function existingPlaylists(token) {
   const payload = await api("playlists?part=snippet&mine=true&maxResults=50", { token });
   return new Set((payload.items || []).map((item) => item.snippet?.title).filter(Boolean));
@@ -137,6 +186,8 @@ try {
   const channel = await ownedChannel(token);
   const existing = await existingPlaylists(token);
   const branding = await updateBranding(token, channel);
+  const bannerUpload = await uploadBanner(token);
+  const banner = await setBanner(token, channel, bannerUpload.url);
   const created = [];
   const skipped = [];
 
@@ -158,11 +209,11 @@ try {
       targetTitle: "Kickoff Room Live"
     },
     brandingUpdated: Boolean(branding),
+    bannerUpdated: Boolean(banner),
     playlistsCreated: created,
     playlistsSkipped: skipped,
     manualStillNeeded: [
       "Upload avatar PNG in YouTube Studio Branding",
-      "Upload banner PNG in YouTube Studio Branding",
       "Set upload defaults in YouTube Studio Settings"
     ]
   }, null, 2));
