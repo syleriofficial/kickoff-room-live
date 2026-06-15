@@ -62,7 +62,6 @@ async function listUpcomingBroadcasts(token) {
     const url = new URL("https://www.googleapis.com/youtube/v3/liveBroadcasts");
     url.searchParams.set("part", "id,snippet,status");
     url.searchParams.set("mine", "true");
-    url.searchParams.set("broadcastStatus", "upcoming");
     url.searchParams.set("maxResults", "50");
     if (pageToken) url.searchParams.set("pageToken", pageToken);
 
@@ -71,7 +70,10 @@ async function listUpcomingBroadcasts(token) {
     pageToken = payload.nextPageToken || "";
   } while (pageToken);
 
-  return found;
+  return found.filter((item) => {
+    const scheduledAt = item.snippet?.scheduledStartTime;
+    return scheduledAt && new Date(scheduledAt).getTime() > Date.now();
+  });
 }
 
 function requestBody(stream, scheduledStartTime) {
