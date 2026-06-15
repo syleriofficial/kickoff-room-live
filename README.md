@@ -152,6 +152,10 @@ Reminder ops:
 
 `http://127.0.0.1:5173/reminders`
 
+Marathon ops:
+
+`http://127.0.0.1:5173/marathon`
+
 Readiness checklist:
 
 `http://127.0.0.1:5173/readiness`
