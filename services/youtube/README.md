@@ -68,6 +68,14 @@ Create the next broadcast as private after live verification is active:
 YOUTUBE_DRY_RUN=false npm run youtube:create-next
 ```
 
+Wait and retry until YouTube unlocks scheduled broadcast creation:
+
+```bash
+YOUTUBE_RETRY_ATTEMPTS=24 YOUTUBE_RETRY_INTERVAL_SECONDS=300 npm run youtube:wait-create-next
+```
+
+The retry helper only keeps retrying for YouTube live activation errors: `livePermissionBlocked` and `liveStreamingNotEnabled`.
+
 ## Step 4: Create Scheduled Broadcast
 
 Use an ISO timestamp:
