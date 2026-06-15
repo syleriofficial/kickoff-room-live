@@ -77,13 +77,19 @@ YOUTUBE_DRY_RUN=false npm run youtube:create-upcoming
 
 The batch helper checks existing upcoming broadcasts and skips exact title/time duplicates before creating missing streams.
 
-Wait and retry until YouTube unlocks scheduled broadcast creation:
+Wait and retry until YouTube unlocks scheduled broadcast creation for all upcoming streams:
+
+```bash
+YOUTUBE_RETRY_ATTEMPTS=180 YOUTUBE_RETRY_INTERVAL_SECONDS=300 npm run youtube:wait-create-upcoming
+```
+
+Wait and retry for only the next stream:
 
 ```bash
 YOUTUBE_RETRY_ATTEMPTS=24 YOUTUBE_RETRY_INTERVAL_SECONDS=300 npm run youtube:wait-create-next
 ```
 
-The retry helper only keeps retrying for YouTube live activation errors: `livePermissionBlocked` and `liveStreamingNotEnabled`.
+The retry helpers only keep retrying for YouTube live activation errors: `livePermissionBlocked` and `liveStreamingNotEnabled`.
 
 ## Step 4: Create Scheduled Broadcast
 

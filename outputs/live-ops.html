@@ -220,8 +220,8 @@
           <h2>Schedule YouTube Lives</h2>
           <div class="actions">
             <div class="action">
-              <code>set -a; source .env; set +a; YOUTUBE_DRY_RUN=false npm run youtube:create-upcoming</code>
-              <button class="primary" data-copy="set -a; source .env; set +a; YOUTUBE_DRY_RUN=false npm run youtube:create-upcoming">Copy</button>
+              <code>set -a; source .env; set +a; YOUTUBE_RETRY_ATTEMPTS=180 YOUTUBE_RETRY_INTERVAL_SECONDS=300 npm run youtube:wait-create-upcoming</code>
+              <button class="primary" data-copy="set -a; source .env; set +a; YOUTUBE_RETRY_ATTEMPTS=180 YOUTUBE_RETRY_INTERVAL_SECONDS=300 npm run youtube:wait-create-upcoming">Copy</button>
             </div>
             <div class="action">
               <code>set -a; source .env; set +a; npm run youtube:live-status</code>

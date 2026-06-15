@@ -177,6 +177,7 @@
           <ol>
             <li>Run live status check.</li>
             <li>Run dry-run create-upcoming.</li>
+            <li>Use batch retry if YouTube live activation is still locked.</li>
             <li>Create all upcoming as private.</li>
             <li>Review in YouTube Studio.</li>
             <li>Only then switch selected live to public/scheduled.</li>
@@ -200,8 +201,12 @@
               <button class="primary" data-copy-target="createCmd">Copy Create</button>
             </div>
             <div class="action">
+              <code id="retryUpcomingCmd">set -a; source .env; set +a; YOUTUBE_RETRY_ATTEMPTS=180 YOUTUBE_RETRY_INTERVAL_SECONDS=300 npm run youtube:wait-create-upcoming</code>
+              <button class="primary" data-copy-target="retryUpcomingCmd">Copy Batch Retry</button>
+            </div>
+            <div class="action">
               <code id="retryCmd">set -a; source .env; set +a; YOUTUBE_RETRY_ATTEMPTS=24 YOUTUBE_RETRY_INTERVAL_SECONDS=300 npm run youtube:wait-create-next</code>
-              <button data-copy-target="retryCmd">Copy Retry</button>
+              <button data-copy-target="retryCmd">Copy Next Retry</button>
             </div>
           </div>
         </section>
