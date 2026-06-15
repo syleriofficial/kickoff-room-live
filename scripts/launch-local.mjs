@@ -52,6 +52,7 @@ if (next) {
 
 console.log("");
 console.log("Local URLs:");
+console.log(`Live ops:       http://127.0.0.1:${port}/ops`);
 console.log(`Dashboard:      http://127.0.0.1:${port}/dashboard`);
 console.log(`Readiness:      http://127.0.0.1:${port}/readiness`);
 console.log(`OBS overlay:    http://127.0.0.1:${port}/overlay`);

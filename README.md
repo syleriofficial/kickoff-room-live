@@ -124,6 +124,10 @@ Open:
 
 `http://127.0.0.1:5173/dashboard`
 
+Live ops control room:
+
+`http://127.0.0.1:5173/ops`
+
 Readiness checklist:
 
 `http://127.0.0.1:5173/readiness`

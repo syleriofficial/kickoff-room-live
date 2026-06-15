@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live Ops | Kickoff Room Live</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #0b1020;
+        color: #f8fafc;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #0b1020;
+      }
+
+      main {
+        width: min(1180px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 44px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1.5fr .9fr;
+        gap: 18px;
+        align-items: end;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,.14);
+      }
+
+      h1, h2, p { margin: 0; }
+
+      h1 {
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        font-size: 18px;
+        line-height: 1.15;
+      }
+
+      .sub {
+        margin-top: 10px;
+        color: #aeb9d0;
+        font-size: 16px;
+        line-height: 1.45;
+        font-weight: 680;
+      }
+
+      .status {
+        display: grid;
+        gap: 8px;
+        padding: 16px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #141b2f;
+      }
+
+      .label {
+        color: #8fe7c8;
+        font-size: 12px;
+        font-weight: 950;
+        text-transform: uppercase;
+      }
+
+      .timer {
+        font-size: 30px;
+        font-weight: 950;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      section {
+        padding: 18px;
+        border: 1px solid rgba(255,255,255,.14);
+        background: #11182a;
+      }
+
+      .wide { grid-column: 1 / -1; }
+
+      .actions {
+        display: grid;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .action {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+        align-items: center;
+        padding: 12px;
+        border: 1px solid rgba(255,255,255,.12);
+        background: #0b1020;
+      }
+
+      code {
+        overflow-wrap: anywhere;
+        color: #f8fafc;
+        font-size: 13px;
+        line-height: 1.35;
+      }
+
+      button, a.button {
+        min-height: 38px;
+        padding: 0 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #1f2a44;
+        color: #f8fafc;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 850;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button.primary, a.primary {
+        background: #1f8f6e;
+        border-color: #39d9a8;
+        color: #05120e;
+      }
+
+      .links {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .schedule {
+        display: grid;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .match {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+        padding: 12px;
+        border: 1px solid rgba(255,255,255,.12);
+        background: #0b1020;
+      }
+
+      .match strong {
+        display: block;
+        font-size: 18px;
+      }
+
+      .match span {
+        display: block;
+        margin-top: 4px;
+        color: #aeb9d0;
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .badge {
+        align-self: start;
+        padding: 6px 9px;
+        background: rgba(255, 191, 63, .14);
+        color: #ffcf66;
+        font-size: 12px;
+        font-weight: 950;
+      }
+
+      ol {
+        margin: 14px 0 0;
+        padding-left: 22px;
+        color: #dbe6f5;
+        line-height: 1.6;
+        font-weight: 700;
+      }
+
+      .note {
+        margin-top: 12px;
+        color: #ffcf66;
+        line-height: 1.45;
+        font-weight: 800;
+      }
+
+      @media (max-width: 850px) {
+        header, .grid, .links, .match {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <span class="label">Kickoff Room Live</span>
+          <h1>Live Ops Control Room</h1>
+          <p class="sub">Use this page until YouTube Live unlocks, then schedule private broadcasts and run the OBS workflow from one place.</p>
+        </div>
+        <aside class="status">
+          <span class="label">YouTube live unlock target</span>
+          <div class="timer" id="countdown">Calculating...</div>
+          <p class="sub" id="unlockText">16 June 2026, 1:43 PM IST</p>
+        </aside>
+      </header>
+
+      <div class="grid">
+        <section>
+          <span class="label">After unlock</span>
+          <h2>Schedule YouTube Lives</h2>
+          <div class="actions">
+            <div class="action">
+              <code>set -a; source .env; set +a; YOUTUBE_DRY_RUN=false npm run youtube:create-upcoming</code>
+              <button class="primary" data-copy="set -a; source .env; set +a; YOUTUBE_DRY_RUN=false npm run youtube:create-upcoming">Copy</button>
+            </div>
+            <div class="action">
+              <code>set -a; source .env; set +a; npm run youtube:live-status</code>
+              <button data-copy="set -a; source .env; set +a; npm run youtube:live-status">Copy</button>
+            </div>
+          </div>
+          <p class="note">Create as private first. Review every title, description, and scheduled time in YouTube Studio before making anything public.</p>
+        </section>
+
+        <section>
+          <span class="label">Local launch</span>
+          <h2>OBS Tool URLs</h2>
+          <div class="links">
+            <a class="button primary" data-local="/dashboard" data-static="watchalong-kit/dashboard.html" href="/dashboard">Dashboard</a>
+            <a class="button" data-local="/control" data-static="watchalong-kit/control.html" href="/control">Control</a>
+            <a class="button" data-local="/overlay" data-static="watchalong-kit/overlay.html" href="/overlay">Overlay</a>
+            <a class="button" data-local="/readiness" data-static="watchalong-kit/readiness.html" href="/readiness">Readiness</a>
+          </div>
+          <div class="actions">
+            <div class="action">
+              <code>npm run launch</code>
+              <button data-copy="npm run launch">Copy</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="wide">
+          <span class="label">Next matchday</span>
+          <h2>Scheduled Package Queue</h2>
+          <div class="schedule" id="schedule">
+            <div class="match">
+              <div>
+                <strong>Loading schedule...</strong>
+                <span>outputs/schedule/live-schedule.json</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <span class="label">Before first stream</span>
+          <h2>OBS Checklist</h2>
+          <ol>
+            <li>Add `/overlay` as OBS Browser Source at 1920 x 1080.</li>
+            <li>Add mic, noise suppression, compressor, and limiter.</li>
+            <li>Open `/control` in a normal browser tab.</li>
+            <li>Load the correct match preset before going live.</li>
+            <li>Keep official match footage out of OBS.</li>
+          </ol>
+        </section>
+
+        <section>
+          <span class="label">Channel safety</span>
+          <h2>YouTube Compliance</h2>
+          <ol>
+            <li>No match footage.</li>
+            <li>No broadcast audio.</li>
+            <li>No copyrighted music.</li>
+            <li>Use English original commentary prompts.</li>
+            <li>Tell viewers to open the official broadcast separately.</li>
+          </ol>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const unlockAt = new Date("2026-06-16T08:13:00Z");
+      const scheduleEl = document.getElementById("schedule");
+      const countdownEl = document.getElementById("countdown");
+      const isStaticOutputPage = location.pathname.includes("/outputs/");
+      const schedulePath = isStaticOutputPage ? "schedule/live-schedule.json" : "/outputs/schedule/live-schedule.json";
+
+      document.querySelectorAll("[data-local][data-static]").forEach((link) => {
+        link.href = isStaticOutputPage ? link.dataset.static : link.dataset.local;
+      });
+
+      function countdown() {
+        const diff = unlockAt.getTime() - Date.now();
+        if (diff <= 0) {
+          countdownEl.textContent = "Ready to test";
+          return;
+        }
+        const hours = Math.floor(diff / 36e5);
+        const minutes = Math.floor((diff % 36e5) / 6e4);
+        const seconds = Math.floor((diff % 6e4) / 1000);
+        countdownEl.textContent = `${hours}h ${minutes}m ${seconds}s`;
+      }
+
+      async function loadSchedule() {
+        try {
+          const response = await fetch(schedulePath, { cache: "no-store" });
+          const schedule = await response.json();
+          scheduleEl.innerHTML = schedule.map((item, index) => `
+            <div class="match">
+              <div>
+                <strong>${item.match}</strong>
+                <span>Go live: ${new Date(item.goLiveUtc).toLocaleString()} · Kickoff: ${item.kickoffIst}</span>
+                <span>${item.keyBattle}</span>
+              </div>
+              <span class="badge">${index === 0 ? "NEXT" : item.id.toUpperCase()}</span>
+            </div>
+          `).join("");
+        } catch {
+          scheduleEl.innerHTML = `<div class="match"><div><strong>Schedule unavailable</strong><span>Run this page from npm run launch or npm run start:tools.</span></div></div>`;
+        }
+      }
+
+      document.addEventListener("click", async (event) => {
+        const button = event.target.closest("[data-copy]");
+        if (!button) return;
+        await navigator.clipboard.writeText(button.dataset.copy);
+        const original = button.textContent;
+        button.textContent = "Copied";
+        setTimeout(() => { button.textContent = original; }, 900);
+      });
+
+      countdown();
+      setInterval(countdown, 1000);
+      loadSchedule();
+    </script>
+  </body>
+</html>
