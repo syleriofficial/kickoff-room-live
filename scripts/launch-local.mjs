@@ -62,6 +62,7 @@ console.log(`Reminders:      http://127.0.0.1:${port}/reminders`);
 console.log(`Marathon ops:   http://127.0.0.1:${port}/marathon`);
 console.log(`Metrics ops:    http://127.0.0.1:${port}/metrics`);
 console.log(`Thumbnail:      http://127.0.0.1:${port}/thumbnail-studio`);
+console.log(`YouTube ops:    http://127.0.0.1:${port}/youtube-ops`);
 console.log(`Dashboard:      http://127.0.0.1:${port}/dashboard`);
 console.log(`Readiness:      http://127.0.0.1:${port}/readiness`);
 console.log(`OBS overlay:    http://127.0.0.1:${port}/overlay`);
