@@ -83,6 +83,12 @@ Wait and retry until YouTube unlocks scheduled broadcast creation for all upcomi
 YOUTUBE_RETRY_ATTEMPTS=180 YOUTUBE_RETRY_INTERVAL_SECONDS=300 npm run youtube:wait-create-upcoming
 ```
 
+Local Terminal launcher that loads `.env` and keeps retrying:
+
+```bash
+./scripts/run-youtube-wait-create-upcoming.sh
+```
+
 Wait and retry for only the next stream:
 
 ```bash
