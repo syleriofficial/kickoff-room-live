@@ -132,6 +132,10 @@ Go-live rehearsal:
 
 `http://127.0.0.1:5173/rehearsal`
 
+OBS scene setup:
+
+`http://127.0.0.1:5173/obs-setup`
+
 Readiness checklist:
 
 `http://127.0.0.1:5173/readiness`
