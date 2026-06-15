@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thumbnail Studio | Kickoff Room Live</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #09111f;
+        color: #f8fafc;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #09111f;
+      }
+
+      main {
+        width: min(1180px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 44px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+        align-items: end;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,.14);
+      }
+
+      h1, h2, p { margin: 0; }
+
+      h1 {
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .sub {
+        margin-top: 10px;
+        color: #aeb9d0;
+        font-size: 16px;
+        line-height: 1.45;
+        font-weight: 700;
+      }
+
+      .label {
+        color: #8fe7c8;
+        font-size: 12px;
+        font-weight: 950;
+        text-transform: uppercase;
+      }
+
+      .badge {
+        padding: 10px 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #141b2f;
+        color: #ffcf66;
+        font-weight: 950;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: .8fr 1.2fr;
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      section {
+        padding: 18px;
+        border: 1px solid rgba(255,255,255,.14);
+        background: #11182a;
+      }
+
+      select, input, button, a.button {
+        min-height: 40px;
+        padding: 0 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #1f2a44;
+        color: #f8fafc;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      button, a.button {
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button.primary, a.primary {
+        background: #1f8f6e;
+        border-color: #39d9a8;
+        color: #06130f;
+      }
+
+      label {
+        display: grid;
+        gap: 7px;
+        margin-top: 14px;
+        color: #aeb9d0;
+        font-size: 13px;
+        font-weight: 850;
+      }
+
+      .row,
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .preview-wrap {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #050914;
+      }
+
+      .thumb {
+        position: relative;
+        width: 1280px;
+        height: 720px;
+        transform-origin: top left;
+        color: white;
+        background:
+          linear-gradient(115deg, rgba(5, 10, 24, 0.98), rgba(14, 20, 38, 0.76)),
+          repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0 2px, transparent 2px 22px);
+      }
+
+      .glow {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 23% 34%, var(--home-glow), transparent 32%),
+          radial-gradient(circle at 82% 20%, var(--away-glow), transparent 34%);
+      }
+
+      .content {
+        position: absolute;
+        inset: 0;
+        padding: 62px;
+      }
+
+      .live {
+        display: inline-grid;
+        place-items: center;
+        height: 58px;
+        padding: 0 22px;
+        background: #ff455f;
+        font-size: 30px;
+        font-weight: 950;
+      }
+
+      .headline {
+        margin-top: 36px;
+        max-width: 870px;
+        font-size: 104px;
+        line-height: .92;
+        font-weight: 950;
+        letter-spacing: 0;
+      }
+
+      .teams {
+        position: absolute;
+        left: 62px;
+        bottom: 78px;
+        display: grid;
+        gap: 14px;
+        font-size: 52px;
+        font-weight: 950;
+      }
+
+      .teams span {
+        display: inline-flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .swatch {
+        width: 30px;
+        height: 58px;
+        display: inline-block;
+      }
+
+      .side {
+        position: absolute;
+        right: 62px;
+        top: 92px;
+        width: 270px;
+        height: 500px;
+        border: 3px solid rgba(255,255,255,.18);
+        display: grid;
+        place-items: center;
+        text-align: center;
+        background: rgba(255,255,255,.06);
+      }
+
+      .side strong {
+        font-size: 34px;
+        line-height: 1.1;
+      }
+
+      .note {
+        position: absolute;
+        right: 62px;
+        bottom: 62px;
+        color: #21d4a3;
+        font-size: 28px;
+        font-weight: 950;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 132px;
+        margin-top: 14px;
+        padding: 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #0b1020;
+        color: #f8fafc;
+        font: inherit;
+        line-height: 1.45;
+        resize: vertical;
+      }
+
+      ol {
+        margin: 14px 0 0;
+        padding-left: 22px;
+        color: #dbe6f5;
+        line-height: 1.65;
+        font-weight: 730;
+      }
+
+      @media (max-width: 950px) {
+        header, .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <span class="label">Kickoff Room Live</span>
+          <h1>Thumbnail Studio</h1>
+          <p class="sub">Generate match-specific 1280x720 live thumbnails for every scheduled watchalong.</p>
+        </div>
+        <div class="badge">1280 x 720</div>
+      </header>
+
+      <div class="grid">
+        <section>
+          <span class="label">Controls</span>
+          <h2>Match Thumbnail</h2>
+          <label>Match
+            <select id="matchSelect"></select>
+          </label>
+          <label>Headline
+            <input id="headlineInput" value="WORLD CUP WATCHALONG">
+          </label>
+          <label>Right panel
+            <input id="sideInput" value="ENGLISH REACTIONS + CHAT">
+          </label>
+          <div class="row">
+            <button class="primary" id="copyTitle">Copy YouTube Title</button>
+            <button id="copyInstructions">Copy Export Steps</button>
+          </div>
+          <textarea id="copyBox"></textarea>
+          <ol>
+            <li>Set browser zoom to 100%.</li>
+            <li>Use the preview or open this page fullscreen.</li>
+            <li>Screenshot the thumbnail preview area.</li>
+            <li>Upload as YouTube live thumbnail.</li>
+          </ol>
+          <div class="links">
+            <a class="button primary" data-local="/ops" data-static="live-ops.html" href="/ops">Live Ops</a>
+            <a class="button" data-local="/dashboard" data-static="watchalong-kit/dashboard.html" href="/dashboard">Dashboard</a>
+            <a class="button" data-local="/channel-ops" data-static="channel-ops.html" href="/channel-ops">Channel</a>
+          </div>
+        </section>
+
+        <section>
+          <span class="label">Preview</span>
+          <h2>Live Thumbnail</h2>
+          <div class="preview-wrap" id="previewWrap">
+            <div class="thumb" id="thumb">
+              <div class="glow"></div>
+              <div class="content">
+                <div class="live">LIVE</div>
+                <div class="headline" id="headline">WORLD CUP WATCHALONG</div>
+                <div class="teams">
+                  <span><i class="swatch" id="homeSwatch"></i><b id="homeName">FRANCE</b></span>
+                  <span><i class="swatch" id="awaySwatch"></i><b id="awayName">SENEGAL</b></span>
+                </div>
+                <div class="side"><strong id="sideText">ENGLISH<br>REACTIONS<br>+ CHAT</strong></div>
+                <div class="note">NO FOOTAGE</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const isStaticOutputPage = location.pathname.includes("/outputs/");
+      const presetsPath = isStaticOutputPage ? "watchalong-kit/match-presets.js" : "/outputs/watchalong-kit/match-presets.js";
+      const matchSelect = document.getElementById("matchSelect");
+      const thumb = document.getElementById("thumb");
+      const previewWrap = document.getElementById("previewWrap");
+      let presets = [];
+
+      document.querySelectorAll("[data-local][data-static]").forEach((link) => {
+        link.href = isStaticOutputPage ? link.dataset.static : link.dataset.local;
+      });
+
+      function colorGlow(hex, alpha) {
+        const clean = hex.replace("#", "");
+        const value = parseInt(clean, 16);
+        const r = (value >> 16) & 255;
+        const g = (value >> 8) & 255;
+        const b = value & 255;
+        return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+      }
+
+      function current() {
+        return presets.find((item) => item.id === matchSelect.value) || presets[0];
+      }
+
+      function scalePreview() {
+        const scale = previewWrap.clientWidth / 1280;
+        thumb.style.transform = `scale(${scale})`;
+      }
+
+      function render() {
+        const match = current();
+        if (!match) return;
+        document.getElementById("headline").textContent = document.getElementById("headlineInput").value;
+        document.getElementById("sideText").innerHTML = document.getElementById("sideInput").value.replace(/\s*\+\s*/g, "<br>+ ");
+        document.getElementById("homeName").textContent = match.home;
+        document.getElementById("awayName").textContent = match.away;
+        document.getElementById("homeSwatch").style.background = match.homeColor;
+        document.getElementById("awaySwatch").style.background = match.awayColor;
+        thumb.style.setProperty("--home-glow", colorGlow(match.homeColor, .28));
+        thumb.style.setProperty("--away-glow", colorGlow(match.awayColor, .28));
+        document.getElementById("copyBox").value = `${match.home} vs ${match.away} LIVE WATCHALONG | World Cup 2026 | English Reactions | No Footage`;
+        scalePreview();
+      }
+
+      async function loadPresets() {
+        const response = await fetch(presetsPath, { cache: "no-store" });
+        const text = await response.text();
+        const scope = { window: {} };
+        Function("window", text)(scope.window);
+        presets = scope.window.MATCH_PRESETS || [];
+        matchSelect.innerHTML = presets.map((item) => `<option value="${item.id}">${item.home} vs ${item.away}</option>`).join("");
+        render();
+      }
+
+      document.getElementById("headlineInput").addEventListener("input", render);
+      document.getElementById("sideInput").addEventListener("input", render);
+      matchSelect.addEventListener("change", render);
+      window.addEventListener("resize", scalePreview);
+      document.getElementById("copyTitle").addEventListener("click", async () => {
+        await navigator.clipboard.writeText(document.getElementById("copyBox").value);
+      });
+      document.getElementById("copyInstructions").addEventListener("click", async () => {
+        await navigator.clipboard.writeText([
+          "Thumbnail export:",
+          "1. Open Thumbnail Studio.",
+          "2. Select the match.",
+          "3. Screenshot the 1280x720 preview area.",
+          "4. Upload it as the YouTube live thumbnail.",
+          "5. Keep No Footage visible."
+        ].join("\n"));
+      });
+
+      loadPresets().catch(() => {
+        document.getElementById("copyBox").value = "Could not load match presets. Run from npm run launch or npm run start:tools.";
+      });
+    </script>
+  </body>
+</html>
