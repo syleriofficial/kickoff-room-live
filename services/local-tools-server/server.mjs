@@ -9,6 +9,7 @@ const port = Number(process.env.PORT || 5173);
 const aliases = new Map([
   ["/", "index.html"],
   ["/ops", "outputs/live-ops.html"],
+  ["/rehearsal", "outputs/go-live-rehearsal.html"],
   ["/dashboard", "outputs/watchalong-kit/dashboard.html"],
   ["/readiness", "outputs/watchalong-kit/readiness.html"],
   ["/control", "outputs/watchalong-kit/control.html"],

@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Go-Live Rehearsal | Kickoff Room Live</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #09111f;
+        color: #f8fafc;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #09111f;
+      }
+
+      main {
+        width: min(1160px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 44px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+        align-items: end;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,.14);
+      }
+
+      h1, h2, p { margin: 0; }
+
+      h1 {
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .sub {
+        margin-top: 10px;
+        max-width: 760px;
+        color: #aeb9d0;
+        font-size: 16px;
+        line-height: 1.45;
+        font-weight: 700;
+      }
+
+      .label {
+        color: #8fe7c8;
+        font-size: 12px;
+        font-weight: 950;
+        text-transform: uppercase;
+      }
+
+      .clock {
+        min-width: 210px;
+        padding: 16px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #141b2f;
+        text-align: right;
+      }
+
+      .clock strong {
+        display: block;
+        margin-top: 6px;
+        font-size: 38px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      section {
+        padding: 18px;
+        border: 1px solid rgba(255,255,255,.14);
+        background: #11182a;
+      }
+
+      .wide { grid-column: 1 / -1; }
+
+      h2 {
+        font-size: 18px;
+        line-height: 1.15;
+      }
+
+      .controls,
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      button, a.button {
+        min-height: 40px;
+        padding: 0 13px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #1f2a44;
+        color: #f8fafc;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 900;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button.primary, a.primary {
+        background: #1f8f6e;
+        border-color: #39d9a8;
+        color: #06130f;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 190px;
+        margin-top: 14px;
+        padding: 14px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #0b1020;
+        color: #f8fafc;
+        font: inherit;
+        line-height: 1.5;
+        resize: vertical;
+      }
+
+      ol {
+        margin: 14px 0 0;
+        padding-left: 22px;
+        color: #dbe6f5;
+        line-height: 1.65;
+        font-weight: 730;
+      }
+
+      .meter {
+        height: 14px;
+        margin-top: 14px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #0b1020;
+      }
+
+      .meter span {
+        display: block;
+        width: 0%;
+        height: 100%;
+        background: #39d9a8;
+      }
+
+      .status {
+        margin-top: 10px;
+        color: #ffcf66;
+        font-weight: 850;
+      }
+
+      @media (max-width: 850px) {
+        header, .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .clock {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <span class="label">Kickoff Room Live</span>
+          <h1>Go-Live Rehearsal</h1>
+          <p class="sub">Practice the first minute, check voice output, confirm OBS pages, and run the final five-minute safety flow before the real stream.</p>
+        </div>
+        <aside class="clock">
+          <span class="label">Practice timer</span>
+          <strong id="timer">00:00</strong>
+        </aside>
+      </header>
+
+      <div class="grid">
+        <section>
+          <span class="label">Step 1</span>
+          <h2>Open OBS Sources</h2>
+          <div class="links">
+            <a class="button primary" data-local="/overlay" data-static="watchalong-kit/overlay.html" href="/overlay">Overlay</a>
+            <a class="button" data-local="/control" data-static="watchalong-kit/control.html" href="/control">Producer Panel</a>
+            <a class="button" data-local="/dashboard" data-static="watchalong-kit/dashboard.html" href="/dashboard">Dashboard</a>
+            <a class="button" data-local="/readiness" data-static="watchalong-kit/readiness.html" href="/readiness">Readiness</a>
+          </div>
+          <ol>
+            <li>OBS browser source must use the overlay URL.</li>
+            <li>Producer panel should stay open outside OBS.</li>
+            <li>Dashboard is for copy, titles, and Shorts ideas.</li>
+          </ol>
+        </section>
+
+        <section>
+          <span class="label">Step 2</span>
+          <h2>Voice And Clock Test</h2>
+          <div class="controls">
+            <button class="primary" id="speak">Speak Test Line</button>
+            <button id="start">Start Timer</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+          </div>
+          <div class="meter"><span id="meter"></span></div>
+          <p class="status" id="status">Ready for rehearsal.</p>
+        </section>
+
+        <section class="wide">
+          <span class="label">Step 3</span>
+          <h2>Opening Script Practice</h2>
+          <textarea id="script">Welcome to Kickoff Room Live. This is an English no-footage watchalong for France vs Senegal.
+
+No match footage and no broadcast audio are shown here. Open the official broadcast in your country and use this stream as your second screen.
+
+Drop your country and score prediction in chat. We are tracking live score, match pulse, key battles, and the biggest moments together.</textarea>
+          <div class="controls">
+            <button class="primary" id="speakScript">Speak Script</button>
+            <button id="copyScript">Copy Script</button>
+          </div>
+        </section>
+
+        <section>
+          <span class="label">Step 4</span>
+          <h2>Five Minutes Before Live</h2>
+          <ol>
+            <li>Confirm private scheduled live exists in YouTube Studio.</li>
+            <li>Load the correct match preset in Producer Panel.</li>
+            <li>Reset score and timer.</li>
+            <li>Check mic peaks around -10 dB to -6 dB.</li>
+            <li>Make the live public only after all checks are green.</li>
+          </ol>
+        </section>
+
+        <section>
+          <span class="label">Step 5</span>
+          <h2>Compliance Reminder</h2>
+          <ol>
+            <li>No TV footage inside OBS.</li>
+            <li>No broadcast audio inside OBS.</li>
+            <li>No copyrighted background music.</li>
+            <li>No misleading title that says official stream.</li>
+            <li>Keep "No Footage" visible in title and description.</li>
+          </ol>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const isStaticOutputPage = location.pathname.includes("/outputs/");
+      document.querySelectorAll("[data-local][data-static]").forEach((link) => {
+        link.href = isStaticOutputPage ? link.dataset.static : link.dataset.local;
+      });
+
+      const timer = document.getElementById("timer");
+      const meter = document.getElementById("meter");
+      const status = document.getElementById("status");
+      let seconds = 0;
+      let interval = null;
+
+      function render() {
+        const mins = String(Math.floor(seconds / 60)).padStart(2, "0");
+        const secs = String(seconds % 60).padStart(2, "0");
+        timer.textContent = `${mins}:${secs}`;
+        meter.style.width = `${Math.min(100, (seconds / 60) * 100)}%`;
+      }
+
+      function speak(text) {
+        if (!("speechSynthesis" in window)) {
+          status.textContent = "Speech synthesis is not available in this browser.";
+          return;
+        }
+        speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "en-US";
+        utterance.rate = 0.95;
+        utterance.pitch = 1;
+        speechSynthesis.speak(utterance);
+        status.textContent = "Voice test playing. Check OBS/audio monitor.";
+      }
+
+      document.getElementById("start").addEventListener("click", () => {
+        if (interval) return;
+        interval = setInterval(() => {
+          seconds += 1;
+          render();
+        }, 1000);
+        status.textContent = "Practice timer running.";
+      });
+
+      document.getElementById("pause").addEventListener("click", () => {
+        clearInterval(interval);
+        interval = null;
+        status.textContent = "Practice timer paused.";
+      });
+
+      document.getElementById("reset").addEventListener("click", () => {
+        clearInterval(interval);
+        interval = null;
+        seconds = 0;
+        render();
+        status.textContent = "Practice timer reset.";
+      });
+
+      document.getElementById("speak").addEventListener("click", () => {
+        speak("Kickoff Room Live audio test. This is an English no-footage watchalong.");
+      });
+
+      document.getElementById("speakScript").addEventListener("click", () => {
+        speak(document.getElementById("script").value);
+      });
+
+      document.getElementById("copyScript").addEventListener("click", async () => {
+        await navigator.clipboard.writeText(document.getElementById("script").value);
+        status.textContent = "Opening script copied.";
+      });
+
+      render();
+    </script>
+  </body>
+</html>
