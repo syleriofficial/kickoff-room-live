@@ -54,6 +54,14 @@ Dry-run next upcoming stream from `outputs/schedule/live-schedule.json`:
 npm run youtube:create-next
 ```
 
+Check whether YouTube Live API read access is available yet:
+
+```bash
+npm run youtube:live-status
+```
+
+If create still returns `livePermissionBlocked`, wait until the YouTube Studio live activation countdown finishes. YouTube can allow Live Control Room read access before scheduled broadcast creation is unlocked.
+
 Create the next broadcast as private after live verification is active:
 
 ```bash
