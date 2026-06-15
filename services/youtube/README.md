@@ -89,6 +89,8 @@ Local Terminal launcher that loads `.env` and keeps retrying:
 ./scripts/run-youtube-wait-create-upcoming.sh
 ```
 
+The launcher runs the Node helper directly and sets a safe Terminal title.
+
 Open a separate macOS Terminal window for the retry worker:
 
 ```bash

@@ -10,4 +10,5 @@ set +a
 export YOUTUBE_RETRY_ATTEMPTS="${YOUTUBE_RETRY_ATTEMPTS:-180}"
 export YOUTUBE_RETRY_INTERVAL_SECONDS="${YOUTUBE_RETRY_INTERVAL_SECONDS:-300}"
 
-exec npm run youtube:wait-create-upcoming
+printf '\033]0;Kickoff Room YouTube Retry\007'
+exec node services/youtube/wait-create-upcoming-broadcasts.mjs
