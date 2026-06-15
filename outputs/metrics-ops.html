@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metrics Ops | Kickoff Room Live</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #09111f;
+        color: #f8fafc;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #09111f;
+      }
+
+      main {
+        width: min(1160px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 44px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+        align-items: end;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,.14);
+      }
+
+      h1, h2, p { margin: 0; }
+
+      h1 {
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .sub {
+        margin-top: 10px;
+        color: #aeb9d0;
+        font-size: 16px;
+        line-height: 1.45;
+        font-weight: 700;
+      }
+
+      .label {
+        color: #8fe7c8;
+        font-size: 12px;
+        font-weight: 950;
+        text-transform: uppercase;
+      }
+
+      .badge {
+        padding: 10px 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #141b2f;
+        color: #ffcf66;
+        font-weight: 950;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      section {
+        padding: 18px;
+        border: 1px solid rgba(255,255,255,.14);
+        background: #11182a;
+      }
+
+      .wide { grid-column: 1 / -1; }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .stat {
+        min-height: 96px;
+        padding: 12px;
+        border: 1px solid rgba(255,255,255,.12);
+        background: #0b1020;
+      }
+
+      .stat strong {
+        display: block;
+        color: #ffcf66;
+        font-size: 28px;
+        line-height: 1;
+      }
+
+      .stat span {
+        display: block;
+        margin-top: 8px;
+        color: #aeb9d0;
+        font-weight: 750;
+      }
+
+      form {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin-top: 14px;
+      }
+
+      label {
+        display: grid;
+        gap: 6px;
+        color: #aeb9d0;
+        font-size: 13px;
+        font-weight: 850;
+      }
+
+      input, select, textarea, button, a.button {
+        min-height: 40px;
+        padding: 0 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #1f2a44;
+        color: #f8fafc;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      textarea {
+        min-height: 118px;
+        padding: 12px;
+        line-height: 1.45;
+        resize: vertical;
+      }
+
+      button, a.button {
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button.primary, a.primary {
+        background: #1f8f6e;
+        border-color: #39d9a8;
+        color: #06130f;
+      }
+
+      .full { grid-column: 1 / -1; }
+
+      .row,
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      table {
+        width: 100%;
+        margin-top: 14px;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        padding: 10px;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        color: #8fe7c8;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      td {
+        color: #dbe6f5;
+        font-weight: 720;
+        line-height: 1.35;
+      }
+
+      @media (max-width: 950px) {
+        header, .grid, form, .stats {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <span class="label">Kickoff Room Live</span>
+          <h1>Metrics Ops</h1>
+          <p class="sub">Track match performance, Shorts output, subscriber growth, and early revenue. Export the log for sponsor proof later.</p>
+        </div>
+        <div class="badge">Local browser storage</div>
+      </header>
+
+      <div class="grid">
+        <section class="wide">
+          <span class="label">Summary</span>
+          <h2>Marathon Performance</h2>
+          <div class="stats">
+            <div class="stat"><strong id="totalStreams">0</strong><span>Streams logged</span></div>
+            <div class="stat"><strong id="totalPeak">0</strong><span>Total peak viewers</span></div>
+            <div class="stat"><strong id="totalSubs">0</strong><span>New subscribers</span></div>
+            <div class="stat"><strong id="totalShorts">0</strong><span>Shorts posted</span></div>
+            <div class="stat"><strong id="totalRevenue">$0</strong><span>Revenue tracked</span></div>
+          </div>
+        </section>
+
+        <section class="wide">
+          <span class="label">Log result</span>
+          <h2>Match Metrics</h2>
+          <form id="metricsForm">
+            <label>Match
+              <select id="match"></select>
+            </label>
+            <label>Peak viewers
+              <input id="peakViewers" type="number" min="0" value="0">
+            </label>
+            <label>Average viewers
+              <input id="avgViewers" type="number" min="0" value="0">
+            </label>
+            <label>New subscribers
+              <input id="newSubs" type="number" min="0" value="0">
+            </label>
+            <label>Chat messages
+              <input id="chatMessages" type="number" min="0" value="0">
+            </label>
+            <label>Shorts posted
+              <input id="shortsPosted" type="number" min="0" value="0">
+            </label>
+            <label>Shorts views
+              <input id="shortsViews" type="number" min="0" value="0">
+            </label>
+            <label>Revenue USD
+              <input id="revenueUsd" type="number" min="0" step="0.01" value="0">
+            </label>
+            <label class="full">Notes
+              <textarea id="notes" placeholder="What worked, what failed, best chat moment, best Short idea..."></textarea>
+            </label>
+            <div class="row full">
+              <button class="primary" type="submit">Save Match Metrics</button>
+              <button id="clearForm" type="button">Clear Form</button>
+              <button id="copyJson" type="button">Copy JSON</button>
+              <button id="copyCsv" type="button">Copy CSV</button>
+              <button id="clearLog" type="button">Clear Saved Log</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="wide">
+          <span class="label">Saved log</span>
+          <h2>Match History</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Match</th>
+                <th>Peak</th>
+                <th>Avg</th>
+                <th>Subs</th>
+                <th>Shorts</th>
+                <th>Views</th>
+                <th>Revenue</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody id="history"></tbody>
+          </table>
+        </section>
+
+        <section class="wide">
+          <span class="label">Open tools</span>
+          <h2>Control Room Links</h2>
+          <div class="links">
+            <a class="button primary" data-local="/ops" data-static="live-ops.html" href="/ops">Live Ops</a>
+            <a class="button" data-local="/marathon" data-static="marathon-ops.html" href="/marathon">Marathon</a>
+            <a class="button" data-local="/revenue" data-static="revenue-ops.html" href="/revenue">Revenue</a>
+            <a class="button" data-local="/shorts-studio" data-static="shorts-studio.html" href="/shorts-studio">Shorts</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const isStaticOutputPage = location.pathname.includes("/outputs/");
+      const schedulePath = isStaticOutputPage ? "schedule/live-schedule.json" : "/outputs/schedule/live-schedule.json";
+      const storageKey = "kickoff-room-metrics";
+      const fields = ["peakViewers", "avgViewers", "newSubs", "chatMessages", "shortsPosted", "shortsViews", "revenueUsd", "notes"];
+      const matchSelect = document.getElementById("match");
+      const history = document.getElementById("history");
+      let schedule = [];
+      let metrics = JSON.parse(localStorage.getItem(storageKey) || "[]");
+
+      document.querySelectorAll("[data-local][data-static]").forEach((link) => {
+        link.href = isStaticOutputPage ? link.dataset.static : link.dataset.local;
+      });
+
+      function number(value) {
+        return Number(value || 0);
+      }
+
+      function save() {
+        localStorage.setItem(storageKey, JSON.stringify(metrics));
+      }
+
+      function currentRecord() {
+        const match = schedule.find((item) => item.id === matchSelect.value) || schedule[0];
+        return {
+          id: match.id,
+          match: match.match,
+          kickoffIst: match.kickoffIst,
+          savedAt: new Date().toISOString(),
+          peakViewers: number(document.getElementById("peakViewers").value),
+          avgViewers: number(document.getElementById("avgViewers").value),
+          newSubs: number(document.getElementById("newSubs").value),
+          chatMessages: number(document.getElementById("chatMessages").value),
+          shortsPosted: number(document.getElementById("shortsPosted").value),
+          shortsViews: number(document.getElementById("shortsViews").value),
+          revenueUsd: number(document.getElementById("revenueUsd").value),
+          notes: document.getElementById("notes").value.trim()
+        };
+      }
+
+      function render() {
+        document.getElementById("totalStreams").textContent = metrics.length;
+        document.getElementById("totalPeak").textContent = metrics.reduce((sum, item) => sum + item.peakViewers, 0);
+        document.getElementById("totalSubs").textContent = metrics.reduce((sum, item) => sum + item.newSubs, 0);
+        document.getElementById("totalShorts").textContent = metrics.reduce((sum, item) => sum + item.shortsPosted, 0);
+        document.getElementById("totalRevenue").textContent = `$${metrics.reduce((sum, item) => sum + item.revenueUsd, 0).toFixed(2)}`;
+        history.innerHTML = metrics.map((item) => `
+          <tr>
+            <td>${item.match}<br><small>${item.kickoffIst}</small></td>
+            <td>${item.peakViewers}</td>
+            <td>${item.avgViewers}</td>
+            <td>${item.newSubs}</td>
+            <td>${item.shortsPosted}</td>
+            <td>${item.shortsViews}</td>
+            <td>$${item.revenueUsd.toFixed(2)}</td>
+            <td>${item.notes || "-"}</td>
+          </tr>
+        `).join("") || `<tr><td colspan="8">No metrics saved yet.</td></tr>`;
+      }
+
+      function toCsv() {
+        const headers = ["match", "kickoffIst", "peakViewers", "avgViewers", "newSubs", "chatMessages", "shortsPosted", "shortsViews", "revenueUsd", "notes", "savedAt"];
+        const rows = metrics.map((item) => headers.map((key) => `"${String(item[key] ?? "").replaceAll('"', '""')}"`).join(","));
+        return [headers.join(","), ...rows].join("\n");
+      }
+
+      async function copy(text, button) {
+        await navigator.clipboard.writeText(text);
+        const original = button.textContent;
+        button.textContent = "Copied";
+        setTimeout(() => { button.textContent = original; }, 900);
+      }
+
+      async function loadSchedule() {
+        const response = await fetch(schedulePath, { cache: "no-store" });
+        schedule = await response.json();
+        matchSelect.innerHTML = schedule.map((item) => `<option value="${item.id}">${item.match}</option>`).join("");
+        render();
+      }
+
+      document.getElementById("metricsForm").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const record = currentRecord();
+        const existingIndex = metrics.findIndex((item) => item.id === record.id);
+        if (existingIndex >= 0) {
+          metrics[existingIndex] = record;
+        } else {
+          metrics.push(record);
+        }
+        save();
+        render();
+      });
+
+      document.getElementById("clearForm").addEventListener("click", () => {
+        fields.forEach((field) => {
+          document.getElementById(field).value = field === "notes" ? "" : "0";
+        });
+      });
+
+      document.getElementById("copyJson").addEventListener("click", (event) => {
+        copy(JSON.stringify(metrics, null, 2), event.target);
+      });
+
+      document.getElementById("copyCsv").addEventListener("click", (event) => {
+        copy(toCsv(), event.target);
+      });
+
+      document.getElementById("clearLog").addEventListener("click", () => {
+        metrics = [];
+        save();
+        render();
+      });
+
+      loadSchedule().catch(() => {
+        history.innerHTML = `<tr><td colspan="8">Could not load schedule. Run this page from npm run launch or npm run start:tools.</td></tr>`;
+      });
+    </script>
+  </body>
+</html>

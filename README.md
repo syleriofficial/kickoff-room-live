@@ -156,6 +156,10 @@ Marathon ops:
 
 `http://127.0.0.1:5173/marathon`
 
+Metrics ops:
+
+`http://127.0.0.1:5173/metrics`
+
 Readiness checklist:
 
 `http://127.0.0.1:5173/readiness`
