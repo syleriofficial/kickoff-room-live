@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shorts Studio | Kickoff Room Live</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #09111f;
+        color: #f8fafc;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #09111f;
+      }
+
+      main {
+        width: min(1160px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 44px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+        align-items: end;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,.14);
+      }
+
+      h1, h2, p { margin: 0; }
+
+      h1 {
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .sub {
+        margin-top: 10px;
+        color: #aeb9d0;
+        font-size: 16px;
+        line-height: 1.45;
+        font-weight: 700;
+      }
+
+      .label {
+        color: #8fe7c8;
+        font-size: 12px;
+        font-weight: 950;
+        text-transform: uppercase;
+      }
+
+      .badge {
+        padding: 10px 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #141b2f;
+        color: #ffcf66;
+        font-weight: 950;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      section {
+        padding: 18px;
+        border: 1px solid rgba(255,255,255,.14);
+        background: #11182a;
+      }
+
+      .wide { grid-column: 1 / -1; }
+
+      select, button, a.button {
+        min-height: 40px;
+        padding: 0 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #1f2a44;
+        color: #f8fafc;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      button, a.button {
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button.primary, a.primary {
+        background: #1f8f6e;
+        border-color: #39d9a8;
+        color: #06130f;
+      }
+
+      .row,
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 220px;
+        margin-top: 14px;
+        padding: 14px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #0b1020;
+        color: #f8fafc;
+        font: inherit;
+        font-size: 14px;
+        line-height: 1.45;
+        resize: vertical;
+      }
+
+      .cards {
+        display: grid;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .card {
+        padding: 12px;
+        border: 1px solid rgba(255,255,255,.12);
+        background: #0b1020;
+      }
+
+      .card strong {
+        display: block;
+        color: #ffcf66;
+        line-height: 1.25;
+      }
+
+      .card span {
+        display: block;
+        margin-top: 6px;
+        color: #aeb9d0;
+        font-weight: 720;
+        line-height: 1.35;
+      }
+
+      ol {
+        margin: 14px 0 0;
+        padding-left: 22px;
+        color: #dbe6f5;
+        line-height: 1.65;
+        font-weight: 730;
+      }
+
+      @media (max-width: 900px) {
+        header, .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <span class="label">Kickoff Room Live</span>
+          <h1>Shorts Studio</h1>
+          <p class="sub">Turn every live stream into Shorts using only original overlay graphics, live reactions, chat prompts, and your own commentary.</p>
+        </div>
+        <div class="badge">No footage. No broadcast audio.</div>
+      </header>
+
+      <div class="grid">
+        <section class="wide">
+          <span class="label">Pick clip</span>
+          <h2>Short Idea Builder</h2>
+          <div class="row">
+            <select id="matchSelect" aria-label="Match"></select>
+            <select id="ideaSelect" aria-label="Short idea"></select>
+            <button class="primary" id="copyPackage">Copy Short Package</button>
+          </div>
+          <textarea id="shortPackage">Loading Shorts kit...</textarea>
+        </section>
+
+        <section>
+          <span class="label">Recording plan</span>
+          <h2>Vertical Clip Checklist</h2>
+          <ol>
+            <li>Use OBS canvas or editor export at 1080 x 1920.</li>
+            <li>Show only overlay, timer, score graphic, chat prompt, and original commentary.</li>
+            <li>Open with the hook in the first two seconds.</li>
+            <li>Keep it under 35 seconds for first batch.</li>
+            <li>End with next live stream CTA.</li>
+          </ol>
+        </section>
+
+        <section>
+          <span class="label">Upload rhythm</span>
+          <h2>After Match Timing</h2>
+          <ol>
+            <li>0-15 min: full-time reaction Short.</li>
+            <li>15-45 min: turning-point Short.</li>
+            <li>45-90 min: key-battle Short.</li>
+            <li>Next morning: best-player or chat-prediction Short.</li>
+            <li>Pin next live link in comments.</li>
+          </ol>
+        </section>
+
+        <section class="wide">
+          <span class="label">Available ideas</span>
+          <h2>Current Match Ideas</h2>
+          <div class="cards" id="cards"></div>
+        </section>
+
+        <section class="wide">
+          <span class="label">Open tools</span>
+          <h2>Control Room Links</h2>
+          <div class="links">
+            <a class="button primary" data-local="/ops" data-static="live-ops.html" href="/ops">Live Ops</a>
+            <a class="button" data-local="/revenue" data-static="revenue-ops.html" href="/revenue">Revenue</a>
+            <a class="button" data-local="/dashboard" data-static="watchalong-kit/dashboard.html" href="/dashboard">Dashboard</a>
+            <a class="button" data-local="/rehearsal" data-static="go-live-rehearsal.html" href="/rehearsal">Rehearsal</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const isStaticOutputPage = location.pathname.includes("/outputs/");
+      const shortsPath = isStaticOutputPage ? "shorts-kit/shorts-kit.json" : "/outputs/shorts-kit/shorts-kit.json";
+      const matchSelect = document.getElementById("matchSelect");
+      const ideaSelect = document.getElementById("ideaSelect");
+      const packageBox = document.getElementById("shortPackage");
+      const cards = document.getElementById("cards");
+      let kit = [];
+
+      document.querySelectorAll("[data-local][data-static]").forEach((link) => {
+        link.href = isStaticOutputPage ? link.dataset.static : link.dataset.local;
+      });
+
+      function currentMatch() {
+        return kit.find((match) => match.id === matchSelect.value) || kit[0];
+      }
+
+      function currentIdea() {
+        return currentMatch().ideas[Number(ideaSelect.value) || 0];
+      }
+
+      function packageText(match, idea) {
+        return [
+          `Title: ${idea.title}`,
+          "",
+          `Hook: ${idea.hook}`,
+          "",
+          `Caption: ${idea.caption}`,
+          "",
+          `Shot list: ${idea.shotList.join(" -> ")}`,
+          "",
+          `Hashtags: ${match.hashtags.join(" ")}`,
+          "",
+          "Safety: no match footage, no broadcast audio, original overlay only."
+        ].join("\n");
+      }
+
+      function renderIdeas() {
+        const match = currentMatch();
+        ideaSelect.innerHTML = match.ideas.map((idea, index) => `<option value="${index}">${idea.title}</option>`).join("");
+        cards.innerHTML = match.ideas.map((idea) => `
+          <article class="card">
+            <strong>${idea.title}</strong>
+            <span>${idea.hook}</span>
+            <span>${idea.shotList.join(" -> ")}</span>
+          </article>
+        `).join("");
+        renderPackage();
+      }
+
+      function renderPackage() {
+        packageBox.value = packageText(currentMatch(), currentIdea());
+      }
+
+      async function loadKit() {
+        const response = await fetch(shortsPath, { cache: "no-store" });
+        kit = await response.json();
+        matchSelect.innerHTML = kit.map((match) => `<option value="${match.id}">${match.match}</option>`).join("");
+        renderIdeas();
+      }
+
+      matchSelect.addEventListener("change", renderIdeas);
+      ideaSelect.addEventListener("change", renderPackage);
+      document.getElementById("copyPackage").addEventListener("click", async () => {
+        await navigator.clipboard.writeText(packageBox.value);
+        const button = document.getElementById("copyPackage");
+        button.textContent = "Copied";
+        setTimeout(() => { button.textContent = "Copy Short Package"; }, 900);
+      });
+
+      loadKit().catch(() => {
+        packageBox.value = "Could not load Shorts kit. Run this page from npm run launch or npm run start:tools.";
+      });
+    </script>
+  </body>
+</html>

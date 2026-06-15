@@ -140,6 +140,10 @@ Revenue ops:
 
 `http://127.0.0.1:5173/revenue`
 
+Shorts studio:
+
+`http://127.0.0.1:5173/shorts-studio`
+
 Readiness checklist:
 
 `http://127.0.0.1:5173/readiness`
