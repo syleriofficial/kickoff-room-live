@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reminder Ops | Kickoff Room Live</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #09111f;
+        color: #f8fafc;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #09111f;
+      }
+
+      main {
+        width: min(1160px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 44px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+        align-items: end;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,.14);
+      }
+
+      h1, h2, p { margin: 0; }
+
+      h1 {
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .sub {
+        margin-top: 10px;
+        color: #aeb9d0;
+        font-size: 16px;
+        line-height: 1.45;
+        font-weight: 700;
+      }
+
+      .label {
+        color: #8fe7c8;
+        font-size: 12px;
+        font-weight: 950;
+        text-transform: uppercase;
+      }
+
+      .badge {
+        padding: 10px 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #141b2f;
+        color: #ffcf66;
+        font-weight: 950;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      section {
+        padding: 18px;
+        border: 1px solid rgba(255,255,255,.14);
+        background: #11182a;
+      }
+
+      .wide { grid-column: 1 / -1; }
+
+      select, button, a.button {
+        min-height: 40px;
+        padding: 0 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #1f2a44;
+        color: #f8fafc;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      button, a.button {
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button.primary, a.primary {
+        background: #1f8f6e;
+        border-color: #39d9a8;
+        color: #06130f;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 230px;
+        margin-top: 14px;
+        padding: 14px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #0b1020;
+        color: #f8fafc;
+        font: inherit;
+        font-size: 14px;
+        line-height: 1.45;
+        resize: vertical;
+      }
+
+      .row,
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .cards {
+        display: grid;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .card {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+        padding: 12px;
+        border: 1px solid rgba(255,255,255,.12);
+        background: #0b1020;
+      }
+
+      .card strong {
+        display: block;
+        color: #ffcf66;
+      }
+
+      .card span {
+        display: block;
+        margin-top: 5px;
+        color: #aeb9d0;
+        font-weight: 720;
+      }
+
+      code {
+        display: block;
+        margin-top: 14px;
+        padding: 12px;
+        background: #0b1020;
+        border: 1px solid rgba(255,255,255,.12);
+        overflow-wrap: anywhere;
+        line-height: 1.45;
+      }
+
+      ol {
+        margin: 14px 0 0;
+        padding-left: 22px;
+        color: #dbe6f5;
+        line-height: 1.65;
+        font-weight: 730;
+      }
+
+      @media (max-width: 900px) {
+        header, .grid, .card {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <span class="label">Kickoff Room Live</span>
+          <h1>Reminder Ops</h1>
+          <p class="sub">Prepare Telegram, WhatsApp, community, and pinned reminder copy for every upcoming watchalong.</p>
+        </div>
+        <div class="badge">Traffic before kickoff</div>
+      </header>
+
+      <div class="grid">
+        <section class="wide">
+          <span class="label">Reminder builder</span>
+          <h2>Copy Message</h2>
+          <div class="row">
+            <select id="matchSelect" aria-label="Match"></select>
+            <select id="messageType" aria-label="Message type">
+              <option value="telegram">Telegram / WhatsApp</option>
+              <option value="community">YouTube Community</option>
+              <option value="pinned">Pinned Comment</option>
+              <option value="lastCall">10-Minute Last Call</option>
+            </select>
+            <button class="primary" id="copyMessage">Copy Message</button>
+          </div>
+          <textarea id="message">Loading reminder...</textarea>
+        </section>
+
+        <section>
+          <span class="label">Telegram command</span>
+          <h2>Dry Run / Send</h2>
+          <code id="telegramDry">npm run telegram:dry-run -- fra-sen</code>
+          <button data-copy-target="telegramDry">Copy Dry Run</button>
+          <code id="telegramSend">set -a; source .env; set +a; TELEGRAM_DRY_RUN=false node services/telegram/send-reminder.mjs fra-sen</code>
+          <button data-copy-target="telegramSend">Copy Real Send</button>
+        </section>
+
+        <section>
+          <span class="label">Timing</span>
+          <h2>Reminder Schedule</h2>
+          <ol>
+            <li>24 hours before: community post or group announcement.</li>
+            <li>3 hours before: Telegram/WhatsApp reminder.</li>
+            <li>30 minutes before: final live link reminder.</li>
+            <li>10 minutes before: last call with country + score prediction prompt.</li>
+            <li>After live: post Shorts link and next match reminder.</li>
+          </ol>
+        </section>
+
+        <section class="wide">
+          <span class="label">Upcoming queue</span>
+          <h2>All Reminders</h2>
+          <div class="cards" id="cards"></div>
+        </section>
+
+        <section class="wide">
+          <span class="label">Open tools</span>
+          <h2>Control Room Links</h2>
+          <div class="links">
+            <a class="button primary" data-local="/ops" data-static="live-ops.html" href="/ops">Live Ops</a>
+            <a class="button" data-local="/channel-ops" data-static="channel-ops.html" href="/channel-ops">Channel</a>
+            <a class="button" data-local="/revenue" data-static="revenue-ops.html" href="/revenue">Revenue</a>
+            <a class="button" data-local="/shorts-studio" data-static="shorts-studio.html" href="/shorts-studio">Shorts</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const isStaticOutputPage = location.pathname.includes("/outputs/");
+      const schedulePath = isStaticOutputPage ? "schedule/live-schedule.json" : "/outputs/schedule/live-schedule.json";
+      const matchSelect = document.getElementById("matchSelect");
+      const messageType = document.getElementById("messageType");
+      const message = document.getElementById("message");
+      const cards = document.getElementById("cards");
+      let schedule = [];
+
+      document.querySelectorAll("[data-local][data-static]").forEach((link) => {
+        link.href = isStaticOutputPage ? link.dataset.static : link.dataset.local;
+      });
+
+      function current() {
+        return schedule.find((item) => item.id === matchSelect.value) || schedule[0];
+      }
+
+      function messageFor(item, type) {
+        const safeLine = "No match footage. No broadcast audio. English live score, reactions, chat polls, and match pulse.";
+        const link = "YOUTUBE_STREAM_URL";
+        const templates = {
+          telegram: [
+            `Live soon: ${item.match}`,
+            "",
+            `Kickoff: ${item.kickoffIst}`,
+            safeLine,
+            "",
+            `Key battle: ${item.keyBattle}`,
+            "",
+            `Watch here: ${link}`,
+            "",
+            "Drop your country and score prediction before kickoff."
+          ].join("\n"),
+          community: [
+            `Tonight's watchalong: ${item.match}`,
+            "",
+            `Kickoff: ${item.kickoffIst}`,
+            "",
+            "Who wins?",
+            "",
+            safeLine
+          ].join("\n"),
+          pinned: [
+            "No match footage or broadcast audio here.",
+            `Open the official broadcast and use this as your second screen for ${item.match}.`,
+            "Drop your country + score prediction in chat."
+          ].join("\n"),
+          lastCall: [
+            `10 minutes to go: ${item.match}`,
+            "",
+            "Join now, sync the timer, and post your score prediction.",
+            safeLine
+          ].join("\n")
+        };
+        return templates[type];
+      }
+
+      function render() {
+        const item = current();
+        message.value = messageFor(item, messageType.value);
+        document.getElementById("telegramDry").textContent = `npm run telegram:dry-run -- ${item.id}`;
+        document.getElementById("telegramSend").textContent = `set -a; source .env; set +a; TELEGRAM_DRY_RUN=false node services/telegram/send-reminder.mjs ${item.id}`;
+      }
+
+      async function loadSchedule() {
+        const response = await fetch(schedulePath, { cache: "no-store" });
+        schedule = await response.json();
+        matchSelect.innerHTML = schedule.map((item) => `<option value="${item.id}">${item.match}</option>`).join("");
+        cards.innerHTML = schedule.map((item) => `
+          <article class="card">
+            <div>
+              <strong>${item.match}</strong>
+              <span>${item.kickoffIst}</span>
+              <span>${item.chatMission}</span>
+            </div>
+            <button data-match="${item.id}">Load</button>
+          </article>
+        `).join("");
+        render();
+      }
+
+      document.addEventListener("click", async (event) => {
+        const loadButton = event.target.closest("[data-match]");
+        if (loadButton) {
+          matchSelect.value = loadButton.dataset.match;
+          render();
+          return;
+        }
+
+        const copyTarget = event.target.closest("[data-copy-target]");
+        if (copyTarget) {
+          await navigator.clipboard.writeText(document.getElementById(copyTarget.dataset.copyTarget).textContent.trim());
+          const original = copyTarget.textContent;
+          copyTarget.textContent = "Copied";
+          setTimeout(() => { copyTarget.textContent = original; }, 900);
+          return;
+        }
+
+        if (event.target.id === "copyMessage") {
+          await navigator.clipboard.writeText(message.value);
+          event.target.textContent = "Copied";
+          setTimeout(() => { event.target.textContent = "Copy Message"; }, 900);
+        }
+      });
+
+      matchSelect.addEventListener("change", render);
+      messageType.addEventListener("change", render);
+      loadSchedule().catch(() => {
+        message.value = "Could not load schedule. Run this page from npm run launch or npm run start:tools.";
+      });
+    </script>
+  </body>
+</html>

@@ -58,6 +58,7 @@ console.log(`OBS setup:      http://127.0.0.1:${port}/obs-setup`);
 console.log(`Revenue ops:    http://127.0.0.1:${port}/revenue`);
 console.log(`Shorts studio:  http://127.0.0.1:${port}/shorts-studio`);
 console.log(`Channel ops:    http://127.0.0.1:${port}/channel-ops`);
+console.log(`Reminders:      http://127.0.0.1:${port}/reminders`);
 console.log(`Dashboard:      http://127.0.0.1:${port}/dashboard`);
 console.log(`Readiness:      http://127.0.0.1:${port}/readiness`);
 console.log(`OBS overlay:    http://127.0.0.1:${port}/overlay`);

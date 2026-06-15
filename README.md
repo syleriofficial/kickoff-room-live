@@ -148,6 +148,10 @@ Channel ops:
 
 `http://127.0.0.1:5173/channel-ops`
 
+Reminder ops:
+
+`http://127.0.0.1:5173/reminders`
+
 Readiness checklist:
 
 `http://127.0.0.1:5173/readiness`
