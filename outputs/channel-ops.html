@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Channel Ops | Kickoff Room Live</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #09111f;
+        color: #f8fafc;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #09111f;
+      }
+
+      main {
+        width: min(1160px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 44px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+        align-items: end;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,.14);
+      }
+
+      h1, h2, p { margin: 0; }
+
+      h1 {
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .sub {
+        margin-top: 10px;
+        color: #aeb9d0;
+        font-size: 16px;
+        line-height: 1.45;
+        font-weight: 700;
+      }
+
+      .label {
+        color: #8fe7c8;
+        font-size: 12px;
+        font-weight: 950;
+        text-transform: uppercase;
+      }
+
+      .badge {
+        padding: 10px 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #141b2f;
+        color: #ffcf66;
+        font-weight: 950;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      section {
+        padding: 18px;
+        border: 1px solid rgba(255,255,255,.14);
+        background: #11182a;
+      }
+
+      .wide { grid-column: 1 / -1; }
+
+      textarea {
+        width: 100%;
+        min-height: 170px;
+        margin-top: 14px;
+        padding: 14px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #0b1020;
+        color: #f8fafc;
+        font: inherit;
+        font-size: 14px;
+        line-height: 1.45;
+        resize: vertical;
+      }
+
+      button, a.button, select {
+        min-height: 40px;
+        padding: 0 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #1f2a44;
+        color: #f8fafc;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      button, a.button {
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button.primary, a.primary {
+        background: #1f8f6e;
+        border-color: #39d9a8;
+        color: #06130f;
+      }
+
+      .row,
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      ol {
+        margin: 14px 0 0;
+        padding-left: 22px;
+        color: #dbe6f5;
+        line-height: 1.65;
+        font-weight: 730;
+      }
+
+      @media (max-width: 900px) {
+        header, .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <span class="label">Kickoff Room Live</span>
+          <h1>Channel Ops</h1>
+          <p class="sub">Keep the channel complete while live access is pending: About copy, upload defaults, tags, community posts, and launch checklist.</p>
+        </div>
+        <div class="badge">English worldwide</div>
+      </header>
+
+      <div class="grid">
+        <section>
+          <span class="label">Channel identity</span>
+          <h2>About Section</h2>
+          <textarea id="about">Welcome to Kickoff Room Live - your second-screen football watchalong room.
+
+We stream English live reactions, score updates, tactical talking points, chat polls, and fan discussion for the biggest football matches around the world.
+
+Important: this channel does not show match footage or play broadcast audio. Open the official broadcast in your country and join us here for live commentary, reactions, and community.
+
+Subscribe and join the room before kickoff.</textarea>
+          <button class="primary" data-copy-target="about">Copy About</button>
+        </section>
+
+        <section>
+          <span class="label">Upload defaults</span>
+          <h2>Description Default</h2>
+          <textarea id="descriptionDefault">This is an English no-footage football watchalong.
+
+No match footage and no broadcast audio are shown on this stream. Open the official broadcast in your country and use this stream as your second-screen live score, commentary, reactions, and fan chat.
+
+Subscribe for every major football watchalong.
+
+Disclosure: Some links may be affiliate links. If you buy through them, the channel may earn a small commission at no extra cost to you.</textarea>
+          <button class="primary" data-copy-target="descriptionDefault">Copy Default Description</button>
+        </section>
+
+        <section>
+          <span class="label">Discovery</span>
+          <h2>Default Tags</h2>
+          <textarea id="tags">football watchalong, live football reaction, world cup watchalong, english watchalong, no footage, live score, football shorts, match reaction</textarea>
+          <button class="primary" data-copy-target="tags">Copy Tags</button>
+        </section>
+
+        <section>
+          <span class="label">Community</span>
+          <h2>Post Builder</h2>
+          <div class="row">
+            <select id="postType" aria-label="Community post type">
+              <option value="poll">Pre-Match Poll</option>
+              <option value="score">Score Prediction</option>
+              <option value="scorer">First Scorer</option>
+              <option value="postMatch">Post-Match</option>
+              <option value="explainer">Channel Explainer</option>
+            </select>
+            <button data-copy-target="communityPost">Copy Post</button>
+          </div>
+          <textarea id="communityPost"></textarea>
+        </section>
+
+        <section>
+          <span class="label">Manual checks</span>
+          <h2>Before First Live</h2>
+          <ol>
+            <li>Avatar uploaded in YouTube Studio Branding.</li>
+            <li>Banner is set and readable on desktop/mobile.</li>
+            <li>About section updated.</li>
+            <li>Upload defaults set to Sports, English, not made for kids.</li>
+            <li>Business/contact email added when available.</li>
+          </ol>
+        </section>
+
+        <section>
+          <span class="label">Public promise</span>
+          <h2>Channel Rules</h2>
+          <ol>
+            <li>No match footage.</li>
+            <li>No broadcast audio.</li>
+            <li>English worldwide watchalong.</li>
+            <li>Official broadcast stays outside the stream.</li>
+            <li>Shorts use original graphics and commentary only.</li>
+          </ol>
+        </section>
+
+        <section class="wide">
+          <span class="label">Open tools</span>
+          <h2>Control Room Links</h2>
+          <div class="links">
+            <a class="button primary" data-local="/ops" data-static="live-ops.html" href="/ops">Live Ops</a>
+            <a class="button" data-local="/revenue" data-static="revenue-ops.html" href="/revenue">Revenue</a>
+            <a class="button" data-local="/shorts-studio" data-static="shorts-studio.html" href="/shorts-studio">Shorts</a>
+            <a class="button" data-local="/dashboard" data-static="watchalong-kit/dashboard.html" href="/dashboard">Dashboard</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const isStaticOutputPage = location.pathname.includes("/outputs/");
+      const schedulePath = isStaticOutputPage ? "schedule/live-schedule.json" : "/outputs/schedule/live-schedule.json";
+      const postType = document.getElementById("postType");
+      const communityPost = document.getElementById("communityPost");
+      let nextMatch = { match: "France vs Senegal" };
+
+      document.querySelectorAll("[data-local][data-static]").forEach((link) => {
+        link.href = isStaticOutputPage ? link.dataset.static : link.dataset.local;
+      });
+
+      function teams() {
+        const [home, away] = nextMatch.match.split(" vs ");
+        return { home, away };
+      }
+
+      function renderPost() {
+        const { home, away } = teams();
+        const match = `${home} vs ${away}`;
+        const templates = {
+          poll: `Tonight's watchalong: ${match}\n\nWho wins?\n\nNo footage, no broadcast audio - live score, English reactions, and chat.\n\nPoll options:\n- ${home}\n- Draw\n- ${away}`,
+          score: `Drop your score prediction for ${match}.\n\nWe go live 30 minutes before kickoff with English no-footage watchalong coverage.`,
+          scorer: `First scorer prediction?\n\nJoin the live watchalong and we will track chat predictions during ${match}.`,
+          postMatch: `Full-time: ${match}\n\nWho was your player of the match?\n\nShorts and full-time verdict coming next.`,
+          explainer: `New here?\n\nKickoff Room Live is a no-footage football watchalong channel.\n\nOpen the official broadcast in your country, then join us here for live score, timer, English commentary prompts, chat polls, and match reactions.`
+        };
+        communityPost.value = templates[postType.value];
+      }
+
+      async function loadNextMatch() {
+        try {
+          const response = await fetch(schedulePath, { cache: "no-store" });
+          const schedule = await response.json();
+          nextMatch = schedule.find((item) => new Date(item.goLiveUtc).getTime() > Date.now()) || schedule[0] || nextMatch;
+        } finally {
+          renderPost();
+        }
+      }
+
+      document.addEventListener("click", async (event) => {
+        const button = event.target.closest("[data-copy-target]");
+        if (!button) return;
+        const value = document.getElementById(button.dataset.copyTarget).value;
+        await navigator.clipboard.writeText(value);
+        const original = button.textContent;
+        button.textContent = "Copied";
+        setTimeout(() => { button.textContent = original; }, 900);
+      });
+
+      postType.addEventListener("change", renderPost);
+      loadNextMatch();
+    </script>
+  </body>
+</html>

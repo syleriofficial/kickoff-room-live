@@ -144,6 +144,10 @@ Shorts studio:
 
 `http://127.0.0.1:5173/shorts-studio`
 
+Channel ops:
+
+`http://127.0.0.1:5173/channel-ops`
+
 Readiness checklist:
 
 `http://127.0.0.1:5173/readiness`
