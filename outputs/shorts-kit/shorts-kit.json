@@ -1,22 +1,22 @@
 [
   {
-    "id": "esp-cpv",
-    "match": "SPAIN vs CABO VERDE",
+    "id": "fra-sen",
+    "match": "FRANCE vs SENEGAL",
     "hashtags": [
       "#WorldCup2026",
       "#FootballShorts",
       "#LiveReaction",
       "#Watchalong",
-      "#SPAIN",
-      "#CABOVERDE",
+      "#FRANCE",
+      "#SENEGAL",
       "#NoFootage"
     ],
     "ideas": [
       {
         "type": "full-time",
-        "title": "SPAIN vs CABO VERDE: Full-Time Reaction in 30 Seconds",
-        "hook": "The biggest story from SPAIN vs CABO VERDE was clear.",
-        "caption": "SPAIN vs CABO VERDE full-time reaction. No footage, just fan analysis and match reaction.",
+        "title": "FRANCE vs SENEGAL: Full-Time Reaction in 30 Seconds",
+        "hook": "The biggest story from FRANCE vs SENEGAL was clear.",
+        "caption": "FRANCE vs SENEGAL full-time reaction. No footage, just fan analysis and match reaction.",
         "shotList": [
           "score graphic",
           "one big turning point",
@@ -26,9 +26,9 @@
       },
       {
         "type": "turning-point",
-        "title": "The Moment SPAIN vs CABO VERDE Changed",
+        "title": "The Moment FRANCE vs SENEGAL Changed",
         "hook": "This was the moment the match shifted.",
-        "caption": "The key turning point from SPAIN vs CABO VERDE, explained fast.",
+        "caption": "The key turning point from FRANCE vs SENEGAL, explained fast.",
         "shotList": [
           "timer graphic",
           "momentum meter",
@@ -38,9 +38,9 @@
       },
       {
         "type": "key-battle",
-        "title": "Why Spain midfield rotations vs Cabo Verde's compact central block Mattered",
+        "title": "Why France's wide rotations vs Senegal's aggressive full-back duels Mattered",
         "hook": "This matchup decided more than people expected.",
-        "caption": "Spain midfield rotations vs Cabo Verde's compact central block was one of the biggest tactical stories in SPAIN vs CABO VERDE.",
+        "caption": "France's wide rotations vs Senegal's aggressive full-back duels was one of the biggest tactical stories in FRANCE vs SENEGAL.",
         "shotList": [
           "key battle text",
           "team colors",
@@ -50,9 +50,9 @@
       },
       {
         "type": "prediction",
-        "title": "Chat Predicted This SPAIN vs CABO VERDE Moment",
+        "title": "Chat Predicted This FRANCE vs SENEGAL Moment",
         "hook": "The live chat saw this coming.",
-        "caption": "Live chat predictions during SPAIN vs CABO VERDE. Join the next no-footage watchalong.",
+        "caption": "Live chat predictions during FRANCE vs SENEGAL. Join the next no-footage watchalong.",
         "shotList": [
           "chat prompt",
           "prediction graphic",
@@ -62,9 +62,9 @@
       },
       {
         "type": "best-player",
-        "title": "Best Player So Far: SPAIN vs CABO VERDE",
+        "title": "Best Player So Far: FRANCE vs SENEGAL",
         "hook": "One player stood above the rest.",
-        "caption": "Quick player-of-the-match debate from SPAIN vs CABO VERDE. Comment your pick.",
+        "caption": "Quick player-of-the-match debate from FRANCE vs SENEGAL. Comment your pick.",
         "shotList": [
           "player role text",
           "stat/momentum graphic",
@@ -75,23 +75,23 @@
     ]
   },
   {
-    "id": "bel-egy",
-    "match": "BELGIUM vs EGYPT",
+    "id": "irq-nor",
+    "match": "IRAQ vs NORWAY",
     "hashtags": [
       "#WorldCup2026",
       "#FootballShorts",
       "#LiveReaction",
       "#Watchalong",
-      "#BELGIUM",
-      "#EGYPT",
+      "#IRAQ",
+      "#NORWAY",
       "#NoFootage"
     ],
     "ideas": [
       {
         "type": "full-time",
-        "title": "BELGIUM vs EGYPT: Full-Time Reaction in 30 Seconds",
-        "hook": "The biggest story from BELGIUM vs EGYPT was clear.",
-        "caption": "BELGIUM vs EGYPT full-time reaction. No footage, just fan analysis and match reaction.",
+        "title": "IRAQ vs NORWAY: Full-Time Reaction in 30 Seconds",
+        "hook": "The biggest story from IRAQ vs NORWAY was clear.",
+        "caption": "IRAQ vs NORWAY full-time reaction. No footage, just fan analysis and match reaction.",
         "shotList": [
           "score graphic",
           "one big turning point",
@@ -101,9 +101,9 @@
       },
       {
         "type": "turning-point",
-        "title": "The Moment BELGIUM vs EGYPT Changed",
+        "title": "The Moment IRAQ vs NORWAY Changed",
         "hook": "This was the moment the match shifted.",
-        "caption": "The key turning point from BELGIUM vs EGYPT, explained fast.",
+        "caption": "The key turning point from IRAQ vs NORWAY, explained fast.",
         "shotList": [
           "timer graphic",
           "momentum meter",
@@ -113,9 +113,9 @@
       },
       {
         "type": "key-battle",
-        "title": "Why Belgium's half-space creators vs Egypt's recovery runs Mattered",
+        "title": "Why Iraq's centre-backs vs Norway's penalty-box movement Mattered",
         "hook": "This matchup decided more than people expected.",
-        "caption": "Belgium's half-space creators vs Egypt's recovery runs was one of the biggest tactical stories in BELGIUM vs EGYPT.",
+        "caption": "Iraq's centre-backs vs Norway's penalty-box movement was one of the biggest tactical stories in IRAQ vs NORWAY.",
         "shotList": [
           "key battle text",
           "team colors",
@@ -125,9 +125,9 @@
       },
       {
         "type": "prediction",
-        "title": "Chat Predicted This BELGIUM vs EGYPT Moment",
+        "title": "Chat Predicted This IRAQ vs NORWAY Moment",
         "hook": "The live chat saw this coming.",
-        "caption": "Live chat predictions during BELGIUM vs EGYPT. Join the next no-footage watchalong.",
+        "caption": "Live chat predictions during IRAQ vs NORWAY. Join the next no-footage watchalong.",
         "shotList": [
           "chat prompt",
           "prediction graphic",
@@ -137,9 +137,9 @@
       },
       {
         "type": "best-player",
-        "title": "Best Player So Far: BELGIUM vs EGYPT",
+        "title": "Best Player So Far: IRAQ vs NORWAY",
         "hook": "One player stood above the rest.",
-        "caption": "Quick player-of-the-match debate from BELGIUM vs EGYPT. Comment your pick.",
+        "caption": "Quick player-of-the-match debate from IRAQ vs NORWAY. Comment your pick.",
         "shotList": [
           "player role text",
           "stat/momentum graphic",
@@ -150,23 +150,23 @@
     ]
   },
   {
-    "id": "ksa-uru",
-    "match": "SAUDI ARABIA vs URUGUAY",
+    "id": "arg-alg",
+    "match": "ARGENTINA vs ALGERIA",
     "hashtags": [
       "#WorldCup2026",
       "#FootballShorts",
       "#LiveReaction",
       "#Watchalong",
-      "#SAUDIARABIA",
-      "#URUGUAY",
+      "#ARGENTINA",
+      "#ALGERIA",
       "#NoFootage"
     ],
     "ideas": [
       {
         "type": "full-time",
-        "title": "SAUDI ARABIA vs URUGUAY: Full-Time Reaction in 30 Seconds",
-        "hook": "The biggest story from SAUDI ARABIA vs URUGUAY was clear.",
-        "caption": "SAUDI ARABIA vs URUGUAY full-time reaction. No footage, just fan analysis and match reaction.",
+        "title": "ARGENTINA vs ALGERIA: Full-Time Reaction in 30 Seconds",
+        "hook": "The biggest story from ARGENTINA vs ALGERIA was clear.",
+        "caption": "ARGENTINA vs ALGERIA full-time reaction. No footage, just fan analysis and match reaction.",
         "shotList": [
           "score graphic",
           "one big turning point",
@@ -176,9 +176,9 @@
       },
       {
         "type": "turning-point",
-        "title": "The Moment SAUDI ARABIA vs URUGUAY Changed",
+        "title": "The Moment ARGENTINA vs ALGERIA Changed",
         "hook": "This was the moment the match shifted.",
-        "caption": "The key turning point from SAUDI ARABIA vs URUGUAY, explained fast.",
+        "caption": "The key turning point from ARGENTINA vs ALGERIA, explained fast.",
         "shotList": [
           "timer graphic",
           "momentum meter",
@@ -188,9 +188,9 @@
       },
       {
         "type": "key-battle",
-        "title": "Why Saudi midfield exits vs Uruguay's aggressive counter-press Mattered",
+        "title": "Why Argentina's No. 10 zone vs Algeria's midfield screen Mattered",
         "hook": "This matchup decided more than people expected.",
-        "caption": "Saudi midfield exits vs Uruguay's aggressive counter-press was one of the biggest tactical stories in SAUDI ARABIA vs URUGUAY.",
+        "caption": "Argentina's No. 10 zone vs Algeria's midfield screen was one of the biggest tactical stories in ARGENTINA vs ALGERIA.",
         "shotList": [
           "key battle text",
           "team colors",
@@ -200,9 +200,9 @@
       },
       {
         "type": "prediction",
-        "title": "Chat Predicted This SAUDI ARABIA vs URUGUAY Moment",
+        "title": "Chat Predicted This ARGENTINA vs ALGERIA Moment",
         "hook": "The live chat saw this coming.",
-        "caption": "Live chat predictions during SAUDI ARABIA vs URUGUAY. Join the next no-footage watchalong.",
+        "caption": "Live chat predictions during ARGENTINA vs ALGERIA. Join the next no-footage watchalong.",
         "shotList": [
           "chat prompt",
           "prediction graphic",
@@ -212,9 +212,9 @@
       },
       {
         "type": "best-player",
-        "title": "Best Player So Far: SAUDI ARABIA vs URUGUAY",
+        "title": "Best Player So Far: ARGENTINA vs ALGERIA",
         "hook": "One player stood above the rest.",
-        "caption": "Quick player-of-the-match debate from SAUDI ARABIA vs URUGUAY. Comment your pick.",
+        "caption": "Quick player-of-the-match debate from ARGENTINA vs ALGERIA. Comment your pick.",
         "shotList": [
           "player role text",
           "stat/momentum graphic",
@@ -225,23 +225,23 @@
     ]
   },
   {
-    "id": "irn-nzl",
-    "match": "IR IRAN vs NEW ZEALAND",
+    "id": "aut-jor",
+    "match": "AUSTRIA vs JORDAN",
     "hashtags": [
       "#WorldCup2026",
       "#FootballShorts",
       "#LiveReaction",
       "#Watchalong",
-      "#IRIRAN",
-      "#NEWZEALAND",
+      "#AUSTRIA",
+      "#JORDAN",
       "#NoFootage"
     ],
     "ideas": [
       {
         "type": "full-time",
-        "title": "IR IRAN vs NEW ZEALAND: Full-Time Reaction in 30 Seconds",
-        "hook": "The biggest story from IR IRAN vs NEW ZEALAND was clear.",
-        "caption": "IR IRAN vs NEW ZEALAND full-time reaction. No footage, just fan analysis and match reaction.",
+        "title": "AUSTRIA vs JORDAN: Full-Time Reaction in 30 Seconds",
+        "hook": "The biggest story from AUSTRIA vs JORDAN was clear.",
+        "caption": "AUSTRIA vs JORDAN full-time reaction. No footage, just fan analysis and match reaction.",
         "shotList": [
           "score graphic",
           "one big turning point",
@@ -251,9 +251,9 @@
       },
       {
         "type": "turning-point",
-        "title": "The Moment IR IRAN vs NEW ZEALAND Changed",
+        "title": "The Moment AUSTRIA vs JORDAN Changed",
         "hook": "This was the moment the match shifted.",
-        "caption": "The key turning point from IR IRAN vs NEW ZEALAND, explained fast.",
+        "caption": "The key turning point from AUSTRIA vs JORDAN, explained fast.",
         "shotList": [
           "timer graphic",
           "momentum meter",
@@ -263,9 +263,9 @@
       },
       {
         "type": "key-battle",
-        "title": "Why Iran's back line vs New Zealand's aerial and second-ball pressure Mattered",
+        "title": "Why Austria's counter-press vs Jordan's first pass after regain Mattered",
         "hook": "This matchup decided more than people expected.",
-        "caption": "Iran's back line vs New Zealand's aerial and second-ball pressure was one of the biggest tactical stories in IR IRAN vs NEW ZEALAND.",
+        "caption": "Austria's counter-press vs Jordan's first pass after regain was one of the biggest tactical stories in AUSTRIA vs JORDAN.",
         "shotList": [
           "key battle text",
           "team colors",
@@ -275,9 +275,9 @@
       },
       {
         "type": "prediction",
-        "title": "Chat Predicted This IR IRAN vs NEW ZEALAND Moment",
+        "title": "Chat Predicted This AUSTRIA vs JORDAN Moment",
         "hook": "The live chat saw this coming.",
-        "caption": "Live chat predictions during IR IRAN vs NEW ZEALAND. Join the next no-footage watchalong.",
+        "caption": "Live chat predictions during AUSTRIA vs JORDAN. Join the next no-footage watchalong.",
         "shotList": [
           "chat prompt",
           "prediction graphic",
@@ -287,9 +287,9 @@
       },
       {
         "type": "best-player",
-        "title": "Best Player So Far: IR IRAN vs NEW ZEALAND",
+        "title": "Best Player So Far: AUSTRIA vs JORDAN",
         "hook": "One player stood above the rest.",
-        "caption": "Quick player-of-the-match debate from IR IRAN vs NEW ZEALAND. Comment your pick.",
+        "caption": "Quick player-of-the-match debate from AUSTRIA vs JORDAN. Comment your pick.",
         "shotList": [
           "player role text",
           "stat/momentum graphic",

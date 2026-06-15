@@ -4,55 +4,55 @@ PRODID:-//Kickoff Room Live//Watchalong Schedule//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:kickoff-room-esp-cpv@kickoff-room-live
-DTSTAMP:20260615T080430.604Z
-DTSTART:20260615T153000Z
-DTEND:20260615T183000Z
-SUMMARY:Go live: SPAIN vs CABO VERDE
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 9:30 PM IST\, Monday June 15\nKey battle: Spain midfield rotations vs Cabo Verde's compact central block\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-fra-sen@kickoff-room-live
+DTSTAMP:20260615T082431.209Z
+DTSTART:20260616T183000Z
+DTEND:20260616T213000Z
+SUMMARY:Go live: FRANCE vs SENEGAL
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 12:30 AM IST\, Wednesday June 17\nKey battle: France's wide rotations vs Senegal's aggressive full-back duels\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: SPAIN vs CABO VERDE
+DESCRIPTION:Go live: FRANCE vs SENEGAL
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:kickoff-room-bel-egy@kickoff-room-live
-DTSTAMP:20260615T080430.604Z
-DTSTART:20260615T183000Z
-DTEND:20260615T213000Z
-SUMMARY:Go live: BELGIUM vs EGYPT
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 12:30 AM IST\, Tuesday June 16\nKey battle: Belgium's half-space creators vs Egypt's recovery runs\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-irq-nor@kickoff-room-live
+DTSTAMP:20260615T082431.209Z
+DTSTART:20260616T213000Z
+DTEND:20260617T003000Z
+SUMMARY:Go live: IRAQ vs NORWAY
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 3:30 AM IST\, Wednesday June 17\nKey battle: Iraq's centre-backs vs Norway's penalty-box movement\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: BELGIUM vs EGYPT
+DESCRIPTION:Go live: IRAQ vs NORWAY
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:kickoff-room-ksa-uru@kickoff-room-live
-DTSTAMP:20260615T080430.604Z
-DTSTART:20260615T213000Z
-DTEND:20260616T003000Z
-SUMMARY:Go live: SAUDI ARABIA vs URUGUAY
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 3:30 AM IST\, Tuesday June 16\nKey battle: Saudi midfield exits vs Uruguay's aggressive counter-press\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-arg-alg@kickoff-room-live
+DTSTAMP:20260615T082431.209Z
+DTSTART:20260617T003000Z
+DTEND:20260617T033000Z
+SUMMARY:Go live: ARGENTINA vs ALGERIA
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 6:30 AM IST\, Wednesday June 17\nKey battle: Argentina's No. 10 zone vs Algeria's midfield screen\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: SAUDI ARABIA vs URUGUAY
+DESCRIPTION:Go live: ARGENTINA vs ALGERIA
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:kickoff-room-irn-nzl@kickoff-room-live
-DTSTAMP:20260615T080430.604Z
-DTSTART:20260616T003000Z
-DTEND:20260616T033000Z
-SUMMARY:Go live: IR IRAN vs NEW ZEALAND
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 6:30 AM IST\, Tuesday June 16\nKey battle: Iran's back line vs New Zealand's aerial and second-ball pressure\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-aut-jor@kickoff-room-live
+DTSTAMP:20260615T082431.209Z
+DTSTART:20260617T033000Z
+DTEND:20260617T063000Z
+SUMMARY:Go live: AUSTRIA vs JORDAN
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 9:30 AM IST\, Wednesday June 17\nKey battle: Austria's counter-press vs Jordan's first pass after regain\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: IR IRAN vs NEW ZEALAND
+DESCRIPTION:Go live: AUSTRIA vs JORDAN
 END:VALARM
 END:VEVENT
 END:VCALENDAR

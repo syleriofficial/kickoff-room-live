@@ -1,42 +1,42 @@
 [
   {
-    "id": "esp-cpv",
-    "match": "SPAIN vs CABO VERDE",
-    "goLiveUtc": "2026-06-15T15:30:00Z",
-    "kickoffUtc": "2026-06-15T16:00:00Z",
-    "kickoffIst": "9:30 PM IST, Monday June 15",
-    "title": "SPAIN vs CABO VERDE LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
-    "keyBattle": "Spain midfield rotations vs Cabo Verde's compact central block",
-    "chatMission": "Tonight crew: country + Spain vs Cabo Verde score prediction"
+    "id": "fra-sen",
+    "match": "FRANCE vs SENEGAL",
+    "goLiveUtc": "2026-06-16T18:30:00Z",
+    "kickoffUtc": "2026-06-16T19:00:00Z",
+    "kickoffIst": "12:30 AM IST, Wednesday June 17",
+    "title": "FRANCE vs SENEGAL LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
+    "keyBattle": "France's wide rotations vs Senegal's aggressive full-back duels",
+    "chatMission": "Late-night crew: country + France vs Senegal score prediction"
   },
   {
-    "id": "bel-egy",
-    "match": "BELGIUM vs EGYPT",
-    "goLiveUtc": "2026-06-15T18:30:00Z",
-    "kickoffUtc": "2026-06-15T19:00:00Z",
-    "kickoffIst": "12:30 AM IST, Tuesday June 16",
-    "title": "BELGIUM vs EGYPT LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
-    "keyBattle": "Belgium's half-space creators vs Egypt's recovery runs",
-    "chatMission": "Late-night crew: country + Belgium vs Egypt score prediction"
+    "id": "irq-nor",
+    "match": "IRAQ vs NORWAY",
+    "goLiveUtc": "2026-06-16T21:30:00Z",
+    "kickoffUtc": "2026-06-16T22:00:00Z",
+    "kickoffIst": "3:30 AM IST, Wednesday June 17",
+    "title": "IRAQ vs NORWAY LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
+    "keyBattle": "Iraq's centre-backs vs Norway's penalty-box movement",
+    "chatMission": "Overnight crew: country + Iraq vs Norway score prediction"
   },
   {
-    "id": "ksa-uru",
-    "match": "SAUDI ARABIA vs URUGUAY",
-    "goLiveUtc": "2026-06-15T21:30:00Z",
-    "kickoffUtc": "2026-06-15T22:00:00Z",
-    "kickoffIst": "3:30 AM IST, Tuesday June 16",
-    "title": "SAUDI ARABIA vs URUGUAY LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
-    "keyBattle": "Saudi midfield exits vs Uruguay's aggressive counter-press",
-    "chatMission": "Overnight crew: country + Saudi Arabia vs Uruguay score prediction"
+    "id": "arg-alg",
+    "match": "ARGENTINA vs ALGERIA",
+    "goLiveUtc": "2026-06-17T00:30:00Z",
+    "kickoffUtc": "2026-06-17T01:00:00Z",
+    "kickoffIst": "6:30 AM IST, Wednesday June 17",
+    "title": "ARGENTINA vs ALGERIA LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
+    "keyBattle": "Argentina's No. 10 zone vs Algeria's midfield screen",
+    "chatMission": "Morning crew: country + Argentina vs Algeria score prediction"
   },
   {
-    "id": "irn-nzl",
-    "match": "IR IRAN vs NEW ZEALAND",
-    "goLiveUtc": "2026-06-16T00:30:00Z",
-    "kickoffUtc": "2026-06-16T01:00:00Z",
-    "kickoffIst": "6:30 AM IST, Tuesday June 16",
-    "title": "IR IRAN vs NEW ZEALAND LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
-    "keyBattle": "Iran's back line vs New Zealand's aerial and second-ball pressure",
-    "chatMission": "Morning crew: country + Iran vs New Zealand score prediction"
+    "id": "aut-jor",
+    "match": "AUSTRIA vs JORDAN",
+    "goLiveUtc": "2026-06-17T03:30:00Z",
+    "kickoffUtc": "2026-06-17T04:00:00Z",
+    "kickoffIst": "9:30 AM IST, Wednesday June 17",
+    "title": "AUSTRIA vs JORDAN LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
+    "keyBattle": "Austria's counter-press vs Jordan's first pass after regain",
+    "chatMission": "Breakfast crew: country + Austria vs Jordan score prediction"
   }
 ]

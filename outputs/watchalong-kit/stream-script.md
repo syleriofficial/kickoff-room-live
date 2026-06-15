@@ -2,15 +2,15 @@
 
 ## Title
 
-SPAIN vs CABO VERDE LIVE WATCHALONG | World Cup 2026 | English Reactions | No Footage
+FRANCE vs SENEGAL LIVE WATCHALONG | World Cup 2026 | English Reactions | No Footage
 
 ## Description
 
-Live English watchalong for Spain vs Cabo Verde at the FIFA World Cup 2026. This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live commentary, reactions, chat, and tactical discussion.
+Live English watchalong for France vs Senegal at the FIFA World Cup 2026. This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live commentary, reactions, chat, and tactical discussion.
 
 ## Tags
 
-world cup 2026, live watchalong, spain vs cabo verde, fifa world cup live, football live reaction, english watchalong, no footage, live football commentary
+world cup 2026, live watchalong, france vs senegal, fifa world cup live, football live reaction, english watchalong, no footage, live football commentary
 
 ## Pinned Chat
 
@@ -18,7 +18,7 @@ No match footage or broadcast audio here. Open the official broadcast and sync w
 
 ## Opening 30 Seconds
 
-Welcome in, everyone. This is a live English watchalong for Spain vs Cabo Verde. Quick reminder: no match footage and no broadcast audio here, so open the official broadcast and use this stream as your second screen. Put your score prediction in chat and tell me where you are watching from.
+Welcome in, everyone. This is a live English watchalong for France vs Senegal. Quick reminder: no match footage and no broadcast audio here, so open the official broadcast and use this stream as your second screen. Put your score prediction in chat and tell me where you are watching from.
 
 ## Pre-Match Flow
 
@@ -56,6 +56,6 @@ Welcome in, everyone. This is a live English watchalong for Spain vs Cabo Verde.
 
 - My live reaction to the first goal
 - The moment the game changed
-- Why Spain/Cabo Verde won the midfield
+- Why France/Senegal won the midfield
 - Chat predicted this score
 - 30-second full-time verdict

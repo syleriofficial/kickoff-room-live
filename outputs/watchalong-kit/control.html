@@ -259,10 +259,10 @@
             </label>
           </div>
           <div class="row">
-            <label>ESP Possession
+            <label>FRA Possession
               <input id="possessionHome" type="number" min="0" max="100">
             </label>
-            <label>CPV Possession
+            <label>SEN Possession
               <input id="possessionAway" type="number" min="0" max="100">
             </label>
           </div>
@@ -276,20 +276,20 @@
       const channel = "BroadcastChannel" in window ? new BroadcastChannel("watchalong-control") : null;
       const presets = window.MATCH_PRESETS || [];
       const defaults = {
-        presetId: "esp-cpv",
-        home: "SPAIN",
-        away: "CABO VERDE",
-        homeShort: "ESP",
-        awayShort: "CPV",
-        homeColor: "#c60b1e",
-        awayColor: "#003893",
+        presetId: "fra-sen",
+        home: "FRANCE",
+        away: "SENEGAL",
+        homeShort: "FRA",
+        awayShort: "SEN",
+        homeColor: "#1d3f8f",
+        awayColor: "#00853f",
         homeScore: 0,
         awayScore: 0,
         seconds: 0,
         hype: 72,
-        topic: "Spain's control, Cabo Verde's transition speed, first-match pressure",
-        keyBattle: "Spain midfield rotations vs Cabo Verde's compact central block",
-        gamePulse: "Spain will try to pin the game in one half; Cabo Verde need clean first passes into space",
+        topic: "France's attacking depth, Senegal's physical edge, opening-night pressure",
+        keyBattle: "France's wide rotations vs Senegal's aggressive full-back duels",
+        gamePulse: "France can stretch the pitch quickly; Senegal need compact defending and fast counters",
         chatMission: "Type your country + final score prediction",
         momentumHome: 58,
         momentumAway: 42,

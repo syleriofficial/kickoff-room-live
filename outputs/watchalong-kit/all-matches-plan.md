@@ -4,17 +4,17 @@
 
 | Match | Go Live IST | Kickoff IST | Stream Focus |
 |---|---:|---:|---|
-| Spain vs Cabo Verde | 9:00 PM | 9:30 PM | First live push, possession vs transition story |
-| Belgium vs Egypt | 12:00 AM | 12:30 AM | Late-night star pull and counterattack angle |
-| Saudi Arabia vs Uruguay | 3:00 AM | 3:30 AM | Overnight high-intensity tactical duel |
-| IR Iran vs New Zealand | 6:00 AM | 6:30 AM | Morning crew, set-piece and second-ball battle |
+| France vs Senegal | 12:00 AM | 12:30 AM | First post-unlock push, star power vs physical edge |
+| Iraq vs Norway | 3:00 AM | 3:30 AM | Overnight underdog story and striker-watch angle |
+| Argentina vs Algeria | 6:00 AM | 6:30 AM | Morning title-defence main event |
+| Austria vs Jordan | 9:00 AM | 9:30 AM | Breakfast match, pressing vs compact block |
 
 ## Priority
 
-1. Spain vs Cabo Verde: best immediate slot for India and global English discovery.
-2. Belgium vs Egypt: strong names and late-night reaction potential.
-3. Saudi Arabia vs Uruguay: physical, intense, good for clipped moments.
-4. IR Iran vs New Zealand: use as morning community-building stream.
+1. Argentina vs Algeria: biggest global pull and best Shorts potential.
+2. France vs Senegal: strong first stream after YouTube unlock.
+3. Austria vs Jordan: India-friendly morning slot.
+4. Iraq vs Norway: underdog story and overnight community-building stream.
 
 ## Between Matches
 

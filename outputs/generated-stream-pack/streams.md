@@ -2,20 +2,20 @@
 
 Generated from `outputs/watchalong-kit/match-presets.js`.
 
-## SPAIN vs CABO VERDE
+## FRANCE vs SENEGAL
 
-Kickoff: **9:30 PM IST, Monday June 15**
+Kickoff: **12:30 AM IST, Wednesday June 17**
 
 ### YouTube Title
 
 ```text
-SPAIN vs CABO VERDE LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
+FRANCE vs SENEGAL LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
 ```
 
 ### Description
 
 ```text
-Live English watchalong for SPAIN vs CABO VERDE at the World Cup 2026.
+Live English watchalong for FRANCE vs SENEGAL at the World Cup 2026.
 
 This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
 
@@ -33,37 +33,37 @@ Disclaimer: No match footage or broadcast audio is shown on this stream.
 ### Pinned Chat
 
 ```text
-No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + SPAIN vs CABO VERDE score prediction.
+No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + FRANCE vs SENEGAL score prediction.
 ```
 
 ### First Minute Script
 
 ```text
-Welcome to Kickoff Room Live. This is an English no-footage watchalong for SPAIN vs CABO VERDE. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Spain midfield rotations vs Cabo Verde's compact central block.
+Welcome to Kickoff Room Live. This is an English no-footage watchalong for FRANCE vs SENEGAL. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is France's wide rotations vs Senegal's aggressive full-back duels.
 ```
 
 ### Shorts Ideas
 
-- SPAIN vs CABO VERDE: full-time reaction in 30 seconds
-- The moment SPAIN vs CABO VERDE changed
-- Best player so far in SPAIN vs CABO VERDE
-- Why the key battle was Spain midfield rotations vs Cabo Verde's compact central block
-- Chat predicted this SPAIN vs CABO VERDE moment
+- FRANCE vs SENEGAL: full-time reaction in 30 seconds
+- The moment FRANCE vs SENEGAL changed
+- Best player so far in FRANCE vs SENEGAL
+- Why the key battle was France's wide rotations vs Senegal's aggressive full-back duels
+- Chat predicted this FRANCE vs SENEGAL moment
 
-## BELGIUM vs EGYPT
+## IRAQ vs NORWAY
 
-Kickoff: **12:30 AM IST, Tuesday June 16**
+Kickoff: **3:30 AM IST, Wednesday June 17**
 
 ### YouTube Title
 
 ```text
-BELGIUM vs EGYPT LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
+IRAQ vs NORWAY LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
 ```
 
 ### Description
 
 ```text
-Live English watchalong for BELGIUM vs EGYPT at the World Cup 2026.
+Live English watchalong for IRAQ vs NORWAY at the World Cup 2026.
 
 This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
 
@@ -81,37 +81,37 @@ Disclaimer: No match footage or broadcast audio is shown on this stream.
 ### Pinned Chat
 
 ```text
-No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + BELGIUM vs EGYPT score prediction.
+No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + IRAQ vs NORWAY score prediction.
 ```
 
 ### First Minute Script
 
 ```text
-Welcome to Kickoff Room Live. This is an English no-footage watchalong for BELGIUM vs EGYPT. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Belgium's half-space creators vs Egypt's recovery runs.
+Welcome to Kickoff Room Live. This is an English no-footage watchalong for IRAQ vs NORWAY. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Iraq's centre-backs vs Norway's penalty-box movement.
 ```
 
 ### Shorts Ideas
 
-- BELGIUM vs EGYPT: full-time reaction in 30 seconds
-- The moment BELGIUM vs EGYPT changed
-- Best player so far in BELGIUM vs EGYPT
-- Why the key battle was Belgium's half-space creators vs Egypt's recovery runs
-- Chat predicted this BELGIUM vs EGYPT moment
+- IRAQ vs NORWAY: full-time reaction in 30 seconds
+- The moment IRAQ vs NORWAY changed
+- Best player so far in IRAQ vs NORWAY
+- Why the key battle was Iraq's centre-backs vs Norway's penalty-box movement
+- Chat predicted this IRAQ vs NORWAY moment
 
-## SAUDI ARABIA vs URUGUAY
+## ARGENTINA vs ALGERIA
 
-Kickoff: **3:30 AM IST, Tuesday June 16**
+Kickoff: **6:30 AM IST, Wednesday June 17**
 
 ### YouTube Title
 
 ```text
-SAUDI ARABIA vs URUGUAY LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
+ARGENTINA vs ALGERIA LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
 ```
 
 ### Description
 
 ```text
-Live English watchalong for SAUDI ARABIA vs URUGUAY at the World Cup 2026.
+Live English watchalong for ARGENTINA vs ALGERIA at the World Cup 2026.
 
 This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
 
@@ -129,37 +129,37 @@ Disclaimer: No match footage or broadcast audio is shown on this stream.
 ### Pinned Chat
 
 ```text
-No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + SAUDI ARABIA vs URUGUAY score prediction.
+No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + ARGENTINA vs ALGERIA score prediction.
 ```
 
 ### First Minute Script
 
 ```text
-Welcome to Kickoff Room Live. This is an English no-footage watchalong for SAUDI ARABIA vs URUGUAY. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Saudi midfield exits vs Uruguay's aggressive counter-press.
+Welcome to Kickoff Room Live. This is an English no-footage watchalong for ARGENTINA vs ALGERIA. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Argentina's No. 10 zone vs Algeria's midfield screen.
 ```
 
 ### Shorts Ideas
 
-- SAUDI ARABIA vs URUGUAY: full-time reaction in 30 seconds
-- The moment SAUDI ARABIA vs URUGUAY changed
-- Best player so far in SAUDI ARABIA vs URUGUAY
-- Why the key battle was Saudi midfield exits vs Uruguay's aggressive counter-press
-- Chat predicted this SAUDI ARABIA vs URUGUAY moment
+- ARGENTINA vs ALGERIA: full-time reaction in 30 seconds
+- The moment ARGENTINA vs ALGERIA changed
+- Best player so far in ARGENTINA vs ALGERIA
+- Why the key battle was Argentina's No. 10 zone vs Algeria's midfield screen
+- Chat predicted this ARGENTINA vs ALGERIA moment
 
-## IR IRAN vs NEW ZEALAND
+## AUSTRIA vs JORDAN
 
-Kickoff: **6:30 AM IST, Tuesday June 16**
+Kickoff: **9:30 AM IST, Wednesday June 17**
 
 ### YouTube Title
 
 ```text
-IR IRAN vs NEW ZEALAND LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
+AUSTRIA vs JORDAN LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
 ```
 
 ### Description
 
 ```text
-Live English watchalong for IR IRAN vs NEW ZEALAND at the World Cup 2026.
+Live English watchalong for AUSTRIA vs JORDAN at the World Cup 2026.
 
 This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
 
@@ -177,19 +177,19 @@ Disclaimer: No match footage or broadcast audio is shown on this stream.
 ### Pinned Chat
 
 ```text
-No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + IR IRAN vs NEW ZEALAND score prediction.
+No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + AUSTRIA vs JORDAN score prediction.
 ```
 
 ### First Minute Script
 
 ```text
-Welcome to Kickoff Room Live. This is an English no-footage watchalong for IR IRAN vs NEW ZEALAND. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Iran's back line vs New Zealand's aerial and second-ball pressure.
+Welcome to Kickoff Room Live. This is an English no-footage watchalong for AUSTRIA vs JORDAN. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Austria's counter-press vs Jordan's first pass after regain.
 ```
 
 ### Shorts Ideas
 
-- IR IRAN vs NEW ZEALAND: full-time reaction in 30 seconds
-- The moment IR IRAN vs NEW ZEALAND changed
-- Best player so far in IR IRAN vs NEW ZEALAND
-- Why the key battle was Iran's back line vs New Zealand's aerial and second-ball pressure
-- Chat predicted this IR IRAN vs NEW ZEALAND moment
+- AUSTRIA vs JORDAN: full-time reaction in 30 seconds
+- The moment AUSTRIA vs JORDAN changed
+- Best player so far in AUSTRIA vs JORDAN
+- Why the key battle was Austria's counter-press vs Jordan's first pass after regain
+- Chat predicted this AUSTRIA vs JORDAN moment

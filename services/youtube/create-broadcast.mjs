@@ -4,7 +4,7 @@ import { resolve } from "node:path";
 const clientId = process.env.YOUTUBE_CLIENT_ID;
 const clientSecret = process.env.YOUTUBE_CLIENT_SECRET;
 const refreshToken = process.env.YOUTUBE_REFRESH_TOKEN;
-const streamId = process.env.STREAM_ID || process.argv[2] || "esp-cpv";
+const streamId = process.env.STREAM_ID || process.argv[2] || "fra-sen";
 const dryRun = process.env.YOUTUBE_DRY_RUN !== "false";
 const privacyStatus = process.env.YOUTUBE_PRIVACY_STATUS || "private";
 const scheduledStartTime = process.env.YOUTUBE_SCHEDULED_START_TIME;

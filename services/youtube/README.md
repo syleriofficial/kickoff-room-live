@@ -41,7 +41,7 @@ Save the printed `YOUTUBE_REFRESH_TOKEN` in local `.env` only.
 ## Step 3: Dry-Run Broadcast Payload
 
 ```bash
-node services/youtube/create-broadcast.mjs esp-cpv
+node services/youtube/create-broadcast.mjs fra-sen
 ```
 
 This does not call YouTube by default.
@@ -84,7 +84,7 @@ Use an ISO timestamp:
 export YOUTUBE_REFRESH_TOKEN="..."
 export YOUTUBE_SCHEDULED_START_TIME="2026-06-13T22:00:00Z"
 export YOUTUBE_PRIVACY_STATUS="private"
-YOUTUBE_DRY_RUN=false node services/youtube/create-broadcast.mjs esp-cpv
+YOUTUBE_DRY_RUN=false node services/youtube/create-broadcast.mjs fra-sen
 ```
 
 Recommended: create as `private` first, review in YouTube Studio, then switch to public/scheduled manually.

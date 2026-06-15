@@ -135,8 +135,8 @@ async function checkSecretLeaks() {
 async function checkCommands() {
   const checks = [
     ["npm", ["run", "check"]],
-    ["npm", ["run", "youtube:create-dry-run", "--", "esp-cpv"]],
-    ["npm", ["run", "telegram:dry-run", "--", "esp-cpv"]]
+    ["npm", ["run", "youtube:create-dry-run", "--", "fra-sen"]],
+    ["npm", ["run", "telegram:dry-run", "--", "fra-sen"]]
   ];
   const failures = [];
   for (const [cmd, args] of checks) {

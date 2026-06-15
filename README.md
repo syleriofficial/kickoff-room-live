@@ -137,7 +137,7 @@ OBS overlay:
 Start with a safe dry run:
 
 ```bash
-npm run youtube:create-dry-run -- esp-cpv
+npm run youtube:create-dry-run -- fra-sen
 ```
 
 Create the next upcoming private scheduled live after YouTube Live is enabled:
@@ -161,7 +161,7 @@ npm run youtube:oauth
 Dry-run message:
 
 ```bash
-npm run telegram:dry-run -- esp-cpv
+npm run telegram:dry-run -- fra-sen
 ```
 
 ## Monetization Kit

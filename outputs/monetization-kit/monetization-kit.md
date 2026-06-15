@@ -67,18 +67,18 @@ Kickoff Room Live
 
 # Match Sponsor Copy
 
-## SPAIN vs CABO VERDE
+## FRANCE vs SENEGAL
 
 ### Pinned Sponsor
 
 ```text
-Sponsor slot available for SPAIN vs CABO VERDE. DM/contact to promote football gear, fan merch, snacks, or creator tools.
+Sponsor slot available for FRANCE vs SENEGAL. DM/contact to promote football gear, fan merch, snacks, or creator tools.
 ```
 
 ### Live Read
 
 ```text
-Quick sponsor note: today's SPAIN vs CABO VERDE watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
+Quick sponsor note: today's FRANCE vs SENEGAL watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
 ```
 
 ### Description Block
@@ -95,18 +95,18 @@ Disclosure: Some links may be affiliate links. If you buy through them, the chan
 Sponsor this match: contact Kickoff Room Live for pinned chat, lower-third, and Shorts promo slots.
 ```
 
-## BELGIUM vs EGYPT
+## IRAQ vs NORWAY
 
 ### Pinned Sponsor
 
 ```text
-Sponsor slot available for BELGIUM vs EGYPT. DM/contact to promote football gear, fan merch, snacks, or creator tools.
+Sponsor slot available for IRAQ vs NORWAY. DM/contact to promote football gear, fan merch, snacks, or creator tools.
 ```
 
 ### Live Read
 
 ```text
-Quick sponsor note: today's BELGIUM vs EGYPT watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
+Quick sponsor note: today's IRAQ vs NORWAY watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
 ```
 
 ### Description Block
@@ -123,18 +123,18 @@ Disclosure: Some links may be affiliate links. If you buy through them, the chan
 Sponsor this match: contact Kickoff Room Live for pinned chat, lower-third, and Shorts promo slots.
 ```
 
-## SAUDI ARABIA vs URUGUAY
+## ARGENTINA vs ALGERIA
 
 ### Pinned Sponsor
 
 ```text
-Sponsor slot available for SAUDI ARABIA vs URUGUAY. DM/contact to promote football gear, fan merch, snacks, or creator tools.
+Sponsor slot available for ARGENTINA vs ALGERIA. DM/contact to promote football gear, fan merch, snacks, or creator tools.
 ```
 
 ### Live Read
 
 ```text
-Quick sponsor note: today's SAUDI ARABIA vs URUGUAY watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
+Quick sponsor note: today's ARGENTINA vs ALGERIA watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
 ```
 
 ### Description Block
@@ -151,18 +151,18 @@ Disclosure: Some links may be affiliate links. If you buy through them, the chan
 Sponsor this match: contact Kickoff Room Live for pinned chat, lower-third, and Shorts promo slots.
 ```
 
-## IR IRAN vs NEW ZEALAND
+## AUSTRIA vs JORDAN
 
 ### Pinned Sponsor
 
 ```text
-Sponsor slot available for IR IRAN vs NEW ZEALAND. DM/contact to promote football gear, fan merch, snacks, or creator tools.
+Sponsor slot available for AUSTRIA vs JORDAN. DM/contact to promote football gear, fan merch, snacks, or creator tools.
 ```
 
 ### Live Read
 
 ```text
-Quick sponsor note: today's IR IRAN vs NEW ZEALAND watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
+Quick sponsor note: today's AUSTRIA vs JORDAN watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
 ```
 
 ### Description Block
