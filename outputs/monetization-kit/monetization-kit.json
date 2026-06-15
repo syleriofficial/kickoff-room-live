@@ -4,38 +4,31 @@
   "rateCard": "# Sponsor Rate Card\n\nStart low while the channel is new. Increase only after consistent viewers and Shorts views.\n\n## Launch Pricing\n\n- Pinned chat mention: $5-$15 per match\n- Lower-third sponsor mention: $10-$25 per match\n- 30-second live read: $15-$50 per match\n- Shorts sponsor caption: $10-$30 per Short\n- Bundle: 3 matches + 3 Shorts for $50-$120\n\n## What Sponsors Get\n\n- English no-footage football watchalong audience\n- Live score and reaction viewers\n- Match-specific pinned chat or description placement\n- Optional post-match Shorts caption\n\n## Safe Sponsor Categories\n\n- football merchandise sellers\n- sports accessories\n- gaming accessories\n- creator tools\n- snacks and beverages\n- local cafes or screening venues\n\nAvoid betting sponsors until legal and platform policy checks are complete.",
   "matches": [
     {
-      "id": "ger-cur",
-      "match": "GERMANY vs CURACAO",
-      "pinnedSponsor": "Sponsor slot available for GERMANY vs CURACAO. DM/contact to promote football gear, fan merch, snacks, or creator tools.",
-      "liveRead": "Quick sponsor note: today's GERMANY vs CURACAO watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.",
+      "id": "esp-cpv",
+      "match": "SPAIN vs CABO VERDE",
+      "pinnedSponsor": "Sponsor slot available for SPAIN vs CABO VERDE. DM/contact to promote football gear, fan merch, snacks, or creator tools.",
+      "liveRead": "Quick sponsor note: today's SPAIN vs CABO VERDE watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.",
       "descriptionBlock": "Support the stream:\n\n- Football gear: ADD_AFFILIATE_LINK\n- Streaming setup: ADD_AFFILIATE_LINK\n- Fan merch: ADD_AFFILIATE_LINK\n\nDisclosure: Some links may be affiliate links. If you buy through them, the channel may earn a small commission at no extra cost to you.\n\nSponsor this match: contact Kickoff Room Live for pinned chat, lower-third, and Shorts promo slots."
     },
     {
-      "id": "qat-sui",
-      "match": "QATAR vs SWITZERLAND",
-      "pinnedSponsor": "Sponsor slot available for QATAR vs SWITZERLAND. DM/contact to promote football gear, fan merch, snacks, or creator tools.",
-      "liveRead": "Quick sponsor note: today's QATAR vs SWITZERLAND watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.",
+      "id": "bel-egy",
+      "match": "BELGIUM vs EGYPT",
+      "pinnedSponsor": "Sponsor slot available for BELGIUM vs EGYPT. DM/contact to promote football gear, fan merch, snacks, or creator tools.",
+      "liveRead": "Quick sponsor note: today's BELGIUM vs EGYPT watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.",
       "descriptionBlock": "Support the stream:\n\n- Football gear: ADD_AFFILIATE_LINK\n- Streaming setup: ADD_AFFILIATE_LINK\n- Fan merch: ADD_AFFILIATE_LINK\n\nDisclosure: Some links may be affiliate links. If you buy through them, the channel may earn a small commission at no extra cost to you.\n\nSponsor this match: contact Kickoff Room Live for pinned chat, lower-third, and Shorts promo slots."
     },
     {
-      "id": "bra-mar",
-      "match": "BRAZIL vs MOROCCO",
-      "pinnedSponsor": "Sponsor slot available for BRAZIL vs MOROCCO. DM/contact to promote football gear, fan merch, snacks, or creator tools.",
-      "liveRead": "Quick sponsor note: today's BRAZIL vs MOROCCO watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.",
+      "id": "ksa-uru",
+      "match": "SAUDI ARABIA vs URUGUAY",
+      "pinnedSponsor": "Sponsor slot available for SAUDI ARABIA vs URUGUAY. DM/contact to promote football gear, fan merch, snacks, or creator tools.",
+      "liveRead": "Quick sponsor note: today's SAUDI ARABIA vs URUGUAY watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.",
       "descriptionBlock": "Support the stream:\n\n- Football gear: ADD_AFFILIATE_LINK\n- Streaming setup: ADD_AFFILIATE_LINK\n- Fan merch: ADD_AFFILIATE_LINK\n\nDisclosure: Some links may be affiliate links. If you buy through them, the channel may earn a small commission at no extra cost to you.\n\nSponsor this match: contact Kickoff Room Live for pinned chat, lower-third, and Shorts promo slots."
     },
     {
-      "id": "hai-sco",
-      "match": "HAITI vs SCOTLAND",
-      "pinnedSponsor": "Sponsor slot available for HAITI vs SCOTLAND. DM/contact to promote football gear, fan merch, snacks, or creator tools.",
-      "liveRead": "Quick sponsor note: today's HAITI vs SCOTLAND watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.",
-      "descriptionBlock": "Support the stream:\n\n- Football gear: ADD_AFFILIATE_LINK\n- Streaming setup: ADD_AFFILIATE_LINK\n- Fan merch: ADD_AFFILIATE_LINK\n\nDisclosure: Some links may be affiliate links. If you buy through them, the channel may earn a small commission at no extra cost to you.\n\nSponsor this match: contact Kickoff Room Live for pinned chat, lower-third, and Shorts promo slots."
-    },
-    {
-      "id": "aus-tur",
-      "match": "AUSTRALIA vs TURKIYE",
-      "pinnedSponsor": "Sponsor slot available for AUSTRALIA vs TURKIYE. DM/contact to promote football gear, fan merch, snacks, or creator tools.",
-      "liveRead": "Quick sponsor note: today's AUSTRALIA vs TURKIYE watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.",
+      "id": "irn-nzl",
+      "match": "IR IRAN vs NEW ZEALAND",
+      "pinnedSponsor": "Sponsor slot available for IR IRAN vs NEW ZEALAND. DM/contact to promote football gear, fan merch, snacks, or creator tools.",
+      "liveRead": "Quick sponsor note: today's IR IRAN vs NEW ZEALAND watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.",
       "descriptionBlock": "Support the stream:\n\n- Football gear: ADD_AFFILIATE_LINK\n- Streaming setup: ADD_AFFILIATE_LINK\n- Fan merch: ADD_AFFILIATE_LINK\n\nDisclosure: Some links may be affiliate links. If you buy through them, the channel may earn a small commission at no extra cost to you.\n\nSponsor this match: contact Kickoff Room Live for pinned chat, lower-third, and Shorts promo slots."
     }
   ]

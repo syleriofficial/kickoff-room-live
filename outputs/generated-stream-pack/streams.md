@@ -2,20 +2,20 @@
 
 Generated from `outputs/watchalong-kit/match-presets.js`.
 
-## GERMANY vs CURACAO
+## SPAIN vs CABO VERDE
 
-Kickoff: **9:30 PM IST, Sunday June 14**
+Kickoff: **9:30 PM IST, Monday June 15**
 
 ### YouTube Title
 
 ```text
-GERMANY vs CURACAO LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
+SPAIN vs CABO VERDE LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
 ```
 
 ### Description
 
 ```text
-Live English watchalong for GERMANY vs CURACAO at the World Cup 2026.
+Live English watchalong for SPAIN vs CABO VERDE at the World Cup 2026.
 
 This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
 
@@ -33,37 +33,37 @@ Disclaimer: No match footage or broadcast audio is shown on this stream.
 ### Pinned Chat
 
 ```text
-No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + GERMANY vs CURACAO score prediction.
+No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + SPAIN vs CABO VERDE score prediction.
 ```
 
 ### First Minute Script
 
 ```text
-Welcome to Kickoff Room Live. This is an English no-footage watchalong for GERMANY vs CURACAO. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Wirtz between the lines vs Curacao's midfield screen.
+Welcome to Kickoff Room Live. This is an English no-footage watchalong for SPAIN vs CABO VERDE. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Spain midfield rotations vs Cabo Verde's compact central block.
 ```
 
 ### Shorts Ideas
 
-- GERMANY vs CURACAO: full-time reaction in 30 seconds
-- The moment GERMANY vs CURACAO changed
-- Best player so far in GERMANY vs CURACAO
-- Why the key battle was Wirtz between the lines vs Curacao's midfield screen
-- Chat predicted this GERMANY vs CURACAO moment
+- SPAIN vs CABO VERDE: full-time reaction in 30 seconds
+- The moment SPAIN vs CABO VERDE changed
+- Best player so far in SPAIN vs CABO VERDE
+- Why the key battle was Spain midfield rotations vs Cabo Verde's compact central block
+- Chat predicted this SPAIN vs CABO VERDE moment
 
-## QATAR vs SWITZERLAND
+## BELGIUM vs EGYPT
 
-Kickoff: **12:30 AM IST, Sunday June 14**
+Kickoff: **12:30 AM IST, Tuesday June 16**
 
 ### YouTube Title
 
 ```text
-QATAR vs SWITZERLAND LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
+BELGIUM vs EGYPT LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
 ```
 
 ### Description
 
 ```text
-Live English watchalong for QATAR vs SWITZERLAND at the World Cup 2026.
+Live English watchalong for BELGIUM vs EGYPT at the World Cup 2026.
 
 This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
 
@@ -81,37 +81,37 @@ Disclaimer: No match footage or broadcast audio is shown on this stream.
 ### Pinned Chat
 
 ```text
-No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + QATAR vs SWITZERLAND score prediction.
+No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + BELGIUM vs EGYPT score prediction.
 ```
 
 ### First Minute Script
 
 ```text
-Welcome to Kickoff Room Live. This is an English no-footage watchalong for QATAR vs SWITZERLAND. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Afif drifting inside vs Swiss full-backs.
+Welcome to Kickoff Room Live. This is an English no-footage watchalong for BELGIUM vs EGYPT. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Belgium's half-space creators vs Egypt's recovery runs.
 ```
 
 ### Shorts Ideas
 
-- QATAR vs SWITZERLAND: full-time reaction in 30 seconds
-- The moment QATAR vs SWITZERLAND changed
-- Best player so far in QATAR vs SWITZERLAND
-- Why the key battle was Afif drifting inside vs Swiss full-backs
-- Chat predicted this QATAR vs SWITZERLAND moment
+- BELGIUM vs EGYPT: full-time reaction in 30 seconds
+- The moment BELGIUM vs EGYPT changed
+- Best player so far in BELGIUM vs EGYPT
+- Why the key battle was Belgium's half-space creators vs Egypt's recovery runs
+- Chat predicted this BELGIUM vs EGYPT moment
 
-## BRAZIL vs MOROCCO
+## SAUDI ARABIA vs URUGUAY
 
-Kickoff: **3:30 AM IST, Sunday June 14**
+Kickoff: **3:30 AM IST, Tuesday June 16**
 
 ### YouTube Title
 
 ```text
-BRAZIL vs MOROCCO LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
+SAUDI ARABIA vs URUGUAY LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
 ```
 
 ### Description
 
 ```text
-Live English watchalong for BRAZIL vs MOROCCO at the World Cup 2026.
+Live English watchalong for SAUDI ARABIA vs URUGUAY at the World Cup 2026.
 
 This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
 
@@ -129,37 +129,37 @@ Disclaimer: No match footage or broadcast audio is shown on this stream.
 ### Pinned Chat
 
 ```text
-No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + BRAZIL vs MOROCCO score prediction.
+No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + SAUDI ARABIA vs URUGUAY score prediction.
 ```
 
 ### First Minute Script
 
 ```text
-Welcome to Kickoff Room Live. This is an English no-footage watchalong for BRAZIL vs MOROCCO. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Vinicius Jr vs Hakimi channel.
+Welcome to Kickoff Room Live. This is an English no-footage watchalong for SAUDI ARABIA vs URUGUAY. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Saudi midfield exits vs Uruguay's aggressive counter-press.
 ```
 
 ### Shorts Ideas
 
-- BRAZIL vs MOROCCO: full-time reaction in 30 seconds
-- The moment BRAZIL vs MOROCCO changed
-- Best player so far in BRAZIL vs MOROCCO
-- Why the key battle was Vinicius Jr vs Hakimi channel
-- Chat predicted this BRAZIL vs MOROCCO moment
+- SAUDI ARABIA vs URUGUAY: full-time reaction in 30 seconds
+- The moment SAUDI ARABIA vs URUGUAY changed
+- Best player so far in SAUDI ARABIA vs URUGUAY
+- Why the key battle was Saudi midfield exits vs Uruguay's aggressive counter-press
+- Chat predicted this SAUDI ARABIA vs URUGUAY moment
 
-## HAITI vs SCOTLAND
+## IR IRAN vs NEW ZEALAND
 
-Kickoff: **6:30 AM IST, Sunday June 14**
+Kickoff: **6:30 AM IST, Tuesday June 16**
 
 ### YouTube Title
 
 ```text
-HAITI vs SCOTLAND LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
+IR IRAN vs NEW ZEALAND LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
 ```
 
 ### Description
 
 ```text
-Live English watchalong for HAITI vs SCOTLAND at the World Cup 2026.
+Live English watchalong for IR IRAN vs NEW ZEALAND at the World Cup 2026.
 
 This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
 
@@ -177,67 +177,19 @@ Disclaimer: No match footage or broadcast audio is shown on this stream.
 ### Pinned Chat
 
 ```text
-No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + HAITI vs SCOTLAND score prediction.
+No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + IR IRAN vs NEW ZEALAND score prediction.
 ```
 
 ### First Minute Script
 
 ```text
-Welcome to Kickoff Room Live. This is an English no-footage watchalong for HAITI vs SCOTLAND. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Haiti pace vs Scotland defensive line.
+Welcome to Kickoff Room Live. This is an English no-footage watchalong for IR IRAN vs NEW ZEALAND. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Iran's back line vs New Zealand's aerial and second-ball pressure.
 ```
 
 ### Shorts Ideas
 
-- HAITI vs SCOTLAND: full-time reaction in 30 seconds
-- The moment HAITI vs SCOTLAND changed
-- Best player so far in HAITI vs SCOTLAND
-- Why the key battle was Haiti pace vs Scotland defensive line
-- Chat predicted this HAITI vs SCOTLAND moment
-
-## AUSTRALIA vs TURKIYE
-
-Kickoff: **9:30 AM IST, Sunday June 14**
-
-### YouTube Title
-
-```text
-AUSTRALIA vs TURKIYE LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage
-```
-
-### Description
-
-```text
-Live English watchalong for AUSTRALIA vs TURKIYE at the World Cup 2026.
-
-This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
-
-Chat questions:
-- Where are you watching from?
-- Score prediction?
-- First scorer?
-- Player of the match?
-
-Subscribe for every World Cup watchalong.
-
-Disclaimer: No match footage or broadcast audio is shown on this stream.
-```
-
-### Pinned Chat
-
-```text
-No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + AUSTRALIA vs TURKIYE score prediction.
-```
-
-### First Minute Script
-
-```text
-Welcome to Kickoff Room Live. This is an English no-footage watchalong for AUSTRALIA vs TURKIYE. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Australia aerial power vs Turkiye midfield craft.
-```
-
-### Shorts Ideas
-
-- AUSTRALIA vs TURKIYE: full-time reaction in 30 seconds
-- The moment AUSTRALIA vs TURKIYE changed
-- Best player so far in AUSTRALIA vs TURKIYE
-- Why the key battle was Australia aerial power vs Turkiye midfield craft
-- Chat predicted this AUSTRALIA vs TURKIYE moment
+- IR IRAN vs NEW ZEALAND: full-time reaction in 30 seconds
+- The moment IR IRAN vs NEW ZEALAND changed
+- Best player so far in IR IRAN vs NEW ZEALAND
+- Why the key battle was Iran's back line vs New Zealand's aerial and second-ball pressure
+- Chat predicted this IR IRAN vs NEW ZEALAND moment

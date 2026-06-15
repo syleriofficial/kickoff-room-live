@@ -16,11 +16,11 @@ Open:
 - `http://localhost:8080/health`
 - `http://localhost:8080/streams`
 - `http://localhost:8080/next`
-- `http://localhost:8080/stream/bra-mar`
+- `http://localhost:8080/stream/esp-cpv`
 - `http://localhost:8080/schedule`
 - `http://localhost:8080/monetization`
 - `http://localhost:8080/shorts`
-- `http://localhost:8080/shorts/bra-mar`
+- `http://localhost:8080/shorts/esp-cpv`
 - `http://localhost:8080/search?q=brazil`
 
 ## Cloud Run Deploy

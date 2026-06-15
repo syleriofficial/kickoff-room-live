@@ -4,68 +4,55 @@ PRODID:-//Kickoff Room Live//Watchalong Schedule//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:kickoff-room-ger-cur@kickoff-room-live
-DTSTAMP:20260614T062016.610Z
-DTSTART:20260614T153000Z
-DTEND:20260614T183000Z
-SUMMARY:Go live: GERMANY vs CURACAO
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 9:30 PM IST\, Sunday June 14\nKey battle: Wirtz between the lines vs Curacao's midfield screen\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-esp-cpv@kickoff-room-live
+DTSTAMP:20260615T080430.604Z
+DTSTART:20260615T153000Z
+DTEND:20260615T183000Z
+SUMMARY:Go live: SPAIN vs CABO VERDE
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 9:30 PM IST\, Monday June 15\nKey battle: Spain midfield rotations vs Cabo Verde's compact central block\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: GERMANY vs CURACAO
+DESCRIPTION:Go live: SPAIN vs CABO VERDE
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:kickoff-room-qat-sui@kickoff-room-live
-DTSTAMP:20260614T062016.610Z
-DTSTART:20260613T183000Z
-DTEND:20260613T213000Z
-SUMMARY:Go live: QATAR vs SWITZERLAND
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 12:30 AM IST\, Sunday June 14\nKey battle: Afif drifting inside vs Swiss full-backs\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-bel-egy@kickoff-room-live
+DTSTAMP:20260615T080430.604Z
+DTSTART:20260615T183000Z
+DTEND:20260615T213000Z
+SUMMARY:Go live: BELGIUM vs EGYPT
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 12:30 AM IST\, Tuesday June 16\nKey battle: Belgium's half-space creators vs Egypt's recovery runs\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: QATAR vs SWITZERLAND
+DESCRIPTION:Go live: BELGIUM vs EGYPT
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:kickoff-room-bra-mar@kickoff-room-live
-DTSTAMP:20260614T062016.610Z
-DTSTART:20260613T213000Z
-DTEND:20260614T003000Z
-SUMMARY:Go live: BRAZIL vs MOROCCO
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 3:30 AM IST\, Sunday June 14\nKey battle: Vinicius Jr vs Hakimi channel\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-ksa-uru@kickoff-room-live
+DTSTAMP:20260615T080430.604Z
+DTSTART:20260615T213000Z
+DTEND:20260616T003000Z
+SUMMARY:Go live: SAUDI ARABIA vs URUGUAY
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 3:30 AM IST\, Tuesday June 16\nKey battle: Saudi midfield exits vs Uruguay's aggressive counter-press\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: BRAZIL vs MOROCCO
+DESCRIPTION:Go live: SAUDI ARABIA vs URUGUAY
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:kickoff-room-hai-sco@kickoff-room-live
-DTSTAMP:20260614T062016.610Z
-DTSTART:20260614T003000Z
-DTEND:20260614T033000Z
-SUMMARY:Go live: HAITI vs SCOTLAND
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 6:30 AM IST\, Sunday June 14\nKey battle: Haiti pace vs Scotland defensive line\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-irn-nzl@kickoff-room-live
+DTSTAMP:20260615T080430.604Z
+DTSTART:20260616T003000Z
+DTEND:20260616T033000Z
+SUMMARY:Go live: IR IRAN vs NEW ZEALAND
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 6:30 AM IST\, Tuesday June 16\nKey battle: Iran's back line vs New Zealand's aerial and second-ball pressure\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: HAITI vs SCOTLAND
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:kickoff-room-aus-tur@kickoff-room-live
-DTSTAMP:20260614T062016.610Z
-DTSTART:20260614T033000Z
-DTEND:20260614T063000Z
-SUMMARY:Go live: AUSTRALIA vs TURKIYE
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 9:30 AM IST\, Sunday June 14\nKey battle: Australia aerial power vs Turkiye midfield craft\nReminder: no match footage\, no broadcast audio.
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Go live: AUSTRALIA vs TURKIYE
+DESCRIPTION:Go live: IR IRAN vs NEW ZEALAND
 END:VALARM
 END:VEVENT
 END:VCALENDAR

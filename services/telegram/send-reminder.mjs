@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 
 const botToken = process.env.TELEGRAM_BOT_TOKEN;
 const chatId = process.env.TELEGRAM_CHAT_ID;
-const streamId = process.env.STREAM_ID || process.argv[2] || "bra-mar";
+const streamId = process.env.STREAM_ID || process.argv[2] || "esp-cpv";
 const streamUrl = process.env.YOUTUBE_STREAM_URL || "YOUTUBE_STREAM_URL_NOT_SET";
 const dryRun = process.env.TELEGRAM_DRY_RUN !== "false";
 const root = resolve(new URL("../..", import.meta.url).pathname);

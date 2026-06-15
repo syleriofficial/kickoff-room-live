@@ -12,7 +12,7 @@ let hype = Number(cfg.panels.hypePercent || 50);
 let ttsEnabled = Boolean(cfg.audio.ttsEnabled);
 let ttsIndex = 0;
 let liveState = {
-  presetId: cfg.match.presetId || "bra-mar",
+  presetId: cfg.match.presetId || "esp-cpv",
   home: cfg.match.home,
   away: cfg.match.away,
   homeShort: cfg.match.homeShort,

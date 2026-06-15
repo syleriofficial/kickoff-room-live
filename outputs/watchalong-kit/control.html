@@ -259,10 +259,10 @@
             </label>
           </div>
           <div class="row">
-            <label>BRA Possession
+            <label>ESP Possession
               <input id="possessionHome" type="number" min="0" max="100">
             </label>
-            <label>MAR Possession
+            <label>CPV Possession
               <input id="possessionAway" type="number" min="0" max="100">
             </label>
           </div>
@@ -276,20 +276,20 @@
       const channel = "BroadcastChannel" in window ? new BroadcastChannel("watchalong-control") : null;
       const presets = window.MATCH_PRESETS || [];
       const defaults = {
-        presetId: "bra-mar",
-        home: "BRAZIL",
-        away: "MOROCCO",
-        homeShort: "BRA",
-        awayShort: "MAR",
-        homeColor: "#f6d94a",
-        awayColor: "#c91f2e",
+        presetId: "esp-cpv",
+        home: "SPAIN",
+        away: "CABO VERDE",
+        homeShort: "ESP",
+        awayShort: "CPV",
+        homeColor: "#c60b1e",
+        awayColor: "#003893",
         homeScore: 0,
         awayScore: 0,
         seconds: 0,
         hype: 72,
-        topic: "Opening pressure, wing battles, early nerves",
-        keyBattle: "Vinicius Jr vs Hakimi channel",
-        gamePulse: "Brazil controlling possession, Morocco dangerous in transition",
+        topic: "Spain's control, Cabo Verde's transition speed, first-match pressure",
+        keyBattle: "Spain midfield rotations vs Cabo Verde's compact central block",
+        gamePulse: "Spain will try to pin the game in one half; Cabo Verde need clean first passes into space",
         chatMission: "Type your country + final score prediction",
         momentumHome: 58,
         momentumAway: 42,

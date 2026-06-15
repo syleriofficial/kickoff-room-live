@@ -74,10 +74,10 @@ Keep the voice useful and match-specific. Avoid running the same generic line re
 
 ## Today Marathon
 
-- Qatar vs Switzerland - 12:30 AM IST, Sunday June 14
-- Brazil vs Morocco - 3:30 AM IST, Sunday June 14
-- Haiti vs Scotland - 6:30 AM IST, Sunday June 14
-- Australia vs Turkiye - 9:30 AM IST, Sunday June 14
+- Spain vs Cabo Verde - 9:30 PM IST, Monday June 15
+- Belgium vs Egypt - 12:30 AM IST, Tuesday June 16
+- Saudi Arabia vs Uruguay - 3:30 AM IST, Tuesday June 16
+- IR Iran vs New Zealand - 6:30 AM IST, Tuesday June 16
 
 Go live 20-30 minutes before each match. Between matches, switch the preset, update the thumbnail/title, and keep a short waiting-room stream only if you still have energy and chat is active.
 

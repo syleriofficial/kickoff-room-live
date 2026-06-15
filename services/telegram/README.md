@@ -7,7 +7,7 @@ Default mode is dry-run, so it prints the message without sending.
 ## Dry Run
 
 ```bash
-npm run telegram:dry-run -- bra-mar
+npm run telegram:dry-run -- esp-cpv
 ```
 
 ## Real Send
@@ -18,7 +18,7 @@ Export secrets locally:
 export TELEGRAM_BOT_TOKEN="..."
 export TELEGRAM_CHAT_ID="..."
 export YOUTUBE_STREAM_URL="https://youtube.com/live/..."
-TELEGRAM_DRY_RUN=false node services/telegram/send-reminder.mjs bra-mar
+TELEGRAM_DRY_RUN=false node services/telegram/send-reminder.mjs esp-cpv
 ```
 
 ## Message Includes

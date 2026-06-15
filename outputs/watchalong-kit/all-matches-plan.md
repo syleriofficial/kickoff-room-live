@@ -4,17 +4,17 @@
 
 | Match | Go Live IST | Kickoff IST | Stream Focus |
 |---|---:|---:|---|
-| Qatar vs Switzerland | 12:00 AM | 12:30 AM | Opening energy, chat warm-up |
-| Brazil vs Morocco | 3:00 AM | 3:30 AM | Main event, highest priority |
-| Haiti vs Scotland | 6:00 AM | 6:30 AM | Morning crew, underdog angle |
-| Australia vs Turkiye | 9:00 AM | 9:30 AM | Breakfast match, tactical duel |
+| Spain vs Cabo Verde | 9:00 PM | 9:30 PM | First live push, possession vs transition story |
+| Belgium vs Egypt | 12:00 AM | 12:30 AM | Late-night star pull and counterattack angle |
+| Saudi Arabia vs Uruguay | 3:00 AM | 3:30 AM | Overnight high-intensity tactical duel |
+| IR Iran vs New Zealand | 6:00 AM | 6:30 AM | Morning crew, set-piece and second-ball battle |
 
 ## Priority
 
-1. Brazil vs Morocco: strongest global pull.
-2. Australia vs Turkiye: India-friendly morning slot.
-3. Qatar vs Switzerland: good start, but late-night fatigue risk.
-4. Haiti vs Scotland: use as community-building stream.
+1. Spain vs Cabo Verde: best immediate slot for India and global English discovery.
+2. Belgium vs Egypt: strong names and late-night reaction potential.
+3. Saudi Arabia vs Uruguay: physical, intense, good for clipped moments.
+4. IR Iran vs New Zealand: use as morning community-building stream.
 
 ## Between Matches
 

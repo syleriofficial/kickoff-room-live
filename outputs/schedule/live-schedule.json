@@ -1,52 +1,42 @@
 [
   {
-    "id": "ger-cur",
-    "match": "GERMANY vs CURACAO",
-    "goLiveUtc": "2026-06-14T15:30:00Z",
-    "kickoffUtc": "2026-06-14T16:00:00Z",
-    "kickoffIst": "9:30 PM IST, Sunday June 14",
-    "title": "GERMANY vs CURACAO LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
-    "keyBattle": "Wirtz between the lines vs Curacao's midfield screen",
-    "chatMission": "Tonight crew: country + Germany vs Curacao score prediction"
+    "id": "esp-cpv",
+    "match": "SPAIN vs CABO VERDE",
+    "goLiveUtc": "2026-06-15T15:30:00Z",
+    "kickoffUtc": "2026-06-15T16:00:00Z",
+    "kickoffIst": "9:30 PM IST, Monday June 15",
+    "title": "SPAIN vs CABO VERDE LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
+    "keyBattle": "Spain midfield rotations vs Cabo Verde's compact central block",
+    "chatMission": "Tonight crew: country + Spain vs Cabo Verde score prediction"
   },
   {
-    "id": "qat-sui",
-    "match": "QATAR vs SWITZERLAND",
-    "goLiveUtc": "2026-06-13T18:30:00Z",
-    "kickoffUtc": "2026-06-13T19:00:00Z",
-    "kickoffIst": "12:30 AM IST, Sunday June 14",
-    "title": "QATAR vs SWITZERLAND LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
-    "keyBattle": "Afif drifting inside vs Swiss full-backs",
-    "chatMission": "First match crew: country + score prediction"
+    "id": "bel-egy",
+    "match": "BELGIUM vs EGYPT",
+    "goLiveUtc": "2026-06-15T18:30:00Z",
+    "kickoffUtc": "2026-06-15T19:00:00Z",
+    "kickoffIst": "12:30 AM IST, Tuesday June 16",
+    "title": "BELGIUM vs EGYPT LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
+    "keyBattle": "Belgium's half-space creators vs Egypt's recovery runs",
+    "chatMission": "Late-night crew: country + Belgium vs Egypt score prediction"
   },
   {
-    "id": "bra-mar",
-    "match": "BRAZIL vs MOROCCO",
-    "goLiveUtc": "2026-06-13T21:30:00Z",
-    "kickoffUtc": "2026-06-13T22:00:00Z",
-    "kickoffIst": "3:30 AM IST, Sunday June 14",
-    "title": "BRAZIL vs MOROCCO LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
-    "keyBattle": "Vinicius Jr vs Hakimi channel",
-    "chatMission": "Big match crew: country + final score prediction"
+    "id": "ksa-uru",
+    "match": "SAUDI ARABIA vs URUGUAY",
+    "goLiveUtc": "2026-06-15T21:30:00Z",
+    "kickoffUtc": "2026-06-15T22:00:00Z",
+    "kickoffIst": "3:30 AM IST, Tuesday June 16",
+    "title": "SAUDI ARABIA vs URUGUAY LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
+    "keyBattle": "Saudi midfield exits vs Uruguay's aggressive counter-press",
+    "chatMission": "Overnight crew: country + Saudi Arabia vs Uruguay score prediction"
   },
   {
-    "id": "hai-sco",
-    "match": "HAITI vs SCOTLAND",
-    "goLiveUtc": "2026-06-14T00:30:00Z",
-    "kickoffUtc": "2026-06-14T01:00:00Z",
-    "kickoffIst": "6:30 AM IST, Sunday June 14",
-    "title": "HAITI vs SCOTLAND LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
-    "keyBattle": "Haiti pace vs Scotland defensive line",
-    "chatMission": "Morning crew: predict first scorer"
-  },
-  {
-    "id": "aus-tur",
-    "match": "AUSTRALIA vs TURKIYE",
-    "goLiveUtc": "2026-06-14T03:30:00Z",
-    "kickoffUtc": "2026-06-14T04:00:00Z",
-    "kickoffIst": "9:30 AM IST, Sunday June 14",
-    "title": "AUSTRALIA vs TURKIYE LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
-    "keyBattle": "Australia aerial power vs Turkiye midfield craft",
-    "chatMission": "Breakfast match: who survives the pressure?"
+    "id": "irn-nzl",
+    "match": "IR IRAN vs NEW ZEALAND",
+    "goLiveUtc": "2026-06-16T00:30:00Z",
+    "kickoffUtc": "2026-06-16T01:00:00Z",
+    "kickoffIst": "6:30 AM IST, Tuesday June 16",
+    "title": "IR IRAN vs NEW ZEALAND LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage",
+    "keyBattle": "Iran's back line vs New Zealand's aerial and second-ball pressure",
+    "chatMission": "Morning crew: country + Iran vs New Zealand score prediction"
   }
 ]

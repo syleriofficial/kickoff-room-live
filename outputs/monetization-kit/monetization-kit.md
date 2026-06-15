@@ -67,18 +67,18 @@ Kickoff Room Live
 
 # Match Sponsor Copy
 
-## GERMANY vs CURACAO
+## SPAIN vs CABO VERDE
 
 ### Pinned Sponsor
 
 ```text
-Sponsor slot available for GERMANY vs CURACAO. DM/contact to promote football gear, fan merch, snacks, or creator tools.
+Sponsor slot available for SPAIN vs CABO VERDE. DM/contact to promote football gear, fan merch, snacks, or creator tools.
 ```
 
 ### Live Read
 
 ```text
-Quick sponsor note: today's GERMANY vs CURACAO watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
+Quick sponsor note: today's SPAIN vs CABO VERDE watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
 ```
 
 ### Description Block
@@ -95,18 +95,18 @@ Disclosure: Some links may be affiliate links. If you buy through them, the chan
 Sponsor this match: contact Kickoff Room Live for pinned chat, lower-third, and Shorts promo slots.
 ```
 
-## QATAR vs SWITZERLAND
+## BELGIUM vs EGYPT
 
 ### Pinned Sponsor
 
 ```text
-Sponsor slot available for QATAR vs SWITZERLAND. DM/contact to promote football gear, fan merch, snacks, or creator tools.
+Sponsor slot available for BELGIUM vs EGYPT. DM/contact to promote football gear, fan merch, snacks, or creator tools.
 ```
 
 ### Live Read
 
 ```text
-Quick sponsor note: today's QATAR vs SWITZERLAND watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
+Quick sponsor note: today's BELGIUM vs EGYPT watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
 ```
 
 ### Description Block
@@ -123,18 +123,18 @@ Disclosure: Some links may be affiliate links. If you buy through them, the chan
 Sponsor this match: contact Kickoff Room Live for pinned chat, lower-third, and Shorts promo slots.
 ```
 
-## BRAZIL vs MOROCCO
+## SAUDI ARABIA vs URUGUAY
 
 ### Pinned Sponsor
 
 ```text
-Sponsor slot available for BRAZIL vs MOROCCO. DM/contact to promote football gear, fan merch, snacks, or creator tools.
+Sponsor slot available for SAUDI ARABIA vs URUGUAY. DM/contact to promote football gear, fan merch, snacks, or creator tools.
 ```
 
 ### Live Read
 
 ```text
-Quick sponsor note: today's BRAZIL vs MOROCCO watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
+Quick sponsor note: today's SAUDI ARABIA vs URUGUAY watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
 ```
 
 ### Description Block
@@ -151,46 +151,18 @@ Disclosure: Some links may be affiliate links. If you buy through them, the chan
 Sponsor this match: contact Kickoff Room Live for pinned chat, lower-third, and Shorts promo slots.
 ```
 
-## HAITI vs SCOTLAND
+## IR IRAN vs NEW ZEALAND
 
 ### Pinned Sponsor
 
 ```text
-Sponsor slot available for HAITI vs SCOTLAND. DM/contact to promote football gear, fan merch, snacks, or creator tools.
+Sponsor slot available for IR IRAN vs NEW ZEALAND. DM/contact to promote football gear, fan merch, snacks, or creator tools.
 ```
 
 ### Live Read
 
 ```text
-Quick sponsor note: today's HAITI vs SCOTLAND watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
-```
-
-### Description Block
-
-```text
-Support the stream:
-
-- Football gear: ADD_AFFILIATE_LINK
-- Streaming setup: ADD_AFFILIATE_LINK
-- Fan merch: ADD_AFFILIATE_LINK
-
-Disclosure: Some links may be affiliate links. If you buy through them, the channel may earn a small commission at no extra cost to you.
-
-Sponsor this match: contact Kickoff Room Live for pinned chat, lower-third, and Shorts promo slots.
-```
-
-## AUSTRALIA vs TURKIYE
-
-### Pinned Sponsor
-
-```text
-Sponsor slot available for AUSTRALIA vs TURKIYE. DM/contact to promote football gear, fan merch, snacks, or creator tools.
-```
-
-### Live Read
-
-```text
-Quick sponsor note: today's AUSTRALIA vs TURKIYE watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
+Quick sponsor note: today's IR IRAN vs NEW ZEALAND watchalong sponsor helps keep Kickoff Room Live running. Check the link in the description and support the stream.
 ```
 
 ### Description Block
