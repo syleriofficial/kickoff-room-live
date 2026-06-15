@@ -89,6 +89,24 @@ Local Terminal launcher that loads `.env` and keeps retrying:
 ./scripts/run-youtube-wait-create-upcoming.sh
 ```
 
+Open a separate macOS Terminal window for the retry worker:
+
+```bash
+./scripts/open-youtube-retry-terminal.sh
+```
+
+macOS LaunchAgent installer. Use this only if launchd has permission to access the project folder:
+
+```bash
+./scripts/install-youtube-retry-launchagent.sh
+```
+
+Stop and remove the LaunchAgent:
+
+```bash
+./scripts/uninstall-youtube-retry-launchagent.sh
+```
+
 Wait and retry for only the next stream:
 
 ```bash
