@@ -68,6 +68,15 @@ Create the next broadcast as private after live verification is active:
 YOUTUBE_DRY_RUN=false npm run youtube:create-next
 ```
 
+Create all upcoming private broadcasts from the generated schedule:
+
+```bash
+npm run youtube:create-upcoming
+YOUTUBE_DRY_RUN=false npm run youtube:create-upcoming
+```
+
+The batch helper checks existing upcoming broadcasts and skips exact title/time duplicates before creating missing streams.
+
 Wait and retry until YouTube unlocks scheduled broadcast creation:
 
 ```bash
