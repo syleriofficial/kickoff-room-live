@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Revenue Ops | Kickoff Room Live</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #09111f;
+        color: #f8fafc;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #09111f;
+      }
+
+      main {
+        width: min(1160px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 44px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+        align-items: end;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,.14);
+      }
+
+      h1, h2, h3, p { margin: 0; }
+
+      h1 {
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .sub {
+        margin-top: 10px;
+        color: #aeb9d0;
+        font-size: 16px;
+        line-height: 1.45;
+        font-weight: 700;
+      }
+
+      .label {
+        color: #8fe7c8;
+        font-size: 12px;
+        font-weight: 950;
+        text-transform: uppercase;
+      }
+
+      .badge {
+        padding: 10px 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #141b2f;
+        color: #ffcf66;
+        font-weight: 950;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      section {
+        padding: 18px;
+        border: 1px solid rgba(255,255,255,.14);
+        background: #11182a;
+      }
+
+      .wide { grid-column: 1 / -1; }
+
+      .box {
+        display: grid;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 190px;
+        padding: 14px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #0b1020;
+        color: #f8fafc;
+        font: inherit;
+        font-size: 14px;
+        line-height: 1.45;
+        resize: vertical;
+      }
+
+      button, a.button, select {
+        min-height: 40px;
+        padding: 0 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #1f2a44;
+        color: #f8fafc;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      button, a.button {
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button.primary, a.primary {
+        background: #1f8f6e;
+        border-color: #39d9a8;
+        color: #06130f;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        margin-top: 12px;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .card {
+        min-height: 118px;
+        padding: 12px;
+        border: 1px solid rgba(255,255,255,.12);
+        background: #0b1020;
+      }
+
+      .card strong {
+        display: block;
+        color: #ffcf66;
+        font-size: 18px;
+      }
+
+      .card span {
+        display: block;
+        margin-top: 6px;
+        color: #aeb9d0;
+        font-weight: 720;
+        line-height: 1.35;
+      }
+
+      ol {
+        margin: 14px 0 0;
+        padding-left: 22px;
+        color: #dbe6f5;
+        line-height: 1.65;
+        font-weight: 730;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      @media (max-width: 950px) {
+        header, .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <span class="label">Kickoff Room Live</span>
+          <h1>Revenue Ops</h1>
+          <p class="sub">Copy sponsor pitch, pinned sponsor text, live read, description block, and Shorts workflow without leaving the control room.</p>
+        </div>
+        <div class="badge">Safe monetization only</div>
+      </header>
+
+      <div class="grid">
+        <section>
+          <span class="label">Sponsor outreach</span>
+          <h2>Pitch</h2>
+          <div class="box">
+            <textarea id="pitch">Loading sponsor pitch...</textarea>
+            <button class="primary" data-copy-target="pitch">Copy Pitch</button>
+          </div>
+        </section>
+
+        <section>
+          <span class="label">Rate card</span>
+          <h2>Launch Pricing</h2>
+          <div class="cards">
+            <div class="card"><strong>$5-$15</strong><span>Pinned chat mention per match</span></div>
+            <div class="card"><strong>$10-$25</strong><span>Lower-third sponsor mention</span></div>
+            <div class="card"><strong>$15-$50</strong><span>30-second live read</span></div>
+            <div class="card"><strong>$10-$30</strong><span>Shorts sponsor caption</span></div>
+            <div class="card"><strong>$50-$120</strong><span>3 matches + 3 Shorts bundle</span></div>
+          </div>
+        </section>
+
+        <section class="wide">
+          <span class="label">Match sponsor copy</span>
+          <h2>Per-Match Blocks</h2>
+          <div class="row">
+            <select id="matchSelect" aria-label="Match"></select>
+            <button data-field="pinnedSponsor">Pinned Sponsor</button>
+            <button data-field="liveRead">Live Read</button>
+            <button data-field="descriptionBlock">Description Block</button>
+          </div>
+          <div class="box">
+            <textarea id="matchCopy">Loading match copy...</textarea>
+            <button class="primary" data-copy-target="matchCopy">Copy Selected Copy</button>
+          </div>
+        </section>
+
+        <section>
+          <span class="label">Affiliate disclosure</span>
+          <h2>Description Block</h2>
+          <div class="box">
+            <textarea id="affiliate">Loading affiliate block...</textarea>
+            <button class="primary" data-copy-target="affiliate">Copy Affiliate Block</button>
+          </div>
+        </section>
+
+        <section>
+          <span class="label">Shorts workflow</span>
+          <h2>After Every Match</h2>
+          <ol>
+            <li>Clip only original overlay, timer, chat prompt, and your own commentary.</li>
+            <li>Make one full-time reaction within 15 minutes.</li>
+            <li>Make one turning-point Short within 45 minutes.</li>
+            <li>Add sponsor caption only if the sponsor is confirmed.</li>
+            <li>Pin next live stream link in the Short comments.</li>
+          </ol>
+        </section>
+
+        <section class="wide">
+          <span class="label">Open tools</span>
+          <h2>Control Room Links</h2>
+          <div class="links">
+            <a class="button primary" data-local="/ops" data-static="live-ops.html" href="/ops">Live Ops</a>
+            <a class="button" data-local="/dashboard" data-static="watchalong-kit/dashboard.html" href="/dashboard">Dashboard</a>
+            <a class="button" data-local="/rehearsal" data-static="go-live-rehearsal.html" href="/rehearsal">Rehearsal</a>
+            <a class="button" data-local="/obs-setup" data-static="obs-scene-setup.html" href="/obs-setup">OBS Setup</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const isStaticOutputPage = location.pathname.includes("/outputs/");
+      const monetizationPath = isStaticOutputPage ? "monetization-kit/monetization-kit.json" : "/outputs/monetization-kit/monetization-kit.json";
+      const matchSelect = document.getElementById("matchSelect");
+      const matchCopy = document.getElementById("matchCopy");
+      let kit = null;
+      let activeField = "pinnedSponsor";
+
+      document.querySelectorAll("[data-local][data-static]").forEach((link) => {
+        link.href = isStaticOutputPage ? link.dataset.static : link.dataset.local;
+      });
+
+      async function loadKit() {
+        const response = await fetch(monetizationPath, { cache: "no-store" });
+        kit = await response.json();
+        document.getElementById("pitch").value = kit.sponsorPitch;
+        document.getElementById("affiliate").value = kit.affiliateBlock;
+        matchSelect.innerHTML = kit.matches.map((match) => `<option value="${match.id}">${match.match}</option>`).join("");
+        renderMatchCopy();
+      }
+
+      function currentMatch() {
+        return kit.matches.find((match) => match.id === matchSelect.value) || kit.matches[0];
+      }
+
+      function renderMatchCopy() {
+        if (!kit) return;
+        matchCopy.value = currentMatch()[activeField];
+      }
+
+      document.addEventListener("click", async (event) => {
+        const fieldButton = event.target.closest("[data-field]");
+        if (fieldButton) {
+          activeField = fieldButton.dataset.field;
+          renderMatchCopy();
+          return;
+        }
+
+        const copyButton = event.target.closest("[data-copy-target]");
+        if (!copyButton) return;
+        const value = document.getElementById(copyButton.dataset.copyTarget).value;
+        await navigator.clipboard.writeText(value);
+        const original = copyButton.textContent;
+        copyButton.textContent = "Copied";
+        setTimeout(() => { copyButton.textContent = original; }, 900);
+      });
+
+      matchSelect.addEventListener("change", renderMatchCopy);
+      loadKit().catch(() => {
+        matchCopy.value = "Could not load monetization kit. Run this page from npm run launch or npm run start:tools.";
+      });
+    </script>
+  </body>
+</html>

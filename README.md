@@ -136,6 +136,10 @@ OBS scene setup:
 
 `http://127.0.0.1:5173/obs-setup`
 
+Revenue ops:
+
+`http://127.0.0.1:5173/revenue`
+
 Readiness checklist:
 
 `http://127.0.0.1:5173/readiness`

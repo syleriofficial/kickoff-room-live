@@ -11,6 +11,7 @@ const aliases = new Map([
   ["/ops", "outputs/live-ops.html"],
   ["/rehearsal", "outputs/go-live-rehearsal.html"],
   ["/obs-setup", "outputs/obs-scene-setup.html"],
+  ["/revenue", "outputs/revenue-ops.html"],
   ["/dashboard", "outputs/watchalong-kit/dashboard.html"],
   ["/readiness", "outputs/watchalong-kit/readiness.html"],
   ["/control", "outputs/watchalong-kit/control.html"],
