@@ -85,7 +85,43 @@ async function readBody(req) {
 
 async function getLiveState() {
   try {
-    return JSON.parse(await readFile(liveStatePath, "utf8"));
+    const payload = JSON.parse(await readFile(liveStatePath, "utf8"));
+    const ageMs = Date.now() - new Date(payload.updatedAt || 0).getTime();
+    if (ageMs < 15000) return payload;
+
+    const presetId = payload.state?.presetId || "fra-sen";
+    const live = await getLiveScore(presetId);
+    if (!live.ok || !live.live) return payload;
+    const preset = live.preset;
+    const state = {
+      ...payload.state,
+      presetId: preset.id,
+      home: preset.home,
+      away: preset.away,
+      homeShort: preset.homeShort,
+      awayShort: preset.awayShort,
+      homeColor: preset.homeColor,
+      awayColor: preset.awayColor,
+      topic: preset.topic,
+      keyBattle: preset.keyBattle,
+      gamePulse: preset.gamePulse,
+      chatMission: preset.chatMission,
+      pollHome: preset.pollHome,
+      pollAway: preset.pollAway,
+      homeScore: Number(live.homeScore || 0),
+      awayScore: Number(live.awayScore || 0),
+      seconds: Number(live.elapsed || 0) * 60,
+      speakLine: live.commentaryLine || `Live score: ${preset.home} ${Number(live.homeScore || 0)}, ${preset.away} ${Number(live.awayScore || 0)}.`,
+      speakNonce: Date.now()
+    };
+    const fresh = {
+      ok: true,
+      updatedAt: new Date().toISOString(),
+      state
+    };
+    await mkdir(runtimeDir, { recursive: true });
+    await writeFile(liveStatePath, JSON.stringify(fresh, null, 2));
+    return fresh;
   } catch {
     return { ok: true, state: null, updatedAt: null };
   }
