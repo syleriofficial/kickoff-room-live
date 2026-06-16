@@ -176,6 +176,7 @@
           <h2>Do This In Order</h2>
           <ol>
             <li>Run live status check.</li>
+            <li>Run readiness summary for one clean go/no-go view.</li>
             <li>List upcoming broadcasts after the retry worker creates them.</li>
             <li>Run dry-run create-upcoming.</li>
             <li>Use batch retry if YouTube live activation is still locked.</li>
@@ -192,6 +193,10 @@
             <div class="action">
               <code id="statusCmd">set -a; source .env; set +a; npm run youtube:live-status</code>
               <button data-copy-target="statusCmd">Copy Status</button>
+            </div>
+            <div class="action">
+              <code id="readinessCmd">set -a; source .env; set +a; npm run youtube:readiness</code>
+              <button class="primary" data-copy-target="readinessCmd">Copy Readiness</button>
             </div>
             <div class="action">
               <code id="listCmd">set -a; source .env; set +a; npm run youtube:list-upcoming</code>

@@ -66,6 +66,12 @@ List YouTube upcoming broadcasts and compare them against the generated match sc
 npm run youtube:list-upcoming
 ```
 
+Print one combined readiness summary:
+
+```bash
+npm run youtube:readiness
+```
+
 If create still returns `livePermissionBlocked`, wait until the YouTube Studio live activation countdown finishes. YouTube can allow Live Control Room read access before scheduled broadcast creation is unlocked.
 
 Create the next broadcast as private after live verification is active:
