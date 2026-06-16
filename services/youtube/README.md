@@ -72,6 +72,8 @@ Print one combined readiness summary:
 npm run youtube:readiness
 ```
 
+The readiness summary uses `YOUTUBE_LIVE_UNLOCK_AT` when set. By default it uses the current channel target: `2026-06-16T08:13:00Z` / `16 June 2026, 1:43 PM IST`.
+
 If create still returns `livePermissionBlocked`, wait until the YouTube Studio live activation countdown finishes. YouTube can allow Live Control Room read access before scheduled broadcast creation is unlocked.
 
 Create the next broadcast as private after live verification is active:

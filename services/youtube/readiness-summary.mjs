@@ -1,5 +1,7 @@
 import { spawnSync } from "node:child_process";
 
+const unlockAt = new Date(process.env.YOUTUBE_LIVE_UNLOCK_AT || "2026-06-16T08:13:00Z");
+
 function runNodeScript(script) {
   const result = spawnSync(process.execPath, [script], {
     encoding: "utf8",
@@ -29,6 +31,18 @@ function compactMatches(matches = []) {
     goLiveUtc: item.goLiveUtc,
     kickoffIst: item.kickoffIst
   }));
+}
+
+function unlockStatus(now = new Date()) {
+  const diffMs = unlockAt.getTime() - now.getTime();
+  const absMinutes = Math.ceil(Math.abs(diffMs) / 60000);
+  return {
+    unlockTargetUtc: unlockAt.toISOString(),
+    unlockTargetIst: "16 June 2026, 1:43 PM IST",
+    unlockWindowStatus: diffMs > 0 ? "before_target" : "after_target",
+    minutesToUnlockTarget: diffMs > 0 ? absMinutes : 0,
+    minutesSinceUnlockTarget: diffMs <= 0 ? absMinutes : 0
+  };
 }
 
 const statusRun = runNodeScript("services/youtube/check-live-status.mjs");
@@ -66,6 +80,7 @@ const allPrivate = (upcoming.matches || [])
 
 const summary = {
   generatedAt: new Date().toISOString(),
+  ...unlockStatus(),
   liveReadApiReady: Boolean(liveStatus.liveReadApiReady),
   createAccessStillDependsOnStudioWait: Boolean(liveStatus.createAccessStillDependsOnStudioWait),
   expectedCount,
