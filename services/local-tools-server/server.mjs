@@ -2,6 +2,7 @@ import { createReadStream } from "node:fs";
 import { stat } from "node:fs/promises";
 import { extname, resolve } from "node:path";
 import { createServer } from "node:http";
+import { getLiveScore } from "../score/api-football.mjs";
 
 const root = resolve(new URL("../..", import.meta.url).pathname);
 const port = Number(process.env.PORT || 5173);
@@ -74,6 +75,18 @@ async function serve(req, res) {
 
   if (url.pathname === "/obs") {
     redirect(res, "/overlay");
+    return;
+  }
+
+  if (url.pathname === "/api/live-score") {
+    const presetId = url.searchParams.get("presetId") || "fra-sen";
+    const payload = await getLiveScore(presetId);
+    res.writeHead(payload.ok ? 200 : 503, {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "no-store",
+      "access-control-allow-origin": "*"
+    });
+    res.end(JSON.stringify(payload, null, 2));
     return;
   }
 

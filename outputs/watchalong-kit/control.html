@@ -117,6 +117,23 @@
       button.primary { background: #21a981; }
       button.danger { background: #c43750; }
       button.gold { background: #b98219; }
+      button.active { outline: 2px solid #21d4a3; }
+
+      .api-status {
+        margin: 10px 0 0;
+        padding: 10px 11px;
+        border: 1px solid rgba(255,255,255,.12);
+        background: rgba(0,0,0,.22);
+        color: #cbd5e1;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .api-status strong {
+        display: block;
+        color: #f8fafc;
+        margin-bottom: 2px;
+      }
 
       .score {
         display: grid;
@@ -178,6 +195,15 @@
             <button class="primary" data-score="away">MAR Goal</button>
             <button data-score="minusHome">BRA -1</button>
             <button data-score="minusAway">MAR -1</button>
+          </div>
+          <div class="api-status" id="apiStatus">
+            <strong>API-Football</strong>
+            Manual mode active. Add API_FOOTBALL_KEY to .env, then fetch live score.
+          </div>
+          <div class="buttons">
+            <button id="fetch-api-score">Fetch API Score</button>
+            <button id="toggle-api-sync">Auto Sync Off</button>
+            <button id="speak-api-event">Speak Last Event</button>
           </div>
         </section>
 
@@ -300,6 +326,8 @@
       };
       let state = { ...defaults, ...JSON.parse(localStorage.getItem(key) || "{}") };
       const ids = ["topic", "gamePulse", "chatMission", "keyBattle", "momentumHome", "momentumAway", "shotsHome", "shotsAway", "possessionHome", "possessionAway", "hype"];
+      let apiSyncTimer = null;
+      let lastApiLine = "";
 
       function el(id) { return document.getElementById(id); }
       function preset() { return presets.find((item) => item.id === state.presetId) || presets[0]; }
@@ -358,6 +386,60 @@
         channel?.postMessage(payload);
       }
 
+      function setApiStatus(title, message) {
+        el("apiStatus").innerHTML = `<strong>${title}</strong>${message}`;
+      }
+
+      async function fetchApiScore({ applyScore = true } = {}) {
+        setApiStatus("API-Football", "Checking live fixtures...");
+        try {
+          const response = await fetch(`/api/live-score?presetId=${encodeURIComponent(state.presetId)}`, { cache: "no-store" });
+          const payload = await response.json();
+          if (payload.keyMissing) {
+            setApiStatus("API key missing", "Add API_FOOTBALL_KEY in .env, restart local tools, then click Fetch API Score.");
+            return;
+          }
+          if (!payload.ok) {
+            setApiStatus("API error", payload.message || "Could not read API-Football right now.");
+            return;
+          }
+          if (!payload.live) {
+            setApiStatus("Not live yet", payload.message || "No matching live fixture found. Keep manual score active.");
+            return;
+          }
+
+          if (applyScore) {
+            state.homeScore = Number(payload.homeScore || 0);
+            state.awayScore = Number(payload.awayScore || 0);
+            if (payload.elapsed) el("minutes").value = payload.elapsed;
+          }
+          lastApiLine = payload.commentaryLine || "";
+          const eventText = payload.events?.length ? payload.events.map((item) => item.line).join("<br>") : "No major event yet.";
+          setApiStatus(
+            `Live: ${payload.status || "LIVE"}${payload.elapsed ? ` ${payload.elapsed}'` : ""}`,
+            `${state.home} ${payload.homeScore} - ${payload.awayScore} ${state.away}<br>${eventText}`
+          );
+          publish();
+        } catch (error) {
+          setApiStatus("Local proxy error", `${error.message}. Restart local tools if needed.`);
+        }
+      }
+
+      function toggleApiSync() {
+        if (apiSyncTimer) {
+          clearInterval(apiSyncTimer);
+          apiSyncTimer = null;
+          el("toggle-api-sync").textContent = "Auto Sync Off";
+          el("toggle-api-sync").classList.remove("active");
+          setApiStatus("API-Football", "Auto sync stopped. Manual controls still work.");
+          return;
+        }
+        fetchApiScore();
+        apiSyncTimer = setInterval(() => fetchApiScore(), 20000);
+        el("toggle-api-sync").textContent = "Auto Sync On";
+        el("toggle-api-sync").classList.add("active");
+      }
+
       presets.forEach((item) => {
         const option = document.createElement("option");
         option.value = item.id;
@@ -381,6 +463,9 @@
         if (hype) state.hype = Number(hype);
         if (event.target.id === "load-preset") loadPreset(el("presetId").value);
         if (event.target.id === "copy-title") navigator.clipboard?.writeText(titleForCurrent());
+        if (event.target.id === "fetch-api-score") fetchApiScore();
+        if (event.target.id === "toggle-api-sync") toggleApiSync();
+        if (event.target.id === "speak-api-event" && lastApiLine) speak(lastApiLine);
         if (event.target.id === "speak-line") speak(el("customLine").value);
         if (event.target.id === "speak-goal") speak("Goal. Huge moment in this match. The score has changed.");
         if (event.target.id === "speak-hype") speak("The pressure is rising. This is the moment where the match can turn.");

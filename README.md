@@ -176,6 +176,26 @@ OBS overlay:
 
 `http://127.0.0.1:5173/overlay`
 
+## API-Football Live Score
+
+Add your API-Football key to `.env`:
+
+```bash
+API_FOOTBALL_KEY=your_key_here
+```
+
+Then restart the local tools server and open Producer Control:
+
+`http://127.0.0.1:5173/control`
+
+Use `Fetch API Score` to pull the matching live fixture from API-Football. Use `Auto Sync On` only after the match appears as live. If the API has no live fixture yet, keep manual score control active from the official broadcast or a trusted live-score page.
+
+Quick terminal check:
+
+```bash
+STREAM_ID=fra-sen npm run score:live
+```
+
 ## YouTube Automation
 
 Start with a safe dry run:
