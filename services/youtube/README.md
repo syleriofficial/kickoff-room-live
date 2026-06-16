@@ -91,6 +91,13 @@ YOUTUBE_DRY_RUN=false npm run youtube:create-upcoming
 
 The batch helper checks existing upcoming broadcasts and skips exact title/time duplicates before creating missing streams.
 
+Generate thumbnails and upload them to the created private broadcasts:
+
+```bash
+npm run thumbnails
+YOUTUBE_DRY_RUN=false npm run youtube:upload-thumbnails
+```
+
 Wait and retry until YouTube unlocks scheduled broadcast creation for all upcoming streams:
 
 ```bash

@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-06-16T11:14:19.090Z",
+  "thumbnails": [
+    {
+      "id": "fra-sen",
+      "match": "FRANCE vs SENEGAL",
+      "svgPath": "outputs/thumbnails/fra-sen.svg",
+      "pngPath": "outputs/thumbnails/fra-sen.png"
+    },
+    {
+      "id": "irq-nor",
+      "match": "IRAQ vs NORWAY",
+      "svgPath": "outputs/thumbnails/irq-nor.svg",
+      "pngPath": "outputs/thumbnails/irq-nor.png"
+    },
+    {
+      "id": "arg-alg",
+      "match": "ARGENTINA vs ALGERIA",
+      "svgPath": "outputs/thumbnails/arg-alg.svg",
+      "pngPath": "outputs/thumbnails/arg-alg.png"
+    },
+    {
+      "id": "aut-jor",
+      "match": "AUSTRIA vs JORDAN",
+      "svgPath": "outputs/thumbnails/aut-jor.svg",
+      "pngPath": "outputs/thumbnails/aut-jor.png"
+    }
+  ]
+}

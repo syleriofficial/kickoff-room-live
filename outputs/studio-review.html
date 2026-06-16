@@ -171,12 +171,20 @@
 
       .stream {
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 180px 1fr auto;
         gap: 12px;
         align-items: center;
         padding: 12px;
         border: 1px solid rgba(255,255,255,.12);
         background: #0b1020;
+      }
+
+      .stream img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        border: 1px solid rgba(255,255,255,.14);
+        background: #050914;
       }
 
       .stream strong {
@@ -234,6 +242,14 @@
             <div class="action">
               <code id="listCmd">set -a; source .env; set +a; npm run youtube:list-upcoming</code>
               <button data-copy-target="listCmd">Copy List</button>
+            </div>
+            <div class="action">
+              <code id="thumbCmd">npm run thumbnails</code>
+              <button data-copy-target="thumbCmd">Copy Generate Thumbnails</button>
+            </div>
+            <div class="action">
+              <code id="uploadThumbCmd">set -a; source .env; set +a; YOUTUBE_DRY_RUN=false npm run youtube:upload-thumbnails</code>
+              <button data-copy-target="uploadThumbCmd">Copy Upload Thumbnails</button>
             </div>
           </div>
         </section>
@@ -347,6 +363,7 @@
         if (!matches.length) return;
         streamsEl.innerHTML = matches.map((item) => `
           <div class="stream">
+            <img src="${isStaticOutputPage ? `thumbnails/${escapeHtml(item.id)}.png` : `/outputs/thumbnails/${escapeHtml(item.id)}.png`}" alt="${escapeHtml(item.match)} thumbnail">
             <div>
               <strong>${escapeHtml(item.match)}</strong>
               <span>${escapeHtml(item.status)} · ${escapeHtml(item.privacyStatus || "not created")} · ${escapeHtml(item.kickoffIst)}</span>
