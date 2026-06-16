@@ -6,6 +6,7 @@ node_modules/
 *.log
 outputs/youtube-upcoming-broadcasts.json
 outputs/youtube-review-report.json
+outputs/runtime/
 dist/
 build/
 .cache/
