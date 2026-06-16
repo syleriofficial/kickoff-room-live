@@ -255,6 +255,14 @@
               <code id="reviewCmd">set -a; source .env; set +a; npm run youtube:review-report</code>
               <button class="primary" data-copy-target="reviewCmd">Copy Review Report</button>
             </div>
+            <div class="action">
+              <code id="publicDryRunCmd">set -a; source .env; set +a; STREAM_ID=fra-sen npm run youtube:set-public</code>
+              <button data-copy-target="publicDryRunCmd">Copy Public Dry Run</button>
+            </div>
+            <div class="action">
+              <code id="publicConfirmCmd">set -a; source .env; set +a; STREAM_ID=fra-sen YOUTUBE_DRY_RUN=false YOUTUBE_CONFIRM_PUBLIC=true npm run youtube:set-public</code>
+              <button data-copy-target="publicConfirmCmd">Copy Confirm Public</button>
+            </div>
           </div>
         </section>
 
@@ -265,6 +273,7 @@
             <li>Open each scheduled live in YouTube Studio.</li>
             <li>Keep privacy as private while checking metadata.</li>
             <li>Only schedule/public after title, description, thumbnail, and no-footage disclaimers are correct.</li>
+            <li>Use public dry-run first; change `STREAM_ID` for the exact match you want to publish.</li>
           </ol>
         </section>
 

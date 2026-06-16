@@ -104,6 +104,18 @@ Run the final YouTube-side metadata, privacy, schedule, and thumbnail review:
 npm run youtube:review-report
 ```
 
+Preview setting one reviewed broadcast public:
+
+```bash
+STREAM_ID=fra-sen npm run youtube:set-public
+```
+
+Only after manual review, explicitly confirm the public change:
+
+```bash
+STREAM_ID=fra-sen YOUTUBE_DRY_RUN=false YOUTUBE_CONFIRM_PUBLIC=true npm run youtube:set-public
+```
+
 Wait and retry until YouTube unlocks scheduled broadcast creation for all upcoming streams:
 
 ```bash
