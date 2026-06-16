@@ -102,6 +102,7 @@ Local Terminal launcher that loads `.env` and keeps retrying:
 ```
 
 The launcher runs the Node helper directly and sets a safe Terminal title.
+When creation succeeds, it prints the readiness summary and shows a macOS notification. Set `YOUTUBE_NOTIFY=false` to disable notifications.
 
 Open a separate macOS Terminal window for the retry worker:
 
