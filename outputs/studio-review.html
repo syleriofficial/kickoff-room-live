@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Studio Review | Kickoff Room Live</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #0a111d;
+        color: #f8fafc;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #0a111d;
+      }
+
+      main {
+        width: min(1160px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 44px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+        align-items: end;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,.14);
+      }
+
+      h1, h2, p { margin: 0; }
+
+      h1 {
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        font-size: 18px;
+        line-height: 1.15;
+      }
+
+      .sub {
+        margin-top: 10px;
+        color: #aeb9d0;
+        font-size: 16px;
+        line-height: 1.45;
+        font-weight: 700;
+      }
+
+      .label {
+        color: #8fe7c8;
+        font-size: 12px;
+        font-weight: 950;
+        text-transform: uppercase;
+      }
+
+      .badge {
+        padding: 10px 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #142138;
+        color: #ffcf66;
+        font-weight: 950;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      section {
+        padding: 18px;
+        border: 1px solid rgba(255,255,255,.14);
+        background: #11182a;
+      }
+
+      .wide { grid-column: 1 / -1; }
+
+      ol {
+        margin: 14px 0 0;
+        padding-left: 22px;
+        color: #dbe6f5;
+        line-height: 1.65;
+        font-weight: 730;
+      }
+
+      .actions, .list {
+        display: grid;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .action, .check {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+        align-items: center;
+        padding: 12px;
+        border: 1px solid rgba(255,255,255,.12);
+        background: #0b1020;
+      }
+
+      .check strong {
+        display: block;
+        color: #f8fafc;
+        font-size: 15px;
+      }
+
+      .check span {
+        display: block;
+        margin-top: 4px;
+        color: #aeb9d0;
+        font-size: 13px;
+        line-height: 1.35;
+        font-weight: 700;
+      }
+
+      code {
+        overflow-wrap: anywhere;
+        color: #f8fafc;
+        font-size: 13px;
+        line-height: 1.35;
+      }
+
+      button, a.button {
+        min-height: 40px;
+        padding: 0 12px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: #1f2a44;
+        color: #f8fafc;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 900;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button.primary, a.primary {
+        background: #1f8f6e;
+        border-color: #39d9a8;
+        color: #06130f;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .status {
+        font-weight: 950;
+        color: #8fe7c8;
+      }
+
+      @media (max-width: 900px) {
+        header, .grid, .action, .check {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <span class="label">Kickoff Room Live</span>
+          <h1>Studio Review</h1>
+          <p class="sub">Use this after `missingCount` becomes 0. Every broadcast stays private until these checks are clean.</p>
+        </div>
+        <div class="badge">Review before public</div>
+      </header>
+
+      <div class="grid">
+        <section>
+          <span class="label">Step 1</span>
+          <h2>Confirm Broadcasts Exist</h2>
+          <div class="actions">
+            <div class="action">
+              <code id="readinessCmd">set -a; source .env; set +a; npm run youtube:readiness</code>
+              <button class="primary" data-copy-target="readinessCmd">Copy Readiness</button>
+            </div>
+            <div class="action">
+              <code id="listCmd">set -a; source .env; set +a; npm run youtube:list-upcoming</code>
+              <button data-copy-target="listCmd">Copy List</button>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <span class="label">Step 2</span>
+          <h2>Go Public Only After Review</h2>
+          <ol>
+            <li>Open each scheduled live in YouTube Studio.</li>
+            <li>Keep privacy as private while checking metadata.</li>
+            <li>Only schedule/public after title, description, thumbnail, and no-footage disclaimers are correct.</li>
+          </ol>
+        </section>
+
+        <section class="wide">
+          <span class="label">Checklist</span>
+          <h2>Per Stream Review</h2>
+          <div class="list">
+            <div class="check">
+              <div>
+                <strong>Privacy is private</strong>
+                <span>No stream should be public until it has the final thumbnail and metadata.</span>
+              </div>
+              <span class="status">Required</span>
+            </div>
+            <div class="check">
+              <div>
+                <strong>Title includes LIVE WATCHALONG and No Footage</strong>
+                <span>Keep the stream clearly positioned as live score, commentary, and reactions only.</span>
+              </div>
+              <span class="status">Required</span>
+            </div>
+            <div class="check">
+              <div>
+                <strong>Description includes no-footage disclaimer</strong>
+                <span>No match footage, no broadcast audio, no copyrighted clips, no official feed.</span>
+              </div>
+              <span class="status">Required</span>
+            </div>
+            <div class="check">
+              <div>
+                <strong>Thumbnail attached</strong>
+                <span>Use the generated thumbnail pack and keep teams, kickoff time, and watchalong angle readable.</span>
+              </div>
+              <span class="status">Required</span>
+            </div>
+            <div class="check">
+              <div>
+                <strong>DVR enabled, auto-start off</strong>
+                <span>Use manual control so the room does not go live before the overlay and audio checks are ready.</span>
+              </div>
+              <span class="status">Required</span>
+            </div>
+            <div class="check">
+              <div>
+                <strong>Made for Kids is false</strong>
+                <span>The stream is general sports commentary, not child-directed content.</span>
+              </div>
+              <span class="status">Required</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="wide">
+          <span class="label">Open tools</span>
+          <h2>Control Room Links</h2>
+          <div class="links">
+            <a class="button primary" data-local="/youtube-ops" data-static="youtube-ops.html" href="/youtube-ops">YouTube Ops</a>
+            <a class="button" data-local="/thumbnail-studio" data-static="thumbnail-studio.html" href="/thumbnail-studio">Thumbnail</a>
+            <a class="button" data-local="/ops" data-static="live-ops.html" href="/ops">Live Ops</a>
+            <a class="button" data-local="/rehearsal" data-static="go-live-rehearsal.html" href="/rehearsal">Rehearsal</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const isStaticOutputPage = location.pathname.includes("/outputs/");
+
+      document.querySelectorAll("[data-local][data-static]").forEach((link) => {
+        link.href = isStaticOutputPage ? link.dataset.static : link.dataset.local;
+      });
+
+      document.addEventListener("click", async (event) => {
+        const button = event.target.closest("[data-copy-target]");
+        if (!button) return;
+        await navigator.clipboard.writeText(document.getElementById(button.dataset.copyTarget).textContent.trim());
+        const original = button.textContent;
+        button.textContent = "Copied";
+        setTimeout(() => { button.textContent = original; }, 900);
+      });
+    </script>
+  </body>
+</html>
