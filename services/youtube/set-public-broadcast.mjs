@@ -64,7 +64,7 @@ async function getBroadcast(token, broadcastId) {
 
 async function updateBroadcast(token, body) {
   const url = new URL("https://www.googleapis.com/youtube/v3/liveBroadcasts");
-  url.searchParams.set("part", "snippet,status,contentDetails");
+  url.searchParams.set("part", "status");
   return youtubeJson(token, url, {
     method: "PUT",
     body: JSON.stringify(body)
@@ -74,19 +74,9 @@ async function updateBroadcast(token, body) {
 function updateBody(current) {
   return {
     id: current.id,
-    snippet: {
-      title: current.snippet?.title || "",
-      description: current.snippet?.description || "",
-      scheduledStartTime: current.snippet?.scheduledStartTime
-    },
     status: {
       privacyStatus: "public",
       selfDeclaredMadeForKids: false
-    },
-    contentDetails: {
-      enableAutoStart: current.contentDetails?.enableAutoStart ?? false,
-      enableAutoStop: current.contentDetails?.enableAutoStop ?? false,
-      enableDvr: current.contentDetails?.enableDvr ?? true
     }
   };
 }
@@ -120,7 +110,7 @@ try {
     toPrivacyStatus: "public",
     studioUrl: target.studioUrl,
     watchUrl: target.watchUrl,
-    scheduledStartTime: body.snippet.scheduledStartTime
+    scheduledStartTime: current.snippet?.scheduledStartTime
   };
 
   if (dryRun || !confirmPublic) {
