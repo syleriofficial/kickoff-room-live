@@ -141,6 +141,17 @@ function loadState() {
   }
 }
 
+async function pollServerState() {
+  try {
+    const response = await fetch("/api/live-state", { cache: "no-store" });
+    if (!response.ok) return;
+    const payload = await response.json();
+    if (payload.state) applyState(payload.state);
+  } catch {
+    // OBS browser source may briefly lose localhost while the tools server restarts.
+  }
+}
+
 function startClock() {
   if (clockTimer) return;
   clockTimer = setInterval(() => {
@@ -301,3 +312,5 @@ channel?.addEventListener("message", (event) => applyState(event.data));
 loadState();
 render();
 startTtsLoop();
+pollServerState();
+setInterval(pollServerState, 1000);

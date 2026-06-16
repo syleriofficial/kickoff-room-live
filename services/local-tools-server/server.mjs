@@ -1,11 +1,13 @@
 import { createReadStream } from "node:fs";
-import { stat } from "node:fs/promises";
+import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
 import { extname, resolve } from "node:path";
 import { createServer } from "node:http";
 import { getLiveScore } from "../score/api-football.mjs";
 
 const root = resolve(new URL("../..", import.meta.url).pathname);
 const port = Number(process.env.PORT || 5173);
+const runtimeDir = resolve(root, "outputs/runtime");
+const liveStatePath = resolve(runtimeDir, "live-state.json");
 
 const aliases = new Map([
   ["/", "index.html"],
@@ -64,8 +66,38 @@ function redirect(res, location) {
   res.end();
 }
 
+function json(res, status, payload) {
+  res.writeHead(status, {
+    "content-type": "application/json; charset=utf-8",
+    "cache-control": "no-store",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-headers": "content-type"
+  });
+  res.end(JSON.stringify(payload, null, 2));
+}
+
+async function readBody(req) {
+  const chunks = [];
+  for await (const chunk of req) chunks.push(chunk);
+  return Buffer.concat(chunks).toString("utf8");
+}
+
+async function getLiveState() {
+  try {
+    return JSON.parse(await readFile(liveStatePath, "utf8"));
+  } catch {
+    return { ok: true, state: null, updatedAt: null };
+  }
+}
+
 async function serve(req, res) {
   const url = new URL(req.url || "/", `http://${req.headers.host || "localhost"}`);
+
+  if (req.method === "OPTIONS") {
+    json(res, 204, {});
+    return;
+  }
 
   if (url.pathname === "/health") {
     res.writeHead(200, { "content-type": "application/json; charset=utf-8" });
@@ -81,12 +113,28 @@ async function serve(req, res) {
   if (url.pathname === "/api/live-score") {
     const presetId = url.searchParams.get("presetId") || "fra-sen";
     const payload = await getLiveScore(presetId);
-    res.writeHead(payload.ok ? 200 : 503, {
-      "content-type": "application/json; charset=utf-8",
-      "cache-control": "no-store",
-      "access-control-allow-origin": "*"
-    });
-    res.end(JSON.stringify(payload, null, 2));
+    json(res, payload.ok ? 200 : 503, payload);
+    return;
+  }
+
+  if (url.pathname === "/api/live-state") {
+    if (req.method === "GET") {
+      json(res, 200, await getLiveState());
+      return;
+    }
+    if (req.method === "POST") {
+      const body = JSON.parse(await readBody(req) || "{}");
+      const payload = {
+        ok: true,
+        updatedAt: new Date().toISOString(),
+        state: body
+      };
+      await mkdir(runtimeDir, { recursive: true });
+      await writeFile(liveStatePath, JSON.stringify(payload, null, 2));
+      json(res, 200, payload);
+      return;
+    }
+    json(res, 405, { ok: false, error: "Method not allowed" });
     return;
   }
 
