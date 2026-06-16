@@ -4,6 +4,7 @@ node_modules/
 .env.*
 !.env.example
 *.log
+outputs/youtube-upcoming-broadcasts.json
 dist/
 build/
 .cache/

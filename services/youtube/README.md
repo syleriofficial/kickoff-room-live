@@ -60,6 +60,12 @@ Check whether YouTube Live API read access is available yet:
 npm run youtube:live-status
 ```
 
+List YouTube upcoming broadcasts and compare them against the generated match schedule:
+
+```bash
+npm run youtube:list-upcoming
+```
+
 If create still returns `livePermissionBlocked`, wait until the YouTube Studio live activation countdown finishes. YouTube can allow Live Control Room read access before scheduled broadcast creation is unlocked.
 
 Create the next broadcast as private after live verification is active:
