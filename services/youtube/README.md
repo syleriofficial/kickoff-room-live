@@ -98,6 +98,12 @@ npm run thumbnails
 YOUTUBE_DRY_RUN=false npm run youtube:upload-thumbnails
 ```
 
+Run the final YouTube-side metadata, privacy, schedule, and thumbnail review:
+
+```bash
+npm run youtube:review-report
+```
+
 Wait and retry until YouTube unlocks scheduled broadcast creation for all upcoming streams:
 
 ```bash
