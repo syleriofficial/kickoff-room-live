@@ -73,6 +73,8 @@ async function listUpcomingBroadcasts(token) {
 function compactBroadcast(item) {
   return {
     youtubeBroadcastId: item.id,
+    watchUrl: `https://www.youtube.com/watch?v=${item.id}`,
+    studioUrl: `https://studio.youtube.com/video/${item.id}/livestreaming`,
     title: item.snippet?.title || "",
     scheduledStartTime: item.snippet?.scheduledStartTime || "",
     privacyStatus: item.status?.privacyStatus || "",
@@ -111,6 +113,8 @@ function compareExpected(expected, broadcasts) {
       ...item,
       status: match ? "found" : "missing",
       youtubeBroadcastId: match?.youtubeBroadcastId || "",
+      watchUrl: match?.watchUrl || "",
+      studioUrl: match?.studioUrl || "",
       privacyStatus: match?.privacyStatus || "",
       lifeCycleStatus: match?.lifeCycleStatus || ""
     };

@@ -27,6 +27,8 @@ function compactMatches(matches = []) {
     match: item.match,
     status: item.status,
     youtubeBroadcastId: item.youtubeBroadcastId,
+    watchUrl: item.watchUrl,
+    studioUrl: item.studioUrl,
     privacyStatus: item.privacyStatus,
     goLiveUtc: item.goLiveUtc,
     kickoffIst: item.kickoffIst
