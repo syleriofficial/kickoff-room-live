@@ -182,23 +182,23 @@
           <div class="score">
             <div>
               <strong id="home-score">0</strong>
-              <div>BRA</div>
+              <div id="score-home-label">FRA</div>
             </div>
             <div>vs</div>
             <div>
               <strong id="away-score">0</strong>
-              <div>MAR</div>
+              <div id="score-away-label">SEN</div>
             </div>
           </div>
           <div class="buttons">
-            <button class="primary" data-score="home">BRA Goal</button>
-            <button class="primary" data-score="away">MAR Goal</button>
-            <button data-score="minusHome">BRA -1</button>
-            <button data-score="minusAway">MAR -1</button>
+            <button class="primary" data-score="home" id="home-goal-button">FRA Goal</button>
+            <button class="primary" data-score="away" id="away-goal-button">SEN Goal</button>
+            <button data-score="minusHome" id="home-minus-button">FRA -1</button>
+            <button data-score="minusAway" id="away-minus-button">SEN -1</button>
           </div>
           <div class="api-status" id="apiStatus">
             <strong>API-Football</strong>
-            Manual mode active. Add API_FOOTBALL_KEY to .env, then fetch live score.
+            Manual mode active. Click Fetch API Score when the match is live.
           </div>
           <div class="buttons">
             <button id="fetch-api-score">Fetch API Score</button>
@@ -269,26 +269,26 @@
         <section class="full">
           <h2>Match Stats</h2>
           <div class="row">
-            <label>BRA Momentum
+            <label><span id="momentum-home-label">FRA</span> Momentum
               <input id="momentumHome" type="range" min="0" max="100">
             </label>
-            <label>MAR Momentum
+            <label><span id="momentum-away-label">SEN</span> Momentum
               <input id="momentumAway" type="range" min="0" max="100">
             </label>
           </div>
           <div class="row">
-            <label>BRA Shots
+            <label><span id="shots-home-label">FRA</span> Shots
               <input id="shotsHome" type="number" min="0">
             </label>
-            <label>MAR Shots
+            <label><span id="shots-away-label">SEN</span> Shots
               <input id="shotsAway" type="number" min="0">
             </label>
           </div>
           <div class="row">
-            <label>FRA Possession
+            <label><span id="possession-home-label">FRA</span> Possession
               <input id="possessionHome" type="number" min="0" max="100">
             </label>
-            <label>SEN Possession
+            <label><span id="possession-away-label">SEN</span> Possession
               <input id="possessionAway" type="number" min="0" max="100">
             </label>
           </div>
@@ -355,6 +355,7 @@
         el("presetId").value = state.presetId;
         const current = preset();
         el("kickoff").textContent = current ? `${current.home} vs ${current.away} - ${current.kickoffIst}` : "";
+        renderTeamLabels();
         el("minutes").value = Math.floor(state.seconds / 60);
         ids.forEach((id) => { el(id).value = state[id]; });
       }
@@ -398,6 +399,23 @@
 
       function setApiStatus(title, message) {
         el("apiStatus").innerHTML = `<strong>${title}</strong>${message}`;
+      }
+
+      function renderTeamLabels() {
+        const home = state.homeShort || "HOME";
+        const away = state.awayShort || "AWAY";
+        el("score-home-label").textContent = home;
+        el("score-away-label").textContent = away;
+        el("home-goal-button").textContent = `${home} Goal`;
+        el("away-goal-button").textContent = `${away} Goal`;
+        el("home-minus-button").textContent = `${home} -1`;
+        el("away-minus-button").textContent = `${away} -1`;
+        el("momentum-home-label").textContent = home;
+        el("momentum-away-label").textContent = away;
+        el("shots-home-label").textContent = home;
+        el("shots-away-label").textContent = away;
+        el("possession-home-label").textContent = home;
+        el("possession-away-label").textContent = away;
       }
 
       async function fetchApiScore({ applyScore = true } = {}) {
