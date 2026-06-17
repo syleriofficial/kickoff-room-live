@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.58" stop-color="#111827"/>
+      <stop offset="1" stop-color="#050914"/>
+    </linearGradient>
+    <radialGradient id="home" cx="12%" cy="18%" r="64%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.66"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="away" cx="92%" cy="8%" r="70%">
+      <stop offset="0" stop-color="#d00027" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="#d00027" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <rect width="1080" height="1920" fill="url(#home)"/>
+  <rect width="1080" height="1920" fill="url(#away)"/>
+  <g opacity="0.16" stroke="#ffffff" stroke-width="4">
+    <path d="M-260 1450 L770 420"/>
+    <path d="M-160 1610 L900 550"/>
+    <path d="M360 2020 L1240 1140"/>
+    <path d="M530 1940 L1320 1150"/>
+  </g>
+  <rect x="72" y="94" width="240" height="92" fill="#ff3454"/>
+  <text x="116" y="158" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="54" font-weight="900">LIVE</text>
+  <text x="72" y="330" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="102" font-weight="900">WORLD CUP</text>
+<text x="72" y="444.24" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="102" font-weight="900">WATCHALONG</text>
+  <rect x="72" y="555" width="816" height="4" fill="#8fe7c8" opacity="0.72"/>
+  <rect x="72" y="660" width="32" height="96" fill="#ffffff"/>
+  <rect x="72" y="815" width="32" height="96" fill="#d00027"/>
+  <text x="130" y="735" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="76" font-weight="900">ENGLAND</text>
+  <text x="130" y="890" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="76" font-weight="900">CROATIA</text>
+  <text x="72" y="1050" fill="#ffcf66" font-family="Arial Black, Arial, sans-serif" font-size="52" font-weight="900">1:30 AM IST, Thursday June 18</text>
+  <rect x="72" y="1155" width="690" height="118" fill="#21d4a3"/>
+  <text x="110" y="1230" fill="#06130f" font-family="Arial Black, Arial, sans-serif" font-size="42" font-weight="900">NO FOOTAGE / NO BROADCAST AUDIO</text>
+  <text x="72" y="1395" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="60" font-weight="900">ENGLISH LIVE SCORE</text>
+<text x="72" y="1462.2" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="60" font-weight="900">REACTIONS + CHAT</text>
+  <rect x="72" y="1540" width="890" height="218" fill="#000000" opacity="0.34"/>
+  <text x="110" y="1605" fill="#ffcf66" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900">KEY BATTLE</text>
+  <text x="110" y="1665" fill="#d8e1f2" font-family="Arial Black, Arial, sans-serif" font-size="38" font-weight="800">England&apos;s runners between the</text>
+<text x="110" y="1707.56" fill="#d8e1f2" font-family="Arial Black, Arial, sans-serif" font-size="38" font-weight="800">lines vs Croatia&apos;s experienced</text>
+<text x="110" y="1750.12" fill="#d8e1f2" font-family="Arial Black, Arial, sans-serif" font-size="38" font-weight="800">midfield screen</text>
+  <text x="72" y="1844" fill="#ffcf66" font-family="Arial Black, Arial, sans-serif" font-size="42" font-weight="900">SUBSCRIBE: KICKOFF ROOM LIVE</text>
+</svg>

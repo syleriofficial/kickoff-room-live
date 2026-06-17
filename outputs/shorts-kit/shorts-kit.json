@@ -1,22 +1,22 @@
 [
   {
-    "id": "fra-sen",
-    "match": "FRANCE vs SENEGAL",
+    "id": "eng-cro",
+    "match": "ENGLAND vs CROATIA",
     "hashtags": [
       "#WorldCup2026",
       "#FootballShorts",
       "#LiveReaction",
       "#Watchalong",
-      "#FRANCE",
-      "#SENEGAL",
+      "#ENGLAND",
+      "#CROATIA",
       "#NoFootage"
     ],
     "ideas": [
       {
         "type": "full-time",
-        "title": "FRANCE vs SENEGAL: Full-Time Reaction in 30 Seconds",
-        "hook": "The biggest story from FRANCE vs SENEGAL was clear.",
-        "caption": "FRANCE vs SENEGAL full-time reaction. No footage, just fan analysis and match reaction.",
+        "title": "ENGLAND vs CROATIA: Full-Time Reaction in 30 Seconds",
+        "hook": "The biggest story from ENGLAND vs CROATIA was clear.",
+        "caption": "ENGLAND vs CROATIA full-time reaction. No footage, just fan analysis and match reaction.",
         "shotList": [
           "score graphic",
           "one big turning point",
@@ -26,9 +26,9 @@
       },
       {
         "type": "turning-point",
-        "title": "The Moment FRANCE vs SENEGAL Changed",
+        "title": "The Moment ENGLAND vs CROATIA Changed",
         "hook": "This was the moment the match shifted.",
-        "caption": "The key turning point from FRANCE vs SENEGAL, explained fast.",
+        "caption": "The key turning point from ENGLAND vs CROATIA, explained fast.",
         "shotList": [
           "timer graphic",
           "momentum meter",
@@ -38,9 +38,9 @@
       },
       {
         "type": "key-battle",
-        "title": "Why France's wide rotations vs Senegal's aggressive full-back duels Mattered",
+        "title": "Why England's runners between the lines vs Croatia's experienced midfield screen Mattered",
         "hook": "This matchup decided more than people expected.",
-        "caption": "France's wide rotations vs Senegal's aggressive full-back duels was one of the biggest tactical stories in FRANCE vs SENEGAL.",
+        "caption": "England's runners between the lines vs Croatia's experienced midfield screen was one of the biggest tactical stories in ENGLAND vs CROATIA.",
         "shotList": [
           "key battle text",
           "team colors",
@@ -50,9 +50,9 @@
       },
       {
         "type": "prediction",
-        "title": "Chat Predicted This FRANCE vs SENEGAL Moment",
+        "title": "Chat Predicted This ENGLAND vs CROATIA Moment",
         "hook": "The live chat saw this coming.",
-        "caption": "Live chat predictions during FRANCE vs SENEGAL. Join the next no-footage watchalong.",
+        "caption": "Live chat predictions during ENGLAND vs CROATIA. Join the next no-footage watchalong.",
         "shotList": [
           "chat prompt",
           "prediction graphic",
@@ -62,9 +62,9 @@
       },
       {
         "type": "best-player",
-        "title": "Best Player So Far: FRANCE vs SENEGAL",
+        "title": "Best Player So Far: ENGLAND vs CROATIA",
         "hook": "One player stood above the rest.",
-        "caption": "Quick player-of-the-match debate from FRANCE vs SENEGAL. Comment your pick.",
+        "caption": "Quick player-of-the-match debate from ENGLAND vs CROATIA. Comment your pick.",
         "shotList": [
           "player role text",
           "stat/momentum graphic",
@@ -75,23 +75,23 @@
     ]
   },
   {
-    "id": "irq-nor",
-    "match": "IRAQ vs NORWAY",
+    "id": "gha-pan",
+    "match": "GHANA vs PANAMA",
     "hashtags": [
       "#WorldCup2026",
       "#FootballShorts",
       "#LiveReaction",
       "#Watchalong",
-      "#IRAQ",
-      "#NORWAY",
+      "#GHANA",
+      "#PANAMA",
       "#NoFootage"
     ],
     "ideas": [
       {
         "type": "full-time",
-        "title": "IRAQ vs NORWAY: Full-Time Reaction in 30 Seconds",
-        "hook": "The biggest story from IRAQ vs NORWAY was clear.",
-        "caption": "IRAQ vs NORWAY full-time reaction. No footage, just fan analysis and match reaction.",
+        "title": "GHANA vs PANAMA: Full-Time Reaction in 30 Seconds",
+        "hook": "The biggest story from GHANA vs PANAMA was clear.",
+        "caption": "GHANA vs PANAMA full-time reaction. No footage, just fan analysis and match reaction.",
         "shotList": [
           "score graphic",
           "one big turning point",
@@ -101,9 +101,9 @@
       },
       {
         "type": "turning-point",
-        "title": "The Moment IRAQ vs NORWAY Changed",
+        "title": "The Moment GHANA vs PANAMA Changed",
         "hook": "This was the moment the match shifted.",
-        "caption": "The key turning point from IRAQ vs NORWAY, explained fast.",
+        "caption": "The key turning point from GHANA vs PANAMA, explained fast.",
         "shotList": [
           "timer graphic",
           "momentum meter",
@@ -113,9 +113,9 @@
       },
       {
         "type": "key-battle",
-        "title": "Why Iraq's centre-backs vs Norway's penalty-box movement Mattered",
+        "title": "Why Ghana's wide pace vs Panama's full-back discipline Mattered",
         "hook": "This matchup decided more than people expected.",
-        "caption": "Iraq's centre-backs vs Norway's penalty-box movement was one of the biggest tactical stories in IRAQ vs NORWAY.",
+        "caption": "Ghana's wide pace vs Panama's full-back discipline was one of the biggest tactical stories in GHANA vs PANAMA.",
         "shotList": [
           "key battle text",
           "team colors",
@@ -125,9 +125,9 @@
       },
       {
         "type": "prediction",
-        "title": "Chat Predicted This IRAQ vs NORWAY Moment",
+        "title": "Chat Predicted This GHANA vs PANAMA Moment",
         "hook": "The live chat saw this coming.",
-        "caption": "Live chat predictions during IRAQ vs NORWAY. Join the next no-footage watchalong.",
+        "caption": "Live chat predictions during GHANA vs PANAMA. Join the next no-footage watchalong.",
         "shotList": [
           "chat prompt",
           "prediction graphic",
@@ -137,9 +137,9 @@
       },
       {
         "type": "best-player",
-        "title": "Best Player So Far: IRAQ vs NORWAY",
+        "title": "Best Player So Far: GHANA vs PANAMA",
         "hook": "One player stood above the rest.",
-        "caption": "Quick player-of-the-match debate from IRAQ vs NORWAY. Comment your pick.",
+        "caption": "Quick player-of-the-match debate from GHANA vs PANAMA. Comment your pick.",
         "shotList": [
           "player role text",
           "stat/momentum graphic",
@@ -150,23 +150,23 @@
     ]
   },
   {
-    "id": "arg-alg",
-    "match": "ARGENTINA vs ALGERIA",
+    "id": "uzb-col",
+    "match": "UZBEKISTAN vs COLOMBIA",
     "hashtags": [
       "#WorldCup2026",
       "#FootballShorts",
       "#LiveReaction",
       "#Watchalong",
-      "#ARGENTINA",
-      "#ALGERIA",
+      "#UZBEKISTAN",
+      "#COLOMBIA",
       "#NoFootage"
     ],
     "ideas": [
       {
         "type": "full-time",
-        "title": "ARGENTINA vs ALGERIA: Full-Time Reaction in 30 Seconds",
-        "hook": "The biggest story from ARGENTINA vs ALGERIA was clear.",
-        "caption": "ARGENTINA vs ALGERIA full-time reaction. No footage, just fan analysis and match reaction.",
+        "title": "UZBEKISTAN vs COLOMBIA: Full-Time Reaction in 30 Seconds",
+        "hook": "The biggest story from UZBEKISTAN vs COLOMBIA was clear.",
+        "caption": "UZBEKISTAN vs COLOMBIA full-time reaction. No footage, just fan analysis and match reaction.",
         "shotList": [
           "score graphic",
           "one big turning point",
@@ -176,9 +176,9 @@
       },
       {
         "type": "turning-point",
-        "title": "The Moment ARGENTINA vs ALGERIA Changed",
+        "title": "The Moment UZBEKISTAN vs COLOMBIA Changed",
         "hook": "This was the moment the match shifted.",
-        "caption": "The key turning point from ARGENTINA vs ALGERIA, explained fast.",
+        "caption": "The key turning point from UZBEKISTAN vs COLOMBIA, explained fast.",
         "shotList": [
           "timer graphic",
           "momentum meter",
@@ -188,9 +188,9 @@
       },
       {
         "type": "key-battle",
-        "title": "Why Argentina's No. 10 zone vs Algeria's midfield screen Mattered",
+        "title": "Why Uzbekistan's midfield press vs Colombia's creators in the half-spaces Mattered",
         "hook": "This matchup decided more than people expected.",
-        "caption": "Argentina's No. 10 zone vs Algeria's midfield screen was one of the biggest tactical stories in ARGENTINA vs ALGERIA.",
+        "caption": "Uzbekistan's midfield press vs Colombia's creators in the half-spaces was one of the biggest tactical stories in UZBEKISTAN vs COLOMBIA.",
         "shotList": [
           "key battle text",
           "team colors",
@@ -200,9 +200,9 @@
       },
       {
         "type": "prediction",
-        "title": "Chat Predicted This ARGENTINA vs ALGERIA Moment",
+        "title": "Chat Predicted This UZBEKISTAN vs COLOMBIA Moment",
         "hook": "The live chat saw this coming.",
-        "caption": "Live chat predictions during ARGENTINA vs ALGERIA. Join the next no-footage watchalong.",
+        "caption": "Live chat predictions during UZBEKISTAN vs COLOMBIA. Join the next no-footage watchalong.",
         "shotList": [
           "chat prompt",
           "prediction graphic",
@@ -212,9 +212,9 @@
       },
       {
         "type": "best-player",
-        "title": "Best Player So Far: ARGENTINA vs ALGERIA",
+        "title": "Best Player So Far: UZBEKISTAN vs COLOMBIA",
         "hook": "One player stood above the rest.",
-        "caption": "Quick player-of-the-match debate from ARGENTINA vs ALGERIA. Comment your pick.",
+        "caption": "Quick player-of-the-match debate from UZBEKISTAN vs COLOMBIA. Comment your pick.",
         "shotList": [
           "player role text",
           "stat/momentum graphic",
@@ -225,23 +225,23 @@
     ]
   },
   {
-    "id": "aut-jor",
-    "match": "AUSTRIA vs JORDAN",
+    "id": "cze-rsa",
+    "match": "CZECHIA vs SOUTH AFRICA",
     "hashtags": [
       "#WorldCup2026",
       "#FootballShorts",
       "#LiveReaction",
       "#Watchalong",
-      "#AUSTRIA",
-      "#JORDAN",
+      "#CZECHIA",
+      "#SOUTHAFRICA",
       "#NoFootage"
     ],
     "ideas": [
       {
         "type": "full-time",
-        "title": "AUSTRIA vs JORDAN: Full-Time Reaction in 30 Seconds",
-        "hook": "The biggest story from AUSTRIA vs JORDAN was clear.",
-        "caption": "AUSTRIA vs JORDAN full-time reaction. No footage, just fan analysis and match reaction.",
+        "title": "CZECHIA vs SOUTH AFRICA: Full-Time Reaction in 30 Seconds",
+        "hook": "The biggest story from CZECHIA vs SOUTH AFRICA was clear.",
+        "caption": "CZECHIA vs SOUTH AFRICA full-time reaction. No footage, just fan analysis and match reaction.",
         "shotList": [
           "score graphic",
           "one big turning point",
@@ -251,9 +251,9 @@
       },
       {
         "type": "turning-point",
-        "title": "The Moment AUSTRIA vs JORDAN Changed",
+        "title": "The Moment CZECHIA vs SOUTH AFRICA Changed",
         "hook": "This was the moment the match shifted.",
-        "caption": "The key turning point from AUSTRIA vs JORDAN, explained fast.",
+        "caption": "The key turning point from CZECHIA vs SOUTH AFRICA, explained fast.",
         "shotList": [
           "timer graphic",
           "momentum meter",
@@ -263,9 +263,9 @@
       },
       {
         "type": "key-battle",
-        "title": "Why Austria's counter-press vs Jordan's first pass after regain Mattered",
+        "title": "Why Czechia's aerial strength vs South Africa's quick wide attacks Mattered",
         "hook": "This matchup decided more than people expected.",
-        "caption": "Austria's counter-press vs Jordan's first pass after regain was one of the biggest tactical stories in AUSTRIA vs JORDAN.",
+        "caption": "Czechia's aerial strength vs South Africa's quick wide attacks was one of the biggest tactical stories in CZECHIA vs SOUTH AFRICA.",
         "shotList": [
           "key battle text",
           "team colors",
@@ -275,9 +275,9 @@
       },
       {
         "type": "prediction",
-        "title": "Chat Predicted This AUSTRIA vs JORDAN Moment",
+        "title": "Chat Predicted This CZECHIA vs SOUTH AFRICA Moment",
         "hook": "The live chat saw this coming.",
-        "caption": "Live chat predictions during AUSTRIA vs JORDAN. Join the next no-footage watchalong.",
+        "caption": "Live chat predictions during CZECHIA vs SOUTH AFRICA. Join the next no-footage watchalong.",
         "shotList": [
           "chat prompt",
           "prediction graphic",
@@ -287,9 +287,9 @@
       },
       {
         "type": "best-player",
-        "title": "Best Player So Far: AUSTRIA vs JORDAN",
+        "title": "Best Player So Far: CZECHIA vs SOUTH AFRICA",
         "hook": "One player stood above the rest.",
-        "caption": "Quick player-of-the-match debate from AUSTRIA vs JORDAN. Comment your pick.",
+        "caption": "Quick player-of-the-match debate from CZECHIA vs SOUTH AFRICA. Comment your pick.",
         "shotList": [
           "player role text",
           "stat/momentum graphic",
