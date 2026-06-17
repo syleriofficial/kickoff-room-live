@@ -86,7 +86,7 @@ const schedule = matches.map((match) => ({
   goLiveUtc: match.goLiveUtc,
   kickoffUtc: match.kickoffUtc,
   kickoffIst: match.kickoffIst,
-  title: `${match.home} vs ${match.away} LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage`,
+    title: `${match.home} vs ${match.away} LIVE | World Cup 2026 Watchalong | English Score | No Footage`,
   keyBattle: match.keyBattle,
   chatMission: match.chatMission
 }));

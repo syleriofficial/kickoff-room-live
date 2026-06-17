@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-06-16T11:14:19.090Z",
+  "generatedAt": "2026-06-17T12:12:52.352Z",
   "thumbnails": [
     {
-      "id": "fra-sen",
-      "match": "FRANCE vs SENEGAL",
-      "svgPath": "outputs/thumbnails/fra-sen.svg",
-      "pngPath": "outputs/thumbnails/fra-sen.png"
+      "id": "eng-cro",
+      "match": "ENGLAND vs CROATIA",
+      "svgPath": "outputs/thumbnails/eng-cro.svg",
+      "pngPath": "outputs/thumbnails/eng-cro.png"
     },
     {
-      "id": "irq-nor",
-      "match": "IRAQ vs NORWAY",
-      "svgPath": "outputs/thumbnails/irq-nor.svg",
-      "pngPath": "outputs/thumbnails/irq-nor.png"
+      "id": "gha-pan",
+      "match": "GHANA vs PANAMA",
+      "svgPath": "outputs/thumbnails/gha-pan.svg",
+      "pngPath": "outputs/thumbnails/gha-pan.png"
     },
     {
-      "id": "arg-alg",
-      "match": "ARGENTINA vs ALGERIA",
-      "svgPath": "outputs/thumbnails/arg-alg.svg",
-      "pngPath": "outputs/thumbnails/arg-alg.png"
+      "id": "uzb-col",
+      "match": "UZBEKISTAN vs COLOMBIA",
+      "svgPath": "outputs/thumbnails/uzb-col.svg",
+      "pngPath": "outputs/thumbnails/uzb-col.png"
     },
     {
-      "id": "aut-jor",
-      "match": "AUSTRIA vs JORDAN",
-      "svgPath": "outputs/thumbnails/aut-jor.svg",
-      "pngPath": "outputs/thumbnails/aut-jor.png"
+      "id": "cze-rsa",
+      "match": "CZECHIA vs SOUTH AFRICA",
+      "svgPath": "outputs/thumbnails/cze-rsa.svg",
+      "pngPath": "outputs/thumbnails/cze-rsa.png"
     }
   ]
 }

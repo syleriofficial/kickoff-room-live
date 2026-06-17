@@ -4,55 +4,55 @@ PRODID:-//Kickoff Room Live//Watchalong Schedule//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:kickoff-room-fra-sen@kickoff-room-live
-DTSTAMP:20260615T082431.209Z
-DTSTART:20260616T183000Z
-DTEND:20260616T213000Z
-SUMMARY:Go live: FRANCE vs SENEGAL
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 12:30 AM IST\, Wednesday June 17\nKey battle: France's wide rotations vs Senegal's aggressive full-back duels\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-eng-cro@kickoff-room-live
+DTSTAMP:20260617T121501.582Z
+DTSTART:20260617T193000Z
+DTEND:20260617T223000Z
+SUMMARY:Go live: ENGLAND vs CROATIA
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 1:30 AM IST\, Thursday June 18\nKey battle: England's runners between the lines vs Croatia's experienced midfield screen\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: FRANCE vs SENEGAL
+DESCRIPTION:Go live: ENGLAND vs CROATIA
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:kickoff-room-irq-nor@kickoff-room-live
-DTSTAMP:20260615T082431.209Z
-DTSTART:20260616T213000Z
-DTEND:20260617T003000Z
-SUMMARY:Go live: IRAQ vs NORWAY
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 3:30 AM IST\, Wednesday June 17\nKey battle: Iraq's centre-backs vs Norway's penalty-box movement\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-gha-pan@kickoff-room-live
+DTSTAMP:20260617T121501.582Z
+DTSTART:20260617T223000Z
+DTEND:20260618T013000Z
+SUMMARY:Go live: GHANA vs PANAMA
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 4:30 AM IST\, Thursday June 18\nKey battle: Ghana's wide pace vs Panama's full-back discipline\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: IRAQ vs NORWAY
+DESCRIPTION:Go live: GHANA vs PANAMA
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:kickoff-room-arg-alg@kickoff-room-live
-DTSTAMP:20260615T082431.209Z
-DTSTART:20260617T003000Z
-DTEND:20260617T033000Z
-SUMMARY:Go live: ARGENTINA vs ALGERIA
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 6:30 AM IST\, Wednesday June 17\nKey battle: Argentina's No. 10 zone vs Algeria's midfield screen\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-uzb-col@kickoff-room-live
+DTSTAMP:20260617T121501.582Z
+DTSTART:20260618T013000Z
+DTEND:20260618T043000Z
+SUMMARY:Go live: UZBEKISTAN vs COLOMBIA
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 7:30 AM IST\, Thursday June 18\nKey battle: Uzbekistan's midfield press vs Colombia's creators in the half-spaces\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: ARGENTINA vs ALGERIA
+DESCRIPTION:Go live: UZBEKISTAN vs COLOMBIA
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:kickoff-room-aut-jor@kickoff-room-live
-DTSTAMP:20260615T082431.209Z
-DTSTART:20260617T033000Z
-DTEND:20260617T063000Z
-SUMMARY:Go live: AUSTRIA vs JORDAN
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 9:30 AM IST\, Wednesday June 17\nKey battle: Austria's counter-press vs Jordan's first pass after regain\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-cze-rsa@kickoff-room-live
+DTSTAMP:20260617T121501.582Z
+DTSTART:20260618T153000Z
+DTEND:20260618T183000Z
+SUMMARY:Go live: CZECHIA vs SOUTH AFRICA
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 9:30 PM IST\, Thursday June 18\nKey battle: Czechia's aerial strength vs South Africa's quick wide attacks\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: AUSTRIA vs JORDAN
+DESCRIPTION:Go live: CZECHIA vs SOUTH AFRICA
 END:VALARM
 END:VEVENT
 END:VCALENDAR

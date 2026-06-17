@@ -15,7 +15,7 @@ function loadPresets(source) {
 }
 
 function title(match) {
-  return `${match.home} vs ${match.away} LIVE WATCHALONG | World Cup 2026 | English Live Score & Reactions | No Footage`;
+  return `${match.home} vs ${match.away} LIVE | World Cup 2026 Watchalong | English Score | No Footage`;
 }
 
 function description(match) {

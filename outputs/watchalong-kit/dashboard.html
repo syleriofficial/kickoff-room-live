@@ -364,7 +364,7 @@
         els.match.append(option);
       });
 
-      els.match.value = "fra-sen";
+      els.match.value = matches[0]?.id || "";
       els.match.addEventListener("change", render);
       document.getElementById("loadPreset").addEventListener("click", loadPreset);
       document.getElementById("copyShorts").addEventListener("click", async () => {
