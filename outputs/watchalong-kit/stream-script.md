@@ -2,15 +2,15 @@
 
 ## Title
 
-ENGLAND vs CROATIA LIVE | World Cup 2026 Watchalong | English Score | No Footage
+SWITZERLAND vs BOSNIA & HERZEGOVINA LIVE | World Cup 2026 Watchalong | English Score | No Footage
 
 ## Description
 
-Live English watchalong for England vs Croatia at the FIFA World Cup 2026. This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, commentary, reactions, chat, and tactical discussion.
+Live English watchalong for Switzerland vs Bosnia & Herzegovina at the FIFA World Cup 2026. This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, commentary, reactions, chat, and tactical discussion.
 
 ## Tags
 
-world cup 2026, live watchalong, england vs croatia, fifa world cup live, football live reaction, english watchalong, no footage, live football commentary
+world cup 2026, live watchalong, switzerland vs bosnia, fifa world cup live, football live reaction, english watchalong, no footage, live football commentary
 
 ## Pinned Chat
 
@@ -18,7 +18,7 @@ No match footage or broadcast audio here. Open the official broadcast and sync w
 
 ## Opening 30 Seconds
 
-Welcome in, everyone. This is a live English watchalong for England vs Croatia. Quick reminder: no match footage and no broadcast audio here, so open the official broadcast and use this stream as your second screen. Put your score prediction in chat and tell me where you are watching from.
+Welcome in, everyone. This is a live English watchalong for Switzerland vs Bosnia & Herzegovina. Quick reminder: no match footage and no broadcast audio here, so open the official broadcast and use this stream as your second screen. Put your score prediction in chat and tell me where you are watching from.
 
 ## Pre-Match Flow
 
@@ -56,6 +56,6 @@ Welcome in, everyone. This is a live English watchalong for England vs Croatia. 
 
 - My live reaction to the first goal
 - The moment the game changed
-- Why England/Croatia won the midfield
+- Why Switzerland/Bosnia won the midfield
 - Chat predicted this score
 - 30-second full-time verdict

@@ -2,20 +2,20 @@
 
 Generated from `outputs/watchalong-kit/match-presets.js`.
 
-## ENGLAND vs CROATIA
+## SWITZERLAND vs BOSNIA & HERZEGOVINA
 
-Kickoff: **1:30 AM IST, Thursday June 18**
+Kickoff: **12:30 AM IST, Friday June 19**
 
 ### YouTube Title
 
 ```text
-ENGLAND vs CROATIA LIVE | World Cup 2026 Watchalong | English Score | No Footage
+SWITZERLAND vs BOSNIA & HERZEGOVINA LIVE | World Cup 2026 Watchalong | English Score | No Footage
 ```
 
 ### Description
 
 ```text
-Live English watchalong for ENGLAND vs CROATIA at the World Cup 2026.
+Live English watchalong for SWITZERLAND vs BOSNIA & HERZEGOVINA at the World Cup 2026.
 
 This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
 
@@ -33,37 +33,37 @@ Disclaimer: No match footage or broadcast audio is shown on this stream.
 ### Pinned Chat
 
 ```text
-No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + ENGLAND vs CROATIA score prediction.
+No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + SWITZERLAND vs BOSNIA & HERZEGOVINA score prediction.
 ```
 
 ### First Minute Script
 
 ```text
-Welcome to Kickoff Room Live. This is an English no-footage watchalong for ENGLAND vs CROATIA. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is England's runners between the lines vs Croatia's experienced midfield screen.
+Welcome to Kickoff Room Live. This is an English no-footage watchalong for SWITZERLAND vs BOSNIA & HERZEGOVINA. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Switzerland's compact press vs Bosnia's creators between the lines.
 ```
 
 ### Shorts Ideas
 
-- ENGLAND vs CROATIA: full-time reaction in 30 seconds
-- The moment ENGLAND vs CROATIA changed
-- Best player so far in ENGLAND vs CROATIA
-- Why the key battle was England's runners between the lines vs Croatia's experienced midfield screen
-- Chat predicted this ENGLAND vs CROATIA moment
+- SWITZERLAND vs BOSNIA & HERZEGOVINA: full-time reaction in 30 seconds
+- The moment SWITZERLAND vs BOSNIA & HERZEGOVINA changed
+- Best player so far in SWITZERLAND vs BOSNIA & HERZEGOVINA
+- Why the key battle was Switzerland's compact press vs Bosnia's creators between the lines
+- Chat predicted this SWITZERLAND vs BOSNIA & HERZEGOVINA moment
 
-## GHANA vs PANAMA
+## CANADA vs QATAR
 
-Kickoff: **4:30 AM IST, Thursday June 18**
+Kickoff: **3:30 AM IST, Friday June 19**
 
 ### YouTube Title
 
 ```text
-GHANA vs PANAMA LIVE | World Cup 2026 Watchalong | English Score | No Footage
+CANADA vs QATAR LIVE | World Cup 2026 Watchalong | English Score | No Footage
 ```
 
 ### Description
 
 ```text
-Live English watchalong for GHANA vs PANAMA at the World Cup 2026.
+Live English watchalong for CANADA vs QATAR at the World Cup 2026.
 
 This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
 
@@ -81,37 +81,37 @@ Disclaimer: No match footage or broadcast audio is shown on this stream.
 ### Pinned Chat
 
 ```text
-No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + GHANA vs PANAMA score prediction.
+No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + CANADA vs QATAR score prediction.
 ```
 
 ### First Minute Script
 
 ```text
-Welcome to Kickoff Room Live. This is an English no-footage watchalong for GHANA vs PANAMA. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Ghana's wide pace vs Panama's full-back discipline.
+Welcome to Kickoff Room Live. This is an English no-footage watchalong for CANADA vs QATAR. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Canada's wide runners vs Qatar's defensive recovery shape.
 ```
 
 ### Shorts Ideas
 
-- GHANA vs PANAMA: full-time reaction in 30 seconds
-- The moment GHANA vs PANAMA changed
-- Best player so far in GHANA vs PANAMA
-- Why the key battle was Ghana's wide pace vs Panama's full-back discipline
-- Chat predicted this GHANA vs PANAMA moment
+- CANADA vs QATAR: full-time reaction in 30 seconds
+- The moment CANADA vs QATAR changed
+- Best player so far in CANADA vs QATAR
+- Why the key battle was Canada's wide runners vs Qatar's defensive recovery shape
+- Chat predicted this CANADA vs QATAR moment
 
-## UZBEKISTAN vs COLOMBIA
+## MEXICO vs SOUTH KOREA
 
-Kickoff: **7:30 AM IST, Thursday June 18**
+Kickoff: **6:30 AM IST, Friday June 19**
 
 ### YouTube Title
 
 ```text
-UZBEKISTAN vs COLOMBIA LIVE | World Cup 2026 Watchalong | English Score | No Footage
+MEXICO vs SOUTH KOREA LIVE | World Cup 2026 Watchalong | English Score | No Footage
 ```
 
 ### Description
 
 ```text
-Live English watchalong for UZBEKISTAN vs COLOMBIA at the World Cup 2026.
+Live English watchalong for MEXICO vs SOUTH KOREA at the World Cup 2026.
 
 This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
 
@@ -129,67 +129,19 @@ Disclaimer: No match footage or broadcast audio is shown on this stream.
 ### Pinned Chat
 
 ```text
-No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + UZBEKISTAN vs COLOMBIA score prediction.
+No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + MEXICO vs SOUTH KOREA score prediction.
 ```
 
 ### First Minute Script
 
 ```text
-Welcome to Kickoff Room Live. This is an English no-footage watchalong for UZBEKISTAN vs COLOMBIA. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Uzbekistan's midfield press vs Colombia's creators in the half-spaces.
+Welcome to Kickoff Room Live. This is an English no-footage watchalong for MEXICO vs SOUTH KOREA. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Mexico's midfield press vs South Korea's fast breaks into space.
 ```
 
 ### Shorts Ideas
 
-- UZBEKISTAN vs COLOMBIA: full-time reaction in 30 seconds
-- The moment UZBEKISTAN vs COLOMBIA changed
-- Best player so far in UZBEKISTAN vs COLOMBIA
-- Why the key battle was Uzbekistan's midfield press vs Colombia's creators in the half-spaces
-- Chat predicted this UZBEKISTAN vs COLOMBIA moment
-
-## CZECHIA vs SOUTH AFRICA
-
-Kickoff: **9:30 PM IST, Thursday June 18**
-
-### YouTube Title
-
-```text
-CZECHIA vs SOUTH AFRICA LIVE | World Cup 2026 Watchalong | English Score | No Footage
-```
-
-### Description
-
-```text
-Live English watchalong for CZECHIA vs SOUTH AFRICA at the World Cup 2026.
-
-This stream has no match footage and no broadcast audio. Open the official broadcast in your country and use this as your second-screen live score, English AI commentary, reactions, chat polls, and match discussion.
-
-Chat questions:
-- Where are you watching from?
-- Score prediction?
-- First scorer?
-- Player of the match?
-
-Subscribe for every World Cup watchalong.
-
-Disclaimer: No match footage or broadcast audio is shown on this stream.
-```
-
-### Pinned Chat
-
-```text
-No match footage or broadcast audio here. Open the official broadcast and sync with our timer. Drop your country + CZECHIA vs SOUTH AFRICA score prediction.
-```
-
-### First Minute Script
-
-```text
-Welcome to Kickoff Room Live. This is an English no-footage watchalong for CZECHIA vs SOUTH AFRICA. Open the official broadcast in your country and use this stream as your second screen. Drop your country and score prediction in chat. Today's key battle is Czechia's aerial strength vs South Africa's quick wide attacks.
-```
-
-### Shorts Ideas
-
-- CZECHIA vs SOUTH AFRICA: full-time reaction in 30 seconds
-- The moment CZECHIA vs SOUTH AFRICA changed
-- Best player so far in CZECHIA vs SOUTH AFRICA
-- Why the key battle was Czechia's aerial strength vs South Africa's quick wide attacks
-- Chat predicted this CZECHIA vs SOUTH AFRICA moment
+- MEXICO vs SOUTH KOREA: full-time reaction in 30 seconds
+- The moment MEXICO vs SOUTH KOREA changed
+- Best player so far in MEXICO vs SOUTH KOREA
+- Why the key battle was Mexico's midfield press vs South Korea's fast breaks into space
+- Chat predicted this MEXICO vs SOUTH KOREA moment

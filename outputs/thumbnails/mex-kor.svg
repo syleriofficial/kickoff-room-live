@@ -7,12 +7,12 @@
       <stop offset="1" stop-color="#050914"/>
     </linearGradient>
     <radialGradient id="homeGlow" cx="24%" cy="28%" r="42%">
-      <stop offset="0" stop-color="#0099b5b8"/>
-      <stop offset="1" stop-color="#0099b500"/>
+      <stop offset="0" stop-color="#006341b8"/>
+      <stop offset="1" stop-color="#00634100"/>
     </radialGradient>
     <radialGradient id="awayGlow" cx="84%" cy="22%" r="42%">
-      <stop offset="0" stop-color="#fcd116b8"/>
-      <stop offset="1" stop-color="#fcd11600"/>
+      <stop offset="0" stop-color="#c60c30b8"/>
+      <stop offset="1" stop-color="#c60c3000"/>
     </radialGradient>
   </defs>
   <rect width="1280" height="720" fill="url(#bg)"/>
@@ -30,10 +30,10 @@
   <text x="54" y="280" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="88" font-weight="900">WATCHALONG</text>
   <rect x="54" y="326" width="700" height="2" fill="#8fe7c8" opacity="0.72"/>
   <g font-family="Arial Black, Arial, sans-serif" font-size="58" font-weight="900">
-    <rect x="54" y="386" width="26" height="62" fill="#0099b5"/>
-    <text x="104" y="438" fill="#ffffff">UZBEKISTAN</text>
-    <rect x="54" y="472" width="26" height="62" fill="#fcd116"/>
-    <text x="104" y="524" fill="#ffffff">COLOMBIA</text>
+    <rect x="54" y="386" width="26" height="62" fill="#006341"/>
+    <text x="104" y="438" fill="#ffffff">MEXICO</text>
+    <rect x="54" y="472" width="26" height="62" fill="#c60c30"/>
+    <text x="104" y="524" fill="#ffffff">SOUTH KOREA</text>
   </g>
   <rect x="836" y="92" width="336" height="408" fill="#ffffff" opacity="0.07" stroke="#ffffff" stroke-opacity="0.22" stroke-width="3"/>
   <text x="1004" y="184" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="35" font-weight="900" text-anchor="middle">ENGLISH</text>
@@ -42,6 +42,6 @@
   <text x="1004" y="334" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="35" font-weight="900" text-anchor="middle">+ CHAT</text>
   <rect x="870" y="382" width="268" height="54" fill="#1f8f6e"/>
   <text x="1004" y="420" fill="#06130f" font-family="Arial Black, Arial, sans-serif" font-size="27" font-weight="900" text-anchor="middle">NO FOOTAGE</text>
-  <text x="54" y="624" fill="#ffcf66" font-family="Arial Black, Arial, sans-serif" font-size="35" font-weight="900">7:30 AM IST, Thursday June 18</text>
-  <text x="54" y="668" fill="#aeb9d0" font-family="Arial, sans-serif" font-size="25" font-weight="700">Uzbekistan&apos;s midfield press vs Colombia&apos;s creators in the half-spaces</text>
+  <text x="54" y="624" fill="#ffcf66" font-family="Arial Black, Arial, sans-serif" font-size="35" font-weight="900">6:30 AM IST, Friday June 19</text>
+  <text x="54" y="668" fill="#aeb9d0" font-family="Arial, sans-serif" font-size="25" font-weight="700">Mexico&apos;s midfield press vs South Korea&apos;s fast breaks into space</text>
 </svg>
