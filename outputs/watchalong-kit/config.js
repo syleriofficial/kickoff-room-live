@@ -14,8 +14,8 @@ window.WATCHALONG_CONFIG = {
     period: "1st Half"
   },
   host: {
-    name: "Aaditya Live",
-    tag: "@AadityaLive",
+    name: "KickoffRoomLive",
+    tag: "@KickoffRoomLive",
     regionLine: "English worldwide watchalong from India"
   },
   panels: {
