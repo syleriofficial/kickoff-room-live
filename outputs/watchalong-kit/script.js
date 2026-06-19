@@ -60,6 +60,9 @@ function render() {
   text("subtitle", cfg.match.subtitle);
   text("strip-home", liveState.homeShort);
   text("strip-away", liveState.awayShort);
+  text("bug-home", liveState.homeShort);
+  text("bug-away", liveState.awayShort);
+  text("bug-score", `${homeScore} - ${awayScore}`);
   text("home-name", liveState.home);
   text("away-name", liveState.away);
   text("period", cfg.match.period);
@@ -83,6 +86,8 @@ function render() {
   text("away-score", awayScore);
   byId("home-swatch").style.background = liveState.homeColor;
   byId("away-swatch").style.background = liveState.awayColor;
+  document.documentElement.style.setProperty("--home-color", liveState.homeColor);
+  document.documentElement.style.setProperty("--away-color", liveState.awayColor);
   byId("mom-home").style.width = `${liveState.momentumHome}%`;
   byId("mom-away").style.width = `${liveState.momentumAway}%`;
   byId("hype-number").textContent = `${hype}%`;

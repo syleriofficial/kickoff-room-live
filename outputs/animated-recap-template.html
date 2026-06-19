@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kickoff Room Animated Recap Template</title>
+    <style>
+      :root {
+        --ink: #f8fafc;
+        --muted: #b8c4d9;
+        --home: #d52b1e;
+        --away: #002f6c;
+        --gold: #ffbf3f;
+        --green: #21d4a3;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #050814;
+        color: var(--ink);
+      }
+
+      .frame {
+        position: relative;
+        width: 1280px;
+        height: 720px;
+        overflow: hidden;
+        background:
+          linear-gradient(90deg, rgba(5, 8, 20, 0.98), rgba(11, 20, 36, 0.88), rgba(5, 8, 20, 0.98)),
+          repeating-linear-gradient(135deg, rgba(255,255,255,0.04) 0 1px, transparent 1px 18px),
+          radial-gradient(circle at 20% 26%, rgba(33, 212, 163, 0.22), transparent 30%),
+          radial-gradient(circle at 82% 18%, rgba(255, 191, 63, 0.18), transparent 32%);
+      }
+
+      .frame::before {
+        content: "";
+        position: absolute;
+        inset: 30px;
+        border: 1px solid rgba(255,255,255,0.1);
+      }
+
+      .header {
+        position: absolute;
+        left: 54px;
+        top: 46px;
+        right: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .brand span,
+      .match-meta span,
+      .segment span {
+        display: block;
+        color: var(--green);
+        font-size: 13px;
+        font-weight: 950;
+        text-transform: uppercase;
+      }
+
+      .brand strong {
+        display: block;
+        margin-top: 4px;
+        font-size: 34px;
+        line-height: 1;
+      }
+
+      .match-meta {
+        text-align: right;
+      }
+
+      .match-meta strong {
+        display: block;
+        margin-top: 4px;
+        color: var(--gold);
+        font-size: 24px;
+      }
+
+      .scoreline {
+        position: absolute;
+        left: 54px;
+        top: 140px;
+        width: 430px;
+        padding: 24px;
+        border: 1px solid rgba(255,255,255,0.16);
+        background: rgba(5, 9, 20, 0.72);
+        backdrop-filter: blur(14px);
+        box-shadow: 0 28px 80px rgba(0,0,0,0.42);
+      }
+
+      .team {
+        display: grid;
+        grid-template-columns: 18px 1fr 70px;
+        gap: 14px;
+        align-items: center;
+        min-height: 70px;
+        border-bottom: 1px solid rgba(255,255,255,0.11);
+      }
+
+      .team:last-child { border-bottom: 0; }
+      .swatch { width: 18px; height: 42px; background: var(--home); }
+      .team:last-child .swatch { background: var(--away); }
+      .team span { font-size: 29px; font-weight: 950; }
+      .team strong { text-align: right; font-size: 54px; }
+
+      .pitch {
+        position: absolute;
+        right: 54px;
+        top: 144px;
+        width: 690px;
+        height: 392px;
+        border: 2px solid rgba(255,255,255,0.28);
+        background:
+          repeating-linear-gradient(90deg, rgba(33, 212, 163, 0.08) 0 14%, rgba(33, 212, 163, 0.16) 14% 28%),
+          linear-gradient(180deg, rgba(12, 73, 54, 0.94), rgba(8, 44, 45, 0.9));
+        box-shadow: 0 28px 80px rgba(0,0,0,0.38);
+      }
+
+      .pitch::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        border-left: 2px solid rgba(255,255,255,0.34);
+      }
+
+      .circle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 120px;
+        height: 120px;
+        border: 2px solid rgba(255,255,255,0.34);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .move {
+        position: absolute;
+        height: 5px;
+        background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        box-shadow: 0 0 28px rgba(255,191,63,0.54);
+        animation: pulse 2.2s ease-in-out infinite;
+      }
+
+      .m1 { left: 12%; top: 35%; width: 63%; transform: rotate(-12deg); }
+      .m2 { left: 18%; top: 58%; width: 62%; animation-delay: 0.4s; }
+      .m3 { left: 28%; top: 72%; width: 44%; transform: rotate(10deg); animation-delay: 0.8s; }
+
+      .dot {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border: 3px solid white;
+        border-radius: 50%;
+        background: var(--home);
+        box-shadow: 0 10px 24px rgba(0,0,0,0.36);
+      }
+
+      .d1 { left: 20%; top: 35%; }
+      .d2 { left: 38%; top: 55%; }
+      .d3 { left: 58%; top: 42%; background: var(--away); }
+      .d4 { left: 74%; top: 63%; background: var(--away); }
+
+      .segment {
+        position: absolute;
+        left: 54px;
+        right: 54px;
+        bottom: 56px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .card {
+        min-height: 112px;
+        padding: 20px;
+        border: 1px solid rgba(255,255,255,0.15);
+        background: rgba(5, 9, 20, 0.68);
+        backdrop-filter: blur(14px);
+      }
+
+      .card strong {
+        display: block;
+        margin-top: 8px;
+        font-size: 24px;
+        line-height: 1.08;
+      }
+
+      .disclaimer {
+        position: absolute;
+        left: 54px;
+        bottom: 18px;
+        color: rgba(255,255,255,0.56);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      @keyframes pulse {
+        0%, 100% { opacity: 0.28; }
+        50% { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="frame">
+      <header class="header">
+        <div class="brand">
+          <span>Animated recap</span>
+          <strong>Kickoff Room Live</strong>
+        </div>
+        <div class="match-meta">
+          <span>No footage. Original graphics.</span>
+          <strong>World Cup 2026</strong>
+        </div>
+      </header>
+
+      <section class="scoreline">
+        <div class="team"><i class="swatch"></i><span>SWITZERLAND</span><strong>0</strong></div>
+        <div class="team"><i class="swatch"></i><span>BOSNIA</span><strong>0</strong></div>
+      </section>
+
+      <section class="pitch">
+        <i class="circle"></i>
+        <i class="move m1"></i>
+        <i class="move m2"></i>
+        <i class="move m3"></i>
+        <i class="dot d1"></i>
+        <i class="dot d2"></i>
+        <i class="dot d3"></i>
+        <i class="dot d4"></i>
+      </section>
+
+      <section class="segment">
+        <article class="card"><span>Story</span><strong>Compact pressure, careful buildup, late-night tension.</strong></article>
+        <article class="card"><span>Key battle</span><strong>Midfield control vs quick transitions.</strong></article>
+        <article class="card"><span>Viewer hook</span><strong>Who owned the biggest spell?</strong></article>
+      </section>
+
+      <p class="disclaimer">Use as a post-match original animated recap template. Do not add official match footage or broadcast audio.</p>
+    </main>
+  </body>
+</html>

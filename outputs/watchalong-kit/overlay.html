@@ -10,16 +10,39 @@
     <main class="stage">
       <section class="camera-frame" aria-label="Host camera area">
         <div class="camera-glow"></div>
+        <div class="score-bug" aria-label="Live score bug">
+          <span id="bug-home">SUI</span>
+          <strong id="bug-score">0 - 0</strong>
+          <span id="bug-away">BIH</span>
+        </div>
         <div class="top-match-strip">
           <span id="strip-home">SUI</span>
           <strong id="strip-title">WORLD CUP WATCHALONG</strong>
           <span id="strip-away">BIH</span>
         </div>
-        <div class="camera-placeholder">
-          <div class="lens-ring"></div>
-          <div>
-            <span class="micro-label">CAMERA</span>
-            <strong>Place webcam here</strong>
+        <div class="tactical-board" aria-label="Animated tactical board">
+          <div class="pitch">
+            <span class="pitch-line halfway"></span>
+            <span class="pitch-line box left-box"></span>
+            <span class="pitch-line box right-box"></span>
+            <span class="pitch-line center-circle"></span>
+            <span class="attack-lane lane-one"></span>
+            <span class="attack-lane lane-two"></span>
+            <span class="attack-lane lane-three"></span>
+            <span class="ball"></span>
+            <span class="player home p1"></span>
+            <span class="player home p2"></span>
+            <span class="player home p3"></span>
+            <span class="player home p4"></span>
+            <span class="player away p5"></span>
+            <span class="player away p6"></span>
+            <span class="player away p7"></span>
+            <span class="player away p8"></span>
+          </div>
+          <div class="board-copy">
+            <span class="micro-label">LIVE TACTICAL ROOM</span>
+            <strong id="board-title">Second-screen match command center</strong>
+            <p id="board-copy">Score, clock, momentum, chat prompts, and original English commentary. No match footage.</p>
           </div>
         </div>
         <div class="chat-mission">
