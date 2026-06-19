@@ -133,10 +133,20 @@ async function checkSecretLeaks() {
 }
 
 async function checkCommands() {
+  const raw = await readFile(resolve(root, "outputs/generated-stream-pack/streams.json"), "utf8");
+  const streams = JSON.parse(raw);
+  const targetId = streams[0]?.id;
+  if (!targetId) {
+    return {
+      name: "dry-run commands",
+      ok: false,
+      detail: "No stream id found in outputs/generated-stream-pack/streams.json"
+    };
+  }
   const checks = [
     ["npm", ["run", "check"]],
-    ["npm", ["run", "youtube:create-dry-run", "--", "fra-sen"]],
-    ["npm", ["run", "telegram:dry-run", "--", "fra-sen"]]
+    ["npm", ["run", "youtube:create-dry-run", "--", targetId]],
+    ["npm", ["run", "telegram:dry-run", "--", targetId]]
   ];
   const failures = [];
   for (const [cmd, args] of checks) {
