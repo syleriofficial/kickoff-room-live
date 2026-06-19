@@ -12,6 +12,24 @@ const fps = Number(process.env.CARTOON_VIDEO_FPS || 2);
 const duration = Number(process.env.CARTOON_VIDEO_SECONDS || 26);
 const voice = process.env.CARTOON_VIDEO_VOICE || "Alex";
 const chromePath = process.env.CHROME_PATH || "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const extraPresets = [
+  {
+    id: "mex-rsa",
+    kickoffIst: "12:30 AM IST, Friday June 12",
+    kickoffUtc: "2026-06-11T19:00:00Z",
+    home: "MEXICO",
+    away: "SOUTH AFRICA",
+    homeShort: "MEX",
+    awayShort: "RSA",
+    homeColor: "#006847",
+    awayColor: "#ffb81c",
+    topic: "Mexico's historic home opener, South Africa's pressure-breaking counters, Group A momentum",
+    keyBattle: "Mexico's wide pressure vs South Africa's transition runs through midfield",
+    gamePulse: "Mexico pushed the tempo at the Azteca; South Africa tried to break out quickly under heavy pressure",
+    chatMission: "Opening match crew: country + Mexico vs South Africa reaction",
+    finalScore: { home: 2, away: 0 }
+  }
+];
 
 function run(command, args) {
   const result = spawnSync(command, args, { encoding: "utf8" });
@@ -173,7 +191,10 @@ function frameSvg(match, frameIndex) {
   const shot = between(t, 16, 22);
   const flash = Math.max(0, Math.sin((t - 17.5) * Math.PI * 3)) * (t > 17 && t < 20 ? 1 : 0);
   const clock = `${String(18 + Math.floor(t / 3)).padStart(2, "0")}:${String(Math.floor((t * 11) % 60)).padStart(2, "0")}`;
-  const scoreHome = t > 22 ? 1 : 0;
+  const finalHome = match.finalScore?.home ?? 1;
+  const finalAway = match.finalScore?.away ?? 0;
+  const scoreHome = t > 22 ? finalHome : t > 16 ? Math.min(finalHome, 1) : 0;
+  const scoreAway = t > 22 ? finalAway : 0;
   const ticker = wrap(match.gamePulse, 64).slice(0, 2);
   const subtitle = actionLabel(t);
 
@@ -214,7 +235,7 @@ function frameSvg(match, frameIndex) {
   ${ball(b.x, b.y - Math.sin(t * Math.PI * 3) * 13, t)}
   <rect x="48" y="32" width="580" height="94" rx="12" fill="#050814" opacity="0.94" stroke="#ffffff" stroke-opacity="0.16"/>
   <text x="78" y="72" fill="#21d4a3" font-family="Arial Black, Arial, sans-serif" font-size="21" font-weight="900">ANIMATED SIMULATION</text>
-  <text x="78" y="108" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900">${escapeXml(match.homeShort)} ${scoreHome} - 0 ${escapeXml(match.awayShort)}</text>
+  <text x="78" y="108" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900">${escapeXml(match.homeShort)} ${scoreHome} - ${scoreAway} ${escapeXml(match.awayShort)}</text>
   <text x="482" y="108" fill="#ffbf3f" font-family="Arial Black, Arial, sans-serif" font-size="32" font-weight="900">${clock}</text>
   <rect x="706" y="32" width="1166" height="94" rx="12" fill="#050814" opacity="0.78" stroke="#ffffff" stroke-opacity="0.16"/>
   <text x="736" y="72" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="26" font-weight="900">${escapeXml(match.home)} vs ${escapeXml(match.away)}</text>
@@ -268,7 +289,7 @@ async function writeFrames(match, frameDir) {
 await mkdir(outputDir, { recursive: true });
 await mkdir(runtimeDir, { recursive: true });
 
-const presets = loadPresets(await readFile(presetsPath, "utf8"));
+const presets = [...extraPresets, ...loadPresets(await readFile(presetsPath, "utf8"))];
 const match = presets.find((item) => item.id === streamId) || presets[0];
 if (!match) throw new Error(`No match preset found for ${streamId}`);
 
