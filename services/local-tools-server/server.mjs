@@ -8,6 +8,7 @@ const root = resolve(new URL("../..", import.meta.url).pathname);
 const port = Number(process.env.PORT || 5173);
 const runtimeDir = resolve(root, "outputs/runtime");
 const liveStatePath = resolve(runtimeDir, "live-state.json");
+const liveScorePollMs = Number(process.env.LIVE_SCORE_POLL_MS || 60000);
 
 const aliases = new Map([
   ["/", "index.html"],
@@ -87,11 +88,32 @@ async function getLiveState() {
   try {
     const payload = JSON.parse(await readFile(liveStatePath, "utf8"));
     const ageMs = Date.now() - new Date(payload.updatedAt || 0).getTime();
-    if (ageMs < 15000) return payload;
+    if (ageMs < liveScorePollMs) return payload;
 
     const presetId = payload.state?.presetId || "fra-sen";
     const live = await getLiveScore(presetId);
-    if (!live.ok || !live.live) return payload;
+    if (!live.ok || !live.live) {
+      const apiLimited = Boolean(live.errors?.requests);
+      const stale = {
+        ...payload,
+        ok: true,
+        updatedAt: new Date().toISOString(),
+        state: {
+          ...payload.state,
+          dataStatus: live.ok ? "waiting" : "limited",
+          dataMessage: apiLimited
+            ? "Last verified score - live API limit reached"
+            : live.message || "Live score temporarily unavailable",
+          speakLine: apiLimited
+            ? "Live score API limit reached. We are keeping the last verified score on screen."
+            : payload.state?.speakLine,
+          speakNonce: apiLimited ? Date.now() : payload.state?.speakNonce
+        }
+      };
+      await mkdir(runtimeDir, { recursive: true });
+      await writeFile(liveStatePath, JSON.stringify(stale, null, 2));
+      return stale;
+    }
     const preset = live.preset;
     const state = {
       ...payload.state,
@@ -111,6 +133,8 @@ async function getLiveState() {
       homeScore: Number(live.homeScore || 0),
       awayScore: Number(live.awayScore || 0),
       seconds: Number(live.elapsed || 0) * 60,
+      dataStatus: "live",
+      dataMessage: `Verified live score at ${new Date(live.checkedAt || Date.now()).toLocaleTimeString("en-IN", { timeZone: "Asia/Kolkata", hour: "2-digit", minute: "2-digit" })} IST`,
       speakLine: live.commentaryLine || `Live score: ${preset.home} ${Number(live.homeScore || 0)}, ${preset.away} ${Number(live.awayScore || 0)}.`,
       speakNonce: Date.now()
     };

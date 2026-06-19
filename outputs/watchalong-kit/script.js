@@ -32,7 +32,9 @@ let liveState = {
   shotsHome: cfg.panels.shotsHome,
   shotsAway: cfg.panels.shotsAway,
   possessionHome: cfg.panels.possessionHome,
-  possessionAway: cfg.panels.possessionAway
+  possessionAway: cfg.panels.possessionAway,
+  dataStatus: "ready",
+  dataMessage: "Live score ready"
 };
 
 function byId(id) {
@@ -61,6 +63,8 @@ function render() {
   text("home-name", liveState.home);
   text("away-name", liveState.away);
   text("period", cfg.match.period);
+  text("data-status", liveState.dataMessage || "Live score ready");
+  byId("data-status").dataset.status = liveState.dataStatus || "ready";
   text("topic", liveState.topic);
   text("key-battle", liveState.keyBattle);
   text("game-pulse", liveState.gamePulse);
@@ -83,7 +87,8 @@ function render() {
   byId("mom-away").style.width = `${liveState.momentumAway}%`;
   byId("hype-number").textContent = `${hype}%`;
   byId("hype-fill").style.width = `${hype}%`;
-  byId("ticker").textContent = cfg.panels.ticker.join("  /  ");
+  const dataTicker = liveState.dataMessage ? [liveState.dataMessage] : [];
+  byId("ticker").textContent = [...dataTicker, ...cfg.panels.ticker].join("  /  ");
   renderClock();
 }
 

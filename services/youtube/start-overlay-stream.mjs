@@ -12,6 +12,7 @@ const upcomingPath = resolve(root, "outputs/youtube-upcoming-broadcasts.json");
 const logsDir = resolve(root, "outputs/runtime");
 const chromePath = process.env.CHROME_PATH || "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 const overlayUrl = process.env.OVERLAY_URL || "http://127.0.0.1:5174/overlay";
+const commentaryAudioPath = process.env.COMMENTARY_AUDIO_PATH || "";
 const debugPort = Number(process.env.CHROME_DEBUG_PORT || 9333);
 const captureFps = Number(process.env.OVERLAY_CAPTURE_FPS || 2);
 const runId = `${Date.now()}-${Math.random().toString(16).slice(2)}`;
@@ -167,14 +168,17 @@ async function main() {
   await cdp.send("Input.dispatchKeyEvent", { type: "keyDown", windowsVirtualKeyCode: 32, code: "Space", key: " " });
   await cdp.send("Input.dispatchKeyEvent", { type: "keyUp", windowsVirtualKeyCode: 32, code: "Space", key: " " });
 
+  const audioInputArgs = commentaryAudioPath
+    ? ["-stream_loop", "-1", "-re", "-i", commentaryAudioPath]
+    : ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100"];
+
   const ffmpeg = spawn("ffmpeg", [
     "-hide_banner",
     "-loglevel", "warning",
     "-f", "image2pipe",
     "-framerate", String(captureFps),
     "-i", "pipe:0",
-    "-f", "lavfi",
-    "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
+    ...audioInputArgs,
     "-c:v", "libx264",
     "-preset", "veryfast",
     "-b:v", "2500k",
@@ -226,6 +230,7 @@ async function main() {
     chromePid: chrome.pid,
     captureFps,
     overlayUrl,
+    commentaryAudioPath: commentaryAudioPath || null,
     streamStatusBefore: liveStream.status?.streamStatus || "unknown",
     healthBefore: liveStream.status?.healthStatus?.status || "unknown",
     logPath,

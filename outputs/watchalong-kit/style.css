@@ -267,6 +267,27 @@ body {
   text-transform: uppercase;
 }
 
+.data-row {
+  margin-top: 10px;
+  min-height: 30px;
+  display: grid;
+  place-items: center;
+  padding: 6px 10px;
+  background: rgba(33, 212, 163, 0.12);
+  border: 1px solid rgba(33, 212, 163, 0.35);
+  color: #d9fff4;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.data-row[data-status="limited"] {
+  background: rgba(255, 191, 63, 0.14);
+  border-color: rgba(255, 191, 63, 0.46);
+  color: #ffe7ab;
+}
+
 .topic-panel,
 .insight-panel,
 .hype-panel,
