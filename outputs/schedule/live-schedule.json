@@ -1,32 +1,42 @@
 [
   {
-    "id": "sui-bih",
-    "match": "SWITZERLAND vs BOSNIA & HERZEGOVINA",
-    "goLiveUtc": "2026-06-18T18:30:00Z",
-    "kickoffUtc": "2026-06-18T19:00:00Z",
-    "kickoffIst": "12:30 AM IST, Friday June 19",
-    "title": "SWITZERLAND vs BOSNIA & HERZEGOVINA LIVE | World Cup 2026 Watchalong | English Score | No Footage",
-    "keyBattle": "Switzerland's compact press vs Bosnia's creators between the lines",
-    "chatMission": "Late-night crew: country + Switzerland vs Bosnia score prediction"
+    "id": "usa-aus",
+    "match": "UNITED STATES vs AUSTRALIA",
+    "goLiveUtc": "2026-06-19T18:30:00Z",
+    "kickoffUtc": "2026-06-19T19:00:00Z",
+    "kickoffIst": "12:30 AM IST, Saturday June 20",
+    "title": "UNITED STATES vs AUSTRALIA LIVE | World Cup 2026 Watchalong | English Score | No Footage",
+    "keyBattle": "USA's midfield press vs Australia's vertical balls into space",
+    "chatMission": "Late-night crew: country + USA vs Australia score prediction"
   },
   {
-    "id": "can-qat",
-    "match": "CANADA vs QATAR",
-    "goLiveUtc": "2026-06-18T21:30:00Z",
-    "kickoffUtc": "2026-06-18T22:00:00Z",
-    "kickoffIst": "3:30 AM IST, Friday June 19",
-    "title": "CANADA vs QATAR LIVE | World Cup 2026 Watchalong | English Score | No Footage",
-    "keyBattle": "Canada's wide runners vs Qatar's defensive recovery shape",
-    "chatMission": "Overnight crew: country + Canada vs Qatar score prediction"
+    "id": "sco-mar",
+    "match": "SCOTLAND vs MOROCCO",
+    "goLiveUtc": "2026-06-19T21:30:00Z",
+    "kickoffUtc": "2026-06-19T22:00:00Z",
+    "kickoffIst": "3:30 AM IST, Saturday June 20",
+    "title": "SCOTLAND vs MOROCCO LIVE | World Cup 2026 Watchalong | English Score | No Footage",
+    "keyBattle": "Scotland's physical midfield vs Morocco's creators between the lines",
+    "chatMission": "Overnight crew: country + Scotland vs Morocco score prediction"
   },
   {
-    "id": "mex-kor",
-    "match": "MEXICO vs SOUTH KOREA",
-    "goLiveUtc": "2026-06-19T00:30:00Z",
-    "kickoffUtc": "2026-06-19T01:00:00Z",
-    "kickoffIst": "6:30 AM IST, Friday June 19",
-    "title": "MEXICO vs SOUTH KOREA LIVE | World Cup 2026 Watchalong | English Score | No Footage",
-    "keyBattle": "Mexico's midfield press vs South Korea's fast breaks into space",
-    "chatMission": "Morning crew: country + Mexico vs South Korea score prediction"
+    "id": "bra-hai",
+    "match": "BRAZIL vs HAITI",
+    "goLiveUtc": "2026-06-20T00:00:00Z",
+    "kickoffUtc": "2026-06-20T00:30:00Z",
+    "kickoffIst": "6:00 AM IST, Saturday June 20",
+    "title": "BRAZIL vs HAITI LIVE | World Cup 2026 Watchalong | English Score | No Footage",
+    "keyBattle": "Brazil's wide combinations vs Haiti's low-block concentration",
+    "chatMission": "Morning crew: country + Brazil vs Haiti score prediction"
+  },
+  {
+    "id": "tur-par",
+    "match": "TURKIYE vs PARAGUAY",
+    "goLiveUtc": "2026-06-20T02:30:00Z",
+    "kickoffUtc": "2026-06-20T03:00:00Z",
+    "kickoffIst": "8:30 AM IST, Saturday June 20",
+    "title": "TURKIYE vs PARAGUAY LIVE | World Cup 2026 Watchalong | English Score | No Footage",
+    "keyBattle": "Turkiye's playmakers vs Paraguay's compact defensive block",
+    "chatMission": "Breakfast crew: country + Turkiye vs Paraguay score prediction"
   }
 ]

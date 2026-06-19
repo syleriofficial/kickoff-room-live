@@ -1,23 +1,29 @@
 {
-  "generatedAt": "2026-06-18T17:53:30.840Z",
+  "generatedAt": "2026-06-19T14:07:09.420Z",
   "thumbnails": [
     {
-      "id": "sui-bih",
-      "match": "SWITZERLAND vs BOSNIA & HERZEGOVINA",
-      "svgPath": "outputs/thumbnails/sui-bih.svg",
-      "pngPath": "outputs/thumbnails/sui-bih.png"
+      "id": "usa-aus",
+      "match": "UNITED STATES vs AUSTRALIA",
+      "svgPath": "outputs/thumbnails/usa-aus.svg",
+      "pngPath": "outputs/thumbnails/usa-aus.png"
     },
     {
-      "id": "can-qat",
-      "match": "CANADA vs QATAR",
-      "svgPath": "outputs/thumbnails/can-qat.svg",
-      "pngPath": "outputs/thumbnails/can-qat.png"
+      "id": "sco-mar",
+      "match": "SCOTLAND vs MOROCCO",
+      "svgPath": "outputs/thumbnails/sco-mar.svg",
+      "pngPath": "outputs/thumbnails/sco-mar.png"
     },
     {
-      "id": "mex-kor",
-      "match": "MEXICO vs SOUTH KOREA",
-      "svgPath": "outputs/thumbnails/mex-kor.svg",
-      "pngPath": "outputs/thumbnails/mex-kor.png"
+      "id": "bra-hai",
+      "match": "BRAZIL vs HAITI",
+      "svgPath": "outputs/thumbnails/bra-hai.svg",
+      "pngPath": "outputs/thumbnails/bra-hai.png"
+    },
+    {
+      "id": "tur-par",
+      "match": "TURKIYE vs PARAGUAY",
+      "svgPath": "outputs/thumbnails/tur-par.svg",
+      "pngPath": "outputs/thumbnails/tur-par.png"
     }
   ]
 }

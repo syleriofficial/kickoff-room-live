@@ -4,42 +4,55 @@ PRODID:-//Kickoff Room Live//Watchalong Schedule//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:kickoff-room-sui-bih@kickoff-room-live
-DTSTAMP:20260618T175314.467Z
-DTSTART:20260618T183000Z
-DTEND:20260618T213000Z
-SUMMARY:Go live: SWITZERLAND vs BOSNIA & HERZEGOVINA
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 12:30 AM IST\, Friday June 19\nKey battle: Switzerland's compact press vs Bosnia's creators between the lines\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-usa-aus@kickoff-room-live
+DTSTAMP:20260619T140558.044Z
+DTSTART:20260619T183000Z
+DTEND:20260619T213000Z
+SUMMARY:Go live: UNITED STATES vs AUSTRALIA
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 12:30 AM IST\, Saturday June 20\nKey battle: USA's midfield press vs Australia's vertical balls into space\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: SWITZERLAND vs BOSNIA & HERZEGOVINA
+DESCRIPTION:Go live: UNITED STATES vs AUSTRALIA
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:kickoff-room-can-qat@kickoff-room-live
-DTSTAMP:20260618T175314.467Z
-DTSTART:20260618T213000Z
-DTEND:20260619T003000Z
-SUMMARY:Go live: CANADA vs QATAR
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 3:30 AM IST\, Friday June 19\nKey battle: Canada's wide runners vs Qatar's defensive recovery shape\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-sco-mar@kickoff-room-live
+DTSTAMP:20260619T140558.044Z
+DTSTART:20260619T213000Z
+DTEND:20260620T003000Z
+SUMMARY:Go live: SCOTLAND vs MOROCCO
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 3:30 AM IST\, Saturday June 20\nKey battle: Scotland's physical midfield vs Morocco's creators between the lines\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: CANADA vs QATAR
+DESCRIPTION:Go live: SCOTLAND vs MOROCCO
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:kickoff-room-mex-kor@kickoff-room-live
-DTSTAMP:20260618T175314.467Z
-DTSTART:20260619T003000Z
-DTEND:20260619T033000Z
-SUMMARY:Go live: MEXICO vs SOUTH KOREA
-DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 6:30 AM IST\, Friday June 19\nKey battle: Mexico's midfield press vs South Korea's fast breaks into space\nReminder: no match footage\, no broadcast audio.
+UID:kickoff-room-bra-hai@kickoff-room-live
+DTSTAMP:20260619T140558.044Z
+DTSTART:20260620T000000Z
+DTEND:20260620T030000Z
+SUMMARY:Go live: BRAZIL vs HAITI
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 6:00 AM IST\, Saturday June 20\nKey battle: Brazil's wide combinations vs Haiti's low-block concentration\nReminder: no match footage\, no broadcast audio.
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Go live: MEXICO vs SOUTH KOREA
+DESCRIPTION:Go live: BRAZIL vs HAITI
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kickoff-room-tur-par@kickoff-room-live
+DTSTAMP:20260619T140558.044Z
+DTSTART:20260620T023000Z
+DTEND:20260620T053000Z
+SUMMARY:Go live: TURKIYE vs PARAGUAY
+DESCRIPTION:Kickoff Room Live watchalong.\nFormat: English no-footage live score\, reactions\, AI voice prompts\, and chat polls.\nKickoff: 8:30 AM IST\, Saturday June 20\nKey battle: Turkiye's playmakers vs Paraguay's compact defensive block\nReminder: no match footage\, no broadcast audio.
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Go live: TURKIYE vs PARAGUAY
 END:VALARM
 END:VEVENT
 END:VCALENDAR
