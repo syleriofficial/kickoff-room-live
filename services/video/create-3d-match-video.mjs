@@ -218,14 +218,14 @@ function sceneHtml(match) {
       const scene = new THREE.Scene();
       scene.fog = new THREE.Fog(0x07101f, 38, 118);
 
-      const camera = new THREE.PerspectiveCamera(44, 1920 / 1080, 0.1, 220);
+      const camera = new THREE.PerspectiveCamera(32, 1920 / 1080, 0.1, 220);
       scene.add(camera);
 
-      const hemi = new THREE.HemisphereLight(0xcfe8ff, 0x07101f, 0.65);
+      const hemi = new THREE.HemisphereLight(0xcfe8ff, 0x07101f, 0.42);
       scene.add(hemi);
 
-      const stadiumLight = new THREE.DirectionalLight(0xffffff, 2.7);
-      stadiumLight.position.set(-18, 42, 24);
+      const stadiumLight = new THREE.DirectionalLight(0xffffff, 3.2);
+      stadiumLight.position.set(-22, 34, 18);
       stadiumLight.castShadow = true;
       stadiumLight.shadow.mapSize.width = 2048;
       stadiumLight.shadow.mapSize.height = 2048;
@@ -237,7 +237,7 @@ function sceneHtml(match) {
       stadiumLight.shadow.camera.bottom = -34;
       scene.add(stadiumLight);
 
-      const fillLight = new THREE.PointLight(0x21d4a3, 2.5, 70);
+      const fillLight = new THREE.PointLight(0x21d4a3, 1.8, 70);
       fillLight.position.set(20, 24, -20);
       scene.add(fillLight);
 
@@ -245,9 +245,9 @@ function sceneHtml(match) {
         return new THREE.MeshStandardMaterial({ color, roughness, metalness });
       }
 
-      const grass = mat(0x0b5a40, 0.88);
-      const stripeA = mat(0x0e6b4a, 0.9);
-      const stripeB = mat(0x084c38, 0.9);
+      const grass = mat(0x0a4d36, 0.92);
+      const stripeA = mat(0x0c6044, 0.94);
+      const stripeB = mat(0x073d2d, 0.94);
       const white = mat(0xf7fbff, 0.45);
       const dark = mat(0x050814, 0.78);
       const gold = mat(0xffbf3f, 0.35);
@@ -270,6 +270,14 @@ function sceneHtml(match) {
         stripe.position.set(-32 + i * 8, 0.02, 0);
         stripe.receiveShadow = true;
         pitch.add(stripe);
+      }
+      const grassLineMat = new THREE.MeshBasicMaterial({ color: 0xcdebd6, transparent: true, opacity: 0.06 });
+      for (let i = 0; i < 90; i += 1) {
+        const blade = new THREE.Mesh(new THREE.PlaneGeometry(0.028, 3.6), grassLineMat);
+        blade.position.set(-35 + (i % 30) * 2.4, 0.105, -21 + Math.floor(i / 30) * 14);
+        blade.rotation.x = -Math.PI / 2;
+        blade.rotation.z = (i % 5) * 0.11;
+        pitch.add(blade);
       }
 
       function lineBox(w, d, x, z) {
@@ -319,43 +327,49 @@ function sceneHtml(match) {
 
       function addPlayer(teamMat, x, z, number, scale = 1) {
         const g = new THREE.Group();
-        const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.62 * scale, 1.55 * scale, 6, 18), teamMat);
-        body.position.y = 2.35 * scale;
-        body.castShadow = true;
-        const shorts = new THREE.Mesh(new THREE.BoxGeometry(1.35 * scale, 0.42 * scale, 0.72 * scale), shortsMat);
-        shorts.position.y = 1.35 * scale;
+        const torso = new THREE.Mesh(new THREE.CylinderGeometry(0.54 * scale, 0.72 * scale, 1.36 * scale, 18), teamMat);
+        torso.position.y = 2.48 * scale;
+        torso.castShadow = true;
+        const chest = new THREE.Mesh(new THREE.BoxGeometry(1.38 * scale, 0.28 * scale, 0.56 * scale), teamMat);
+        chest.position.y = 3.08 * scale;
+        chest.castShadow = true;
+        const shorts = new THREE.Mesh(new THREE.BoxGeometry(1.18 * scale, 0.46 * scale, 0.68 * scale), shortsMat);
+        shorts.position.y = 1.68 * scale;
         shorts.castShadow = true;
         const head = new THREE.Mesh(new THREE.SphereGeometry(0.58 * scale, 24, 16), skinMat);
-        head.position.y = 3.78 * scale;
+        head.position.y = 3.84 * scale;
         head.castShadow = true;
         const hair = new THREE.Mesh(new THREE.SphereGeometry(0.6 * scale, 24, 8, 0, Math.PI * 2, 0, Math.PI * 0.48), dark);
-        hair.position.y = 4.05 * scale;
+        hair.position.y = 4.11 * scale;
         hair.castShadow = true;
-        const armGeom = new THREE.CapsuleGeometry(0.12 * scale, 1.1 * scale, 4, 10);
+        const neck = new THREE.Mesh(new THREE.CylinderGeometry(0.18 * scale, 0.2 * scale, 0.28 * scale, 12), skinMat);
+        neck.position.y = 3.38 * scale;
+        neck.castShadow = true;
+        const armGeom = new THREE.CapsuleGeometry(0.11 * scale, 1.22 * scale, 4, 10);
         const arm1 = new THREE.Mesh(armGeom, skinMat);
         const arm2 = new THREE.Mesh(armGeom, skinMat);
-        arm1.position.set(-0.78 * scale, 2.42 * scale, 0);
-        arm2.position.set(0.78 * scale, 2.42 * scale, 0);
-        arm1.rotation.z = 0.42;
-        arm2.rotation.z = -0.42;
+        arm1.position.set(-0.87 * scale, 2.52 * scale, 0);
+        arm2.position.set(0.87 * scale, 2.52 * scale, 0);
+        arm1.rotation.z = 0.24;
+        arm2.rotation.z = -0.24;
         arm1.castShadow = true;
         arm2.castShadow = true;
-        const legGeom = new THREE.CapsuleGeometry(0.14 * scale, 1.08 * scale, 4, 10);
+        const legGeom = new THREE.CapsuleGeometry(0.13 * scale, 1.2 * scale, 4, 10);
         const leg1 = new THREE.Mesh(legGeom, shortsMat);
         const leg2 = new THREE.Mesh(legGeom, shortsMat);
-        leg1.position.set(-0.28 * scale, 0.95 * scale, 0);
-        leg2.position.set(0.28 * scale, 0.95 * scale, 0);
-        leg1.rotation.z = 0.08;
-        leg2.rotation.z = -0.08;
+        leg1.position.set(-0.27 * scale, 0.98 * scale, 0);
+        leg2.position.set(0.27 * scale, 0.98 * scale, 0);
+        leg1.rotation.z = 0.12;
+        leg2.rotation.z = -0.12;
         leg1.castShadow = true;
         leg2.castShadow = true;
-        const boot1 = new THREE.Mesh(new THREE.BoxGeometry(0.38 * scale, 0.12 * scale, 0.58 * scale), bootMat);
+        const boot1 = new THREE.Mesh(new THREE.BoxGeometry(0.36 * scale, 0.13 * scale, 0.66 * scale), bootMat);
         const boot2 = boot1.clone();
-        boot1.position.set(-0.32 * scale, 0.25 * scale, -0.08 * scale);
-        boot2.position.set(0.32 * scale, 0.25 * scale, -0.08 * scale);
+        boot1.position.set(-0.32 * scale, 0.27 * scale, -0.16 * scale);
+        boot2.position.set(0.32 * scale, 0.27 * scale, -0.16 * scale);
         boot1.castShadow = true;
         boot2.castShadow = true;
-        g.add(body, shorts, head, hair, arm1, arm2, leg1, leg2, boot1, boot2);
+        g.add(torso, chest, shorts, neck, head, hair, arm1, arm2, leg1, leg2, boot1, boot2);
         g.position.set(x, 0, z);
         g.userData.base = { x, z, number };
         scene.add(g);
@@ -363,16 +377,16 @@ function sceneHtml(match) {
       }
 
       const players = [
-        addPlayer(homeMat, -19, -7, 4, 0.95),
-        addPlayer(homeMat, -8, 4, 8, 1.02),
-        addPlayer(homeMat, 2, -3, 10, 1.08),
-        addPlayer(homeMat, 14, 8, 9, 1.05),
-        addPlayer(awayMat, -4, 12, 5, 0.95),
-        addPlayer(awayMat, 7, 4, 6, 0.95),
-        addPlayer(awayMat, 18, -8, 3, 0.98),
-        addPlayer(awayMat, 25, 10, 2, 0.94),
-        addPlayer(mat(0xff5a36), 31, 0, 1, 1.08),
-        addPlayer(mat(0xff5a36), -31, 0, 1, 1.08)
+        addPlayer(homeMat, -19, -7, 4, 1.08),
+        addPlayer(homeMat, -8, 4, 8, 1.14),
+        addPlayer(homeMat, 2, -3, 10, 1.2),
+        addPlayer(homeMat, 14, 8, 9, 1.17),
+        addPlayer(awayMat, -4, 12, 5, 1.08),
+        addPlayer(awayMat, 7, 4, 6, 1.08),
+        addPlayer(awayMat, 18, -8, 3, 1.1),
+        addPlayer(awayMat, 25, 10, 2, 1.06),
+        addPlayer(mat(0xff5a36), 31, 0, 1, 1.18),
+        addPlayer(mat(0xff5a36), -31, 0, 1, 1.18)
       ];
 
       const ball = new THREE.Mesh(new THREE.SphereGeometry(0.44, 32, 18), mat(0xf8fafc, 0.28));
@@ -466,10 +480,10 @@ function sceneHtml(match) {
       ball.rotation.z = t * 5;
 
       const intro = Math.max(0, Math.min(1, t / 4));
-      const camStart = new THREE.Vector3(-3, 30, 48);
-      const camEnd = new THREE.Vector3(6 + progress * 12, 20 - progress * 5, 42 - progress * 18);
+      const camStart = new THREE.Vector3(-10, 15, 33);
+      const camEnd = new THREE.Vector3(3 + progress * 20, 9.8 - progress * 1.6, 30 - progress * 12);
       camera.position.copy(camStart.lerp(camEnd, smooth(intro)));
-      camera.lookAt(new THREE.Vector3(9 + progress * 12, 1.6, -1 + progress * 2));
+      camera.lookAt(new THREE.Vector3(10 + progress * 16, 2.4, -1 + progress * 2));
 
       renderer.render(scene, camera);
       window.__READY = true;
