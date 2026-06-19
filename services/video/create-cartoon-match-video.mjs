@@ -12,6 +12,7 @@ const fps = Number(process.env.CARTOON_VIDEO_FPS || 2);
 const duration = Number(process.env.CARTOON_VIDEO_SECONDS || 26);
 const voice = process.env.CARTOON_VIDEO_VOICE || "Alex";
 const chromePath = process.env.CHROME_PATH || "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const style = process.env.CARTOON_VIDEO_STYLE || "broadcast";
 const extraPresets = [
   {
     id: "mex-rsa",
@@ -150,6 +151,82 @@ function stadium(match) {
   </g>`;
 }
 
+function lightning(x, color, flip = 1) {
+  return `
+  <g transform="translate(${x} 0) scale(${flip} 1)" opacity="0.9">
+    <path d="M160 0 L118 178 L196 162 L128 400 L298 106 L218 126 L280 0 Z" fill="${color}" opacity="0.72"/>
+    <path d="M166 0 L132 170 L202 156 L150 340" fill="none" stroke="#ffffff" stroke-width="7" stroke-linejoin="round" opacity="0.75"/>
+  </g>`;
+}
+
+function faceOffPlayer({ x, y, color, side, shortName }) {
+  const dir = side === "left" ? 1 : -1;
+  const labelTransform = side === "left" ? "" : ' transform="scale(-1 1)"';
+  return `
+  <g transform="translate(${x} ${y}) scale(${dir} 1)">
+    <ellipse cx="0" cy="410" rx="250" ry="42" fill="#000000" opacity="0.34"/>
+    <path d="M-110 120 Q-38 60 62 90 Q166 126 205 242 Q156 364 30 380 Q-110 354 -166 236 Q-160 164 -110 120 Z" fill="#efc39d" stroke="#ffffff" stroke-width="9"/>
+    <path d="M-135 126 Q-52 16 92 74 Q112 116 36 112 Q-26 106 -92 150 Q-140 184 -158 242 Q-184 176 -135 126 Z" fill="#171717"/>
+    <path d="M18 225 Q78 210 135 230" fill="none" stroke="#1a1a1a" stroke-width="9" stroke-linecap="round"/>
+    <path d="M-48 250 Q20 282 92 262" fill="none" stroke="#1a1a1a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-200 398 Q-80 330 80 345 Q210 370 265 520 L-280 520 Q-250 430 -200 398 Z" fill="${color}" stroke="#ffffff" stroke-width="10"/>
+    <text${labelTransform} x="-8" y="476" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="82" font-weight="900" text-anchor="middle">${escapeXml(shortName)}</text>
+  </g>`;
+}
+
+function cupIcon() {
+  return `
+  <g transform="translate(890 110)">
+    <path d="M70 40 H210 V102 Q210 185 160 220 V270 H205 V320 H75 V270 H120 V220 Q70 185 70 102 Z" fill="#ffbf3f" stroke="#ffffff" stroke-width="8"/>
+    <path d="M70 78 H20 Q20 158 88 166" fill="none" stroke="#ffbf3f" stroke-width="18" stroke-linecap="round"/>
+    <path d="M210 78 H260 Q260 158 192 166" fill="none" stroke="#ffbf3f" stroke-width="18" stroke-linecap="round"/>
+    <text x="140" y="374" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="46" font-weight="900" text-anchor="middle">2026</text>
+  </g>`;
+}
+
+function highVoltageIntro(match, frameIndex) {
+  const t = frameIndex / fps;
+  const pulse = 0.72 + Math.sin(t * 7) * 0.18;
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="posterBg" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#06130f"/>
+      <stop offset="0.46" stop-color="#101827"/>
+      <stop offset="0.54" stop-color="#101827"/>
+      <stop offset="1" stop-color="#171006"/>
+    </linearGradient>
+    <radialGradient id="leftGlow" cx="24%" cy="40%" r="55%">
+      <stop offset="0" stop-color="${match.homeColor}" stop-opacity="${pulse}"/>
+      <stop offset="1" stop-color="${match.homeColor}" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rightGlow" cx="76%" cy="40%" r="55%">
+      <stop offset="0" stop-color="${match.awayColor}" stop-opacity="${pulse}"/>
+      <stop offset="1" stop-color="${match.awayColor}" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#posterBg)"/>
+  <rect width="1920" height="1080" fill="url(#leftGlow)"/>
+  <rect width="1920" height="1080" fill="url(#rightGlow)"/>
+  <g opacity="0.18" stroke="#ffffff" stroke-width="3">
+    ${Array.from({ length: 23 }, (_, i) => `<path d="M${i * 88} 0 V1080"/>`).join("")}
+    ${Array.from({ length: 13 }, (_, i) => `<path d="M0 ${i * 88} H1920"/>`).join("")}
+  </g>
+  ${lightning(660, "#21d4a3", 1)}
+  ${lightning(1260, "#ffbf3f", -1)}
+  ${faceOffPlayer({ x: 430, y: 250, color: match.homeColor, side: "left", shortName: match.homeShort })}
+  ${faceOffPlayer({ x: 1490, y: 250, color: match.awayColor, side: "right", shortName: match.awayShort })}
+  ${cupIcon()}
+  <rect x="650" y="474" width="620" height="104" rx="10" fill="#050814" opacity="0.82" stroke="#ffffff" stroke-opacity="0.18"/>
+  <text x="960" y="544" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="56" font-weight="900" text-anchor="middle">HIGH VOLTAGE MATCH</text>
+  <text x="960" y="704" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="96" font-weight="900" text-anchor="middle">${escapeXml(match.home)}</text>
+  <text x="960" y="804" fill="#ffbf3f" font-family="Arial Black, Arial, sans-serif" font-size="76" font-weight="900" text-anchor="middle">VS</text>
+  <text x="960" y="914" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="96" font-weight="900" text-anchor="middle">${escapeXml(match.away)}</text>
+  <text x="960" y="998" fill="#c9d4e8" font-family="Arial, sans-serif" font-size="28" font-weight="800" text-anchor="middle">Original cartoon simulation. No official footage. No broadcast audio.</text>
+</svg>
+`;
+}
+
 function pitch() {
   return `
   <g>
@@ -177,6 +254,7 @@ function actionLabel(t) {
 
 function frameSvg(match, frameIndex) {
   const t = frameIndex / fps;
+  if (style === "high-voltage" && t < 4) return highVoltageIntro(match, frameIndex);
   const ballPath = [
     { x: 690, y: 560 },
     { x: 880, y: 486 },
@@ -249,8 +327,9 @@ function frameSvg(match, frameIndex) {
 }
 
 function metadata(match) {
+  const highVoltage = style === "high-voltage";
   const script = [
-    `${match.home} versus ${match.away}, animated match simulation from Kickoff Room Live.`,
+    `${match.home} versus ${match.away}, ${highVoltage ? "a high voltage " : ""}animated match simulation from Kickoff Room Live.`,
     "This is original cartoon action only, with no official footage and no broadcast audio.",
     "Watch the movement: the press opens midfield, the runner attacks the channel, and the low cross creates the chance.",
     `The key battle is ${match.keyBattle}.`,
@@ -258,7 +337,7 @@ function metadata(match) {
   ].join(" ");
   return {
     script,
-    title: `${match.home} vs ${match.away} Cartoon Match Simulation | No Footage`,
+    title: `${match.home} vs ${match.away} ${highVoltage ? "High Voltage " : ""}Cartoon Match Simulation | No Footage`,
     description: [
       `${match.home} vs ${match.away} original cartoon match simulation.`,
       "",
@@ -293,7 +372,8 @@ const presets = [...extraPresets, ...loadPresets(await readFile(presetsPath, "ut
 const match = presets.find((item) => item.id === streamId) || presets[0];
 if (!match) throw new Error(`No match preset found for ${streamId}`);
 
-const base = resolve(outputDir, `${match.id}-cartoon-simulation`);
+const slug = style === "high-voltage" ? "high-voltage-cartoon" : "cartoon-simulation";
+const base = resolve(outputDir, `${match.id}-${slug}`);
 const frameDir = resolve(runtimeDir, match.id);
 const voicePath = `${base}.aiff`;
 const videoPath = `${base}.mp4`;
@@ -325,7 +405,7 @@ run("ffmpeg", [
 
 run("ffmpeg", [
   "-y",
-  "-ss", "00:00:12",
+  "-ss", style === "high-voltage" ? "00:00:02" : "00:00:12",
   "-i", videoPath,
   "-frames:v", "1",
   "-update", "1",
@@ -343,6 +423,7 @@ await writeFile(metaPath, `${JSON.stringify({
   coverPath,
   voicePath,
   frameSource: frameDir,
+  style,
   safeUse: "Original cartoon simulation only. Do not represent it as official footage or add broadcast audio."
 }, null, 2)}\n`);
 
